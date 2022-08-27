@@ -1,8 +1,16 @@
 /* TODO: consider creating <Button> and <GradientText> components */
+a {
+  @apply text-primary;
+}
+
 a,
 .btn {
   @apply transition-colors duration-200;
   @apply hover:text-secondary;
+}
+
+.nav-text{
+  @apply text-current;
 }
 
 .gradient-text {

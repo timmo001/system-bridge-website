@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Discussions",
+    "icon": "mdi:forum-outline",
+    "description": "Participate in discussions and get help here.",
+    "url": "https://github.com/timmo001/system-bridge/discussions"
+  },
+  {
+    "title": "Suggest a Feature / Report a Bug",
+    "icon": "mdi:notebook-edit-outline",
+    "description": "Thought of a feature that could be added?<br />Found an issue?<br />Suggest it here.",
+    "url": "https://github.com/timmo001/system-bridge/issues"
+  }
+]

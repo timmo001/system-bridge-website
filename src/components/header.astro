@@ -4,7 +4,7 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 
 const navItems = [
   { title: "Features", url: "/#features" },
-  { title: "Showcase", url: "/#showcase" },
+  // { title: "Showcase", url: "/#showcase" },
   { title: "Links / Resources", url: "/#links" },
   { title: "Download & Install", url: "/docs/install" },
   { title: "Running", url: "/docs/running" },
@@ -20,7 +20,7 @@ const navItems = [
   id="page-header"
   class="absolute bottom-0 z-10 flex items-center justify-between w-full px-8 py-4 text-white border-b border-transparent"
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="/">
+  <a class="flex items-center gap-3 nav-text hover:!text-default" href="/">
     <h1 class="sr-only">System Bridge</h1>
     <Icon name="logomark" class="h-10" />
     <Icon name="wordmark" class="hidden h-4 sm:block" />
@@ -32,7 +32,7 @@ const navItems = [
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-sm" href={url}>
+                <a class="text-sm nav-text" href={url}>
                   {title}
                 </a>
               </li>
