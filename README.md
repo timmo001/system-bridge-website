@@ -1,19 +1,14 @@
-# Astro Landing Page
+# System Bridge
 
-An Astro + Tailwind CSS starter kit for landing pages.
+The System Bridge website, written with Astro.
 
-![Screenshots of Astro Landing Page](screenshots.jpg)
+![Logo](https://raw.githubusercontent.com/timmo001/system-bridge/master/resources/system-bridge-rect.png)
 
-## Features
+## Site
 
-- 💨 Tailwind CSS for styling
-- 🎨 Themeable
-  - CSS variables are defined in `src/styles/theme.css` and mapped to Tailwind (`tailwind.config.cjs`)
-- 🌙 Dark mode
-- 📱 Responsive (layout, images, typography)
-- ♿ Accessible (as measured by https://web.dev/measure/)
-- 🔎 SEO-enabled (as measured by https://web.dev/measure/)
-- 🔗 Open Graph tags for social media sharing
+The site is available [here][site].
+
+[site]: https://system-bridge.timmo.dev
 
 ## Commands
 
@@ -27,11 +22,3 @@ An Astro + Tailwind CSS starter kit for landing pages.
 | `npm run astro --help` | Get help using the Astro CLI                       |
 | `npm run format`       | Format code with [Prettier](https://prettier.io/)  |
 | `npm run clean`        | Remove `node_modules` and build output             |
-
-## Credits
-
-- astronaut image
-  - source: https://github.com/withastro/astro-og-image; note: this repo is not available anymore
-- moon image
-  - source: https://unsplash.com/@nasa
-- other than that, a lot of material (showcase data, copy) was taken from official Astro sources, in particular https://astro.build/blog/introducing-astro/ and https://github.com/withastro/astro.build
