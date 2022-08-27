@@ -11,6 +11,10 @@ export default defineConfig({
   site: "https://system-bridge.timmo.dev",
   markdown: {
     extendDefaultPlugins: true,
+    shikiConfig: {
+      theme: "github-dark-dimmed",
+      wrap: false,
+    },
   },
   vite: {
     ssr: {
