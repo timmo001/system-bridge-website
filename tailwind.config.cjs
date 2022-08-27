@@ -25,7 +25,7 @@ module.exports = {
     },
   },
   corePlugins: {
-    fontSize: false,
+    fontSize: true,
   },
   plugins: [require("tailwindcss-fluid-type")],
 };

@@ -1,4 +1,31 @@
-/* TODO: consider creating <Button> and <GradientText> components */
+h1 {
+  @apply text-5xl mt-2 mb-5;
+}
+
+h2 {
+  @apply text-4xl mt-2 mb-4;
+}
+
+h3 {
+  @apply text-3xl mt-2 mb-3;
+}
+
+h4 {
+  @apply text-2xl mt-2 mb-2;
+}
+
+h5 {
+  @apply text-xl mt-1 mb-1;
+}
+
+p {
+  @apply text-base mt-1 mb-1;
+}
+
+pre {
+  @apply text-base mt-1 mb-1 p-3;
+}
+
 a {
   @apply text-primary;
 }
@@ -9,7 +36,7 @@ a,
   @apply hover:text-secondary;
 }
 
-.nav-text{
+.nav-text {
   @apply text-current;
 }
 

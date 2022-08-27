@@ -9,6 +9,9 @@ export default defineConfig({
   },
   integrations: [robotsTxt(), sitemap(), tailwind()],
   site: "https://system-bridge.timmo.dev",
+  markdown: {
+    extendDefaultPlugins: true,
+  },
   vite: {
     ssr: {
       external: ["@11ty/eleventy-img", "svgo"],
