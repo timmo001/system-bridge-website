@@ -5,10 +5,10 @@ import modules from "~/data/modules.json";
 ---
 
 <ContentSection title="Modules" id="modules">
-  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <div class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
       modules.map(({ title, description, icon }) => (
-        <li class="flex flex-col items-center gap-4 p-6">
+        <div class="flex flex-col items-center gap-4 p-6">
           <div class="w-72 h-72">
             <Icon name={icon} />
           </div>
@@ -16,8 +16,8 @@ import modules from "~/data/modules.json";
           <p class="text-sm text-center text-offset">
             <Fragment set:html={description} />
           </p>
-        </li>
+        </div>
       ))
     }
-  </ul>
+  </div>
 </ContentSection>
