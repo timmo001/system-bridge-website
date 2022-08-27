@@ -8,5 +8,5 @@ a,
 
 .gradient-text {
   @apply text-transparent bg-clip-text;
-  @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500;
+  @apply bg-gradient-to-br from-indigo-700 via-indigo-700 to-purple-700;
 }

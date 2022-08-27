@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "clean": "rimraf dist node_modules"
+    "clean": "rimraf dist node_modules public/assets/images"
   },
   "devDependencies": {
     "@astrojs/tailwind": "1.0.0",

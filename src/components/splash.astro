@@ -1,17 +1,15 @@
 ---
 import { generateImage } from "astro-eleventy-img";
-import { Icon } from "astro-icon";
-import Starfield from "~/components/starfield.astro";
 import HeroImage from "~/components/hero-image.astro";
 
 const widths = [450, 800];
-const sizes = "(min-width: 640px) 42vw, 67vw";
+const sizes = "(min-width: 620px) 38vw, 64vw";
 
-const { webp, avif, png } = generateImage("src/assets/astronaut.png", {
+const { webp, avif, png } = generateImage("src/assets/logo.svg", {
   widths,
   formats: ["webp", "avif", "png"],
-  outputDir: "public/assets/images/astronaut",
-  urlPath: "/assets/images/astronaut",
+  outputDir: "public/assets/images/logo",
+  urlPath: "/assets/images/logo",
 });
 
 const avifSrcset = avif.map(({ srcset }) => srcset).join(",");
@@ -19,26 +17,13 @@ const webpSrcset = webp.map(({ srcset }) => srcset).join(",");
 const pngSrcset = png.map(({ srcset }) => srcset).join(",");
 ---
 
-<section class="relative h-full bg-black">
-  <Starfield />
+<section class="relative h-full bg-violet-900">
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
-  <div class="relative grid h-full sm:grid-cols-2 place-items-center">
-    <h2
-      class="flex flex-col self-end gap-2 sm:gap-4 sm:self-auto sm:justify-self-end"
-    >
-      <Icon name="logomark" class="h-24 text-white md:h-32" />
-      <div
-        class="font-extrabold tracking-tighter text-center text-8xl gradient-text"
-      >
-        Build fast
-        <br /> websites,
-        <br /> faster.
-      </div>
-    </h2>
+  <div class="relative grid h-full sm:grid-cols-2 place-items-center gap-8">
     <picture
-      class="self-start w-2/3 max-w-3xl sm:w-10/12 sm:self-auto sm:justify-self-start"
+      class="self-end w-2/3 max-w-3xl sm:w-10/12 sm:self-auto sm:justify-self-end drop-shadow-xl hover:drop-shadow-2xl"
     >
       <source type="image/avif" srcset={avifSrcset} {sizes} />
       <source type="image/webp" srcset={webpSrcset} {sizes} />
@@ -48,9 +33,20 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
         src={png[0].url}
         width={png[0].width}
         height={png[0].height}
-        alt="A floating astronaut in a space suit"
+        alt="System Bridge logo"
       />
     </picture>
+    <h2
+      class="flex flex-col self-start gap-2 sm:gap-4 sm:self-auto sm:justify-self-start"
+    >
+      <div
+        class="font-extrabold tracking-tighter text-center text-8xl drop-shadow-xl hover:drop-shadow-2xl"
+      >
+        A bridge for
+        <br />
+        your systems.
+      </div>
+    </h2>
   </div>
 </section>
 
@@ -64,20 +60,6 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
 </noscript> -->
 
 <style>
-  @keyframes float {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 30px, 0);
-    }
-  }
-
-  picture {
-    animation: float linear 2.5s infinite alternate;
-  }
-
   @media (prefers-reduced-motion: reduce) {
     picture {
       @apply animate-none;
