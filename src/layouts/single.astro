@@ -18,9 +18,7 @@ const { id, title } = Astro.props.content;
     <Header />
     <Splash />
     <ContentSection title={title} id={id}>
-      <article class="max-w-6xl">
-        <slot />
-      </article>
+      <slot />
     </ContentSection>
     <Footer />
   </body>

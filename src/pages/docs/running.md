@@ -1,6 +1,6 @@
 ---
 layout: ~/layouts/single.astro
-id: runnning
+id: running
 title: Running
 ---
 
