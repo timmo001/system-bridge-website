@@ -1,5 +1,5 @@
 [data-theme="light"] {
-  --color-primary: theme("colors.violet.900");
+  --color-primary: theme("colors.violet.700");
   --color-secondary: theme("colors.indigo.500");
   --color-text: theme("colors.gray.900");
   --color-text-offset: theme("colors.gray.600");
@@ -9,7 +9,7 @@
 }
 
 [data-theme="dark"] {
-  --color-primary: theme("colors.violet.800");
+  --color-primary: theme("colors.violet.600");
   --color-secondary: theme("colors.indigo.400");
   --color-text: theme("colors.gray.50");
   --color-text-offset: theme("colors.gray.400");
