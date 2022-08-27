@@ -22,6 +22,14 @@ p {
   @apply text-sm mt-1 mb-1;
 }
 
+ul {
+  @apply mt-1 mb-1;
+}
+
+li {
+  @apply text-sm ml-8 list-disc;
+}
+
 pre {
   @apply text-sm mt-1 mb-1 p-3;
 }

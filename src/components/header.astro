@@ -34,14 +34,12 @@ const navItems = [
         <ul class="flex items-center gap-6">
           {
             navItems.map(({ title, url }) => (
-              <li>
-                <a
-                  class="text-sm nav-text drop-shadow-lg hover:drop-shadow-xl"
-                  href={url}
-                >
-                  {title}
-                </a>
-              </li>
+              <a
+                class="text-sm nav-text drop-shadow-lg hover:drop-shadow-xl"
+                href={url}
+              >
+                {title}
+              </a>
             ))
           }
         </ul>
