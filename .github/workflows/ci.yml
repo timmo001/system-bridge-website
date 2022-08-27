@@ -1,0 +1,17 @@
+name: CI
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+  workflow_dispatch:
+
+jobs:
+  build-node-linux:
+    uses: timmo001/workflows/.github/workflows/build-node-linux.yml@master
