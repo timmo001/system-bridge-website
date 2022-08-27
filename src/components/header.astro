@@ -31,7 +31,7 @@ const navItems = [
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
-        <ul class="flex items-center gap-6">
+        <div class="flex items-center gap-6">
           {
             navItems.map(({ title, url }) => (
               <a
@@ -42,7 +42,7 @@ const navItems = [
               </a>
             ))
           }
-        </ul>
+        </div>
       </nav>
       <button
         id="open-nav-button"
@@ -71,17 +71,15 @@ const navItems = [
             <Icon name="logomark" class="h-16" />
           </div>
           <nav>
-            <ul class="flex flex-col">
+            <div class="flex flex-col">
               {
                 navItems.map(({ title, url }) => (
-                  <li>
-                    <a class="block py-4 text-xl text-center" href={url}>
-                      {title}
-                    </a>
-                  </li>
+                  <a class="block py-4 text-xl text-center" href={url}>
+                    {title}
+                  </a>
                 ))
               }
-            </ul>
+            </div>
           </nav>
         </div>
       </div>
