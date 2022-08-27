@@ -2,21 +2,17 @@
 import { Icon } from "astro-icon";
 ---
 
-<!--
-  negative margin is sum of button width (8) and gap size of flex parent (6)
-  TODO don't hardcode these values
--->
 <button
   id="theme-switcher"
   type="button"
-  class="scale-0 transition-all origin-[right_center] duration-500 -ml-14"
+  class="transition-all origin-[right_center] duration-500"
 >
   <div id="icon-theme-light" class="hidden">
-    <Icon name="theme/light" class="h-8" />
+    <Icon name="theme/dark" class="h-8" />
     <span class="sr-only">Use light theme</span>
   </div>
   <div id="icon-theme-dark" class="hidden">
-    <Icon name="theme/dark" class="h-8" />
+    <Icon name="theme/light" class="h-8" />
     <span class="sr-only">Use dark theme</span>
   </div>
 </button>
@@ -52,9 +48,3 @@ import { Icon } from "astro-icon";
 
   updateIcon();
 </script>
-
-<style>
-  :global(.fixed-header) #theme-switcher {
-    @apply scale-100 ml-0;
-  }
-</style>
