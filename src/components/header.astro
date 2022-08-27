@@ -10,8 +10,28 @@ const navItems = [
   { title: "Download & Install", url: "/docs/install" },
   { title: "Running", url: "/docs/running" },
   { title: "CLI", url: "/docs/cli" },
-  { title: "API", url: "/docs/api/data" },
-  { title: "WebSocket", url: "/docs/websocket/data-get" },
+  {
+    title: "API",
+    subitems: [
+      { title: "Data", url: "/docs/api/data" },
+      { title: "Data by Key", url: "/docs/api/data-key" },
+      { title: "Keyboard", url: "/docs/api/keyboard" },
+      { title: "Notification", url: "/docs/api/notification" },
+      { title: "Open", url: "/docs/api/open" },
+      { title: "Power", url: "/docs/api/power" },
+    ],
+  },
+  {
+    title: "WebSocket",
+    subitems: [
+      { title: "Requesting Data", url: "/docs/websocket/data-get" },
+      { title: "Receiving Data", url: "/docs/websocket/data-receive" },
+      {
+        title: "Registering as a Listener",
+        url: "/docs/websocket/data-register-listener",
+      },
+    ],
+  },
   { title: "FAQ", url: "/faq" },
 ];
 ---
@@ -73,11 +93,29 @@ const navItems = [
           <nav>
             <ul class="flex flex-col">
               {
-                navItems.map(({ title, url }) => (
+                navItems.map(({ title, url, subitems }) => (
                   <li>
-                    <a class="block py-4 text-xl text-center" href={url}>
-                      {title}
-                    </a>
+                    {subitems ? (
+                      <>
+                        {title}
+                        {subitems.map((subitem) => (
+                          <a
+                            class="text-sm nav-text drop-shadow-lg hover:drop-shadow-xl"
+                            href={subitem.url}
+                          >
+                            {subitem.title}
+                          </a>
+                        ))}
+                        ))
+                      </>
+                    ) : (
+                      <a
+                        class="text-sm nav-text drop-shadow-lg hover:drop-shadow-xl"
+                        href={url}
+                      >
+                        {title}
+                      </a>
+                    )}
                   </li>
                 ))
               }
