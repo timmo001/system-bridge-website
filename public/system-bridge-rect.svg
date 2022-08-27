@@ -11,10 +11,8 @@
    width="48"
    height="48"
    id="svg48"
-   sodipodi:docname="icon-circle.svg"
+   sodipodi:docname="system-bridge-rect.svg"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
-  <title
-     id="title54">System Bridge Curcle</title>
   <metadata
      id="metadata52">
     <rdf:RDF>
@@ -23,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>System Bridge Curcle</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,17 +33,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1611"
-     inkscape:window-height="1551"
+     inkscape:window-width="1968"
+     inkscape:window-height="1425"
      id="namedview50"
      showgrid="false"
-     inkscape:zoom="10.5"
-     inkscape:cx="28.677941"
-     inkscape:cy="24.463948"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="21"
+     inkscape:cx="20.572926"
+     inkscape:cy="28.214224"
+     inkscape:window-x="1369"
+     inkscape:window-y="149"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g46" />
+     inkscape:current-layer="g46"
+     inkscape:document-rotation="0" />
   <defs
      id="defs25">
     <linearGradient
@@ -127,12 +125,12 @@
      style="mix-blend-mode: normal"
      id="g46">
     <path
-       d="M2,24c0,-12.15026 9.84974,-22 22,-22c12.15026,0 22,9.84974 22,22c0,12.15026 -9.84974,22 -22,22c-12.15026,0 -22,-9.84974 -22,-22z"
+       d="m 4.0000002,40 c -1.10457,0 -2,-0.89543 -2,-2 V 10 c 0,-1.1045699 0.89543,-2.0000002 2,-2.0000002 H 44 c 1.10457,0 2,0.8954303 2,2.0000002 v 28 c 0,1.10457 -0.89543,2 -2,2 z"
        id="base 1 5"
        fill="#512da8"
        stroke-width="1" />
     <path
-       d="m 5.2618,29.96216 v -3.407 H 8.66872 V 14.63092 h 3.40692 l 5.77606,5.77606 c 1.4469,0.50644 2.99022,0.84206 4.59893,0.97433 l 0.66605,0.04289 c 0.29254,0.01364 0.58705,0.02056 0.88337,0.02056 4.65047,0 8.858,-1.70343 11.92424,-4.37792 v -2.43591 h 3.407 l 6.48081,6.48081 c 0.12395,0.94519 0.18789,1.90926 0.18789,2.88827 0,12.15026 -9.84974,22 -22,22 -0.979,0 -1.94307,-0.06395 -2.88825,-0.18789 z"
+       d="m 5.2618,29.96216 v -3.407 H 8.66872 V 14.63092 h 3.40692 l 5.77606,5.77606 c 1.4469,0.50644 2.979947,0.825164 4.588657,0.957434 l 0.66605,0.04289 c 0.29254,0.01364 0.58705,0.02056 0.88337,0.02056 4.65047,0 8.868273,-1.686534 11.934513,-4.361024 v -2.43591 h 3.407 l 6.658427,6.651804 v 16.70038 c 0,1.10457 -0.89543,2 -2,2 h -28.70036 z"
        fill="url(#color-1)"
        stroke-width="1"
        id="path28"
