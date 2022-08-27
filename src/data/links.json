@@ -7,8 +7,20 @@
   },
   {
     "title": "Suggest a Feature / Report a Bug",
-    "icon": "mdi:notebook-edit-outline",
+    "icon": "mdi:notebook-plus-outline",
     "description": "Thought of a feature that could be added?<br />Found an issue?<br />Suggest it here.",
     "url": "https://github.com/timmo001/system-bridge/issues"
+  },
+  {
+    "title": "Contribute to the Application",
+    "icon": "mdi:github",
+    "description": "Contribute to the project by submitting a pull request.",
+    "url": "https://github.com/timmo001/system-bridge"
+  },
+  {
+    "title": "Contribute to the Website / Documentation",
+    "icon": "mdi:notebook-edit-outline",
+    "description": "Contribute to the website by submitting a pull request.",
+    "url": "https://github.com/timmo001/system-bridge-site"
   }
 ]
