@@ -1,7 +1,7 @@
 ---
 layout: ~/layouts/single.astro
-id: data-key
-title: Data by Key
+id: api-data-key
+title: API - Data by Key
 ---
 
 _Get data from data modules by key._

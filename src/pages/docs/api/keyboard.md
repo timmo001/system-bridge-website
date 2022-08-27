@@ -1,7 +1,7 @@
 ---
 layout: ~/layouts/single.astro
-id: keyboard
-title: Keyboard
+id: api-keyboard
+title: API - Keyboard
 ---
 
 _Send keyboard keypresses and text._

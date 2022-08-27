@@ -1,7 +1,7 @@
 ---
 layout: ~/layouts/single.astro
-id: open
-title: Open
+id: api-open
+title: API - Open
 ---
 
 _Open files or urls._

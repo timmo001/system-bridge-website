@@ -1,6 +1,6 @@
 ---
 layout: ~/layouts/single.astro
-id: notification
+id: websocket-data-receive
 title: WebSocket - Receiving Data
 ---
 

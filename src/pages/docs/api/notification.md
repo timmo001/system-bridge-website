@@ -1,7 +1,7 @@
 ---
 layout: ~/layouts/single.astro
-id: notification
-title: Notification
+id: api-notification
+title: API - Notification
 ---
 
 _Send notifications to the desktop._

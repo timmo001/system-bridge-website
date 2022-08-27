@@ -1,7 +1,7 @@
 ---
 layout: ~/layouts/single.astro
-id: power
-title: Power
+id: api-power
+title: API - Power
 ---
 
 _Send power commands to the system._

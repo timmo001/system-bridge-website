@@ -48,6 +48,10 @@ a,
   @apply text-current;
 }
 
+.nav-text:active {
+  @apply text-secondary;
+}
+
 .gradient-text {
   @apply text-transparent bg-clip-text;
   @apply bg-gradient-to-br from-indigo-700 via-indigo-700 to-purple-700;

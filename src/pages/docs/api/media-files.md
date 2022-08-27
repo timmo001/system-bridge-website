@@ -1,7 +1,7 @@
 ---
 layout: ~/layouts/single.astro
-id: media-files
-title: Media - Files
+id: api-media-files
+title: API - Media - Files
 ---
 
 _List files from system._

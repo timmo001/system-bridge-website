@@ -1,6 +1,6 @@
 ---
 layout: ~/layouts/single.astro
-id: data-get
+id: websocket-data-get
 title: WebSocket - Requesting Data
 ---
 

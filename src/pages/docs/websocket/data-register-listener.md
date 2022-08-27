@@ -1,6 +1,6 @@
 ---
 layout: ~/layouts/single.astro
-id: data-register-listener
+id: websocket-data-register-listener
 title: WebSocket - Registering as a Listener
 ---
 
