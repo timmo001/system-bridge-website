@@ -1,10 +1,11 @@
 ---
-import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import MainHead from "~/components/MainHead.astro";
 import Splash from "~/components/splash.astro";
+
+const { id, title } = Astro.props.content;
 ---
 
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
@@ -16,8 +17,10 @@ import Splash from "~/components/splash.astro";
   >
     <Header />
     <Splash />
-    <ContentSection title="Download & Install" id="install">
-      <Icon pack="mdi" name="tray-arrow-down" class="h-8" />
+    <ContentSection title={title} id={id}>
+      <article class="max-w-6xl">
+        <slot />
+      </article>
     </ContentSection>
     <Footer />
   </body>
