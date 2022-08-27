@@ -10,6 +10,12 @@ The site is available [here][site].
 
 [site]: https://system-bridge.timmo.dev
 
+### Old version
+
+You can find version 1 [here][v1].
+
+[v1]: https://system-bridge-site.vercel.app
+
 ## Commands
 
 | Command                | Action                                             |
