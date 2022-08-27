@@ -2,6 +2,8 @@
 import { generateImage } from "astro-eleventy-img";
 import HeroImage from "~/components/hero-image.astro";
 
+const { fullHeight } = Astro.props;
+
 const widths = [450, 800];
 const sizes = "(min-width: 620px) 38vw, 64vw";
 
@@ -17,13 +19,24 @@ const webpSrcset = webp.map(({ srcset }) => srcset).join(",");
 const pngSrcset = png.map(({ srcset }) => srcset).join(",");
 ---
 
-<section class="relative h-full bg-violet-900">
+<section
+  class={`relative ${fullHeight ? "h-full" : "h-96"} mb-8 bg-violet-900`}
+  style={`${fullHeight ? "" : "height: 580px"}`}
+>
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
-  <div class="relative grid h-full sm:grid-cols-2 place-items-center gap-8">
+  <div
+    class={`relative grid h-full ${
+      fullHeight ? "sm:grid-cols-2" : "sm:grid-cols-1"
+    } place-items-center gap-8`}
+  >
     <picture
-      class="self-end w-2/3 max-w-3xl sm:w-10/12 sm:self-auto sm:justify-self-end drop-shadow-xl hover:drop-shadow-2xl"
+      class={`${
+        fullHeight ? "self-end" : "self-center"
+      } w-2/3 max-w-3xl sm:w-10/12 sm:self-auto ${
+        fullHeight ? "sm:justify-self-end" : "sm:justify-self-center"
+      } drop-shadow-xl hover:drop-shadow-2xl`}
     >
       <source type="image/avif" srcset={avifSrcset} {sizes} />
       <source type="image/webp" srcset={webpSrcset} {sizes} />
@@ -36,17 +49,19 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
         alt="System Bridge logo"
       />
     </picture>
-    <h2
-      class="flex flex-col self-start gap-2 sm:gap-4 sm:self-auto sm:justify-self-start"
-    >
-      <div
-        class="font-extrabold tracking-tighter text-center text-8xl drop-shadow-xl hover:drop-shadow-2xl"
-      >
-        A bridge for
-        <br />
-        your systems.
-      </div>
-    </h2>
+    {
+      fullHeight ? (
+        <h2 class="flex flex-col self-start gap-2 sm:gap-4 sm:self-auto sm:justify-self-start">
+          <div class="font-extrabold tracking-tighter text-center text-8xl drop-shadow-xl hover:drop-shadow-2xl">
+            A bridge for
+            <br />
+            your systems.
+          </div>
+        </h2>
+      ) : (
+        ""
+      )
+    }
   </div>
 </section>
 
@@ -63,10 +78,6 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
   @media (prefers-reduced-motion: reduce) {
     picture {
       @apply animate-none;
-    }
-
-    :global(#starfield) {
-      @apply hidden;
     }
 
     #splash-bg-fallback {

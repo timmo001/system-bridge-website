@@ -2,6 +2,8 @@
 import { Icon } from "astro-icon";
 import ThemeSwitcher from "~/components/theme-switcher.astro";
 
+const { fullHeight } = Astro.props;
+
 const navItems = [
   { title: "Features", url: "/#features" },
   // { title: "Showcase", url: "/#showcase" },
@@ -18,9 +20,12 @@ const navItems = [
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-10 flex items-center justify-between w-full px-8 py-4 text-white border-b border-transparent"
+  class="z-10 flex items-center justify-between w-full px-8 py-4 text-white border-b border-transparent fixed top-0 bottom-auto text-default bg-violet-900"
 >
-  <a class="flex items-center gap-3 nav-text hover:!text-default" href="/">
+  <a
+    class="flex items-center gap-3 nav-text hover:!text-default drop-shadow-lg hover:drop-shadow-xl"
+    href="/"
+  >
     <h1 class="sr-only">System Bridge</h1>
     <Icon name="logomark" class="h-10" />
     <Icon name="wordmark" class="hidden h-4 sm:block" />
@@ -32,7 +37,10 @@ const navItems = [
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-sm nav-text" href={url}>
+                <a
+                  class="text-sm nav-text drop-shadow-lg hover:drop-shadow-xl"
+                  href={url}
+                >
                   {title}
                 </a>
               </li>
@@ -129,10 +137,6 @@ const navItems = [
 </noscript> -->
 
 <style>
-  .fixed-header {
-    @apply fixed top-0 bottom-auto;
-    @apply text-default bg-default border-default;
-  }
   .modal.is-open {
     @apply block;
   }
