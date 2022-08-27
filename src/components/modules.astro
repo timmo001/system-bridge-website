@@ -1,0 +1,23 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import modules from "~/data/modules.json";
+---
+
+<ContentSection title="Modules" id="modules">
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      modules.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 p-6">
+          <div class="w-72 h-72">
+            <Icon name={icon} />
+          </div>
+          <p class="text-xl font-extrabold text-center">{title}</p>
+          <p class="text-sm text-center text-offset">
+            <Fragment set:html={description} />
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

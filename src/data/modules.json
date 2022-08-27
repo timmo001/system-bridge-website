@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Battery",
+    "description": "Battery level, capacity and configuration.",
+    "icon": "mdi:battery-charging"
+  },
+  {
+    "title": "CPU",
+    "description": "CPU usage, clock speed, and configuration.",
+    "icon": "mdi:cpu-64-bit"
+  },
+  {
+    "title": "Disks",
+    "description": "Disk and filesystem information.",
+    "icon": "mdi:harddisk"
+  },
+  {
+    "title": "Display",
+    "description": "Display information.",
+    "icon": "mdi:monitor"
+  },
+  {
+    "title": "GPU",
+    "description": "Graphics card configuration and usage.",
+    "icon": "mdi:expansion-card"
+  },
+  {
+    "title": "Memory",
+    "description": "Memory configuration and usage.",
+    "icon": "mdi:memory"
+  },
+  {
+    "title": "Network",
+    "description": "Networking information.",
+    "icon": "mdi:network-outline"
+  },
+  {
+    "title": "Sensors",
+    "description": "Sensor data.",
+    "icon": "mdi:desktop-classic"
+  },
+  {
+    "title": "System",
+    "description": "System information.",
+    "icon": "mdi:desktop-tower"
+  }
+]
