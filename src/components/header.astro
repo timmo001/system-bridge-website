@@ -94,20 +94,9 @@ const navItems = [
             <div class="flex flex-col">
               {
                 navItems.map(({ title, url, subitems }) => (
-                  <li>
+                  <span>
                     {subitems ? (
-                      <>
-                        {title}
-                        {subitems.map((subitem) => (
-                          <a
-                            class="text-sm nav-text drop-shadow-lg hover:drop-shadow-xl"
-                            href={subitem.url}
-                          >
-                            {subitem.title}
-                          </a>
-                        ))}
-                        ))
-                      </>
+                      <span class="select-none">{title}</span>
                     ) : (
                       <a
                         class="text-sm nav-text drop-shadow-lg hover:drop-shadow-xl"
@@ -116,7 +105,7 @@ const navItems = [
                         {title}
                       </a>
                     )}
-                  </li>
+                  </span>
                 ))
               }
             </div>
