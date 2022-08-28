@@ -10,7 +10,7 @@ const { id, title } = Astro.props.content;
 
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
   <head>
-    <MainHead title="Download & Install" />
+    <MainHead title={title} />
   </head>
   <body
     class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white"
