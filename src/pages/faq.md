@@ -28,10 +28,10 @@ know how to code to do so.
  in the [Issues](https://github.com/timmo001/system-bridge/issues)
  area of the GitHub Repository.
 - You can open a
- [pull request](https://github.com/timmo001/system-bridge-site/pulls)
+ [pull request](https://github.com/timmo001/system-bridge/pulls)
  to fix a bug or implement a new feature.
 - You can also contribute to the website GitHub repository
- [here](https://github.com/timmo001/system-bridge-site).
+ [here](https://github.com/timmo001/system-bridge-site-v2).
 
 ## I have a question or need help with something
 
