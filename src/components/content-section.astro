@@ -1,20 +1,53 @@
 ---
+import navAPI from "~/data/nav_api.json";
+import navWebSocket from "~/data/nav_websocket.json";
+
 const { title, id } = Astro.props;
+
+const isAPI = id.startsWith("api");
+const isWebSocket = id.startsWith("websocket");
 ---
 
-<section {id} class="flex flex-col items-center gap-4 space-y-8 scroll-mt-24">
-  <div class="flex flex-col items-center gap-4">
-    <slot name="eyebrow" />
-    <h2
-      class="text-6xl font-extrabold tracking-tight text-center gradient-text"
-    >
-      {title}
-    </h2>
+<section
+  {id}
+  class="flex flex-row justify-center items-start gap-4 scroll-mt-24"
+>
+  {
+    isAPI && (
+      <div class="justify-start space-y-6 mt-28 pl-2 pr-6 border-r-2 text-start">
+        {navAPI.map(({ title, url }) => (
+          <a href={url} class="flex flex-col space-y-4">
+            <span class="text-sm font-medium">{title}</span>
+          </a>
+        ))}
+      </div>
+    )
+  }
+  {
+    isWebSocket && (
+      <div class="justify-start space-y-6 mt-28 pl-2 pr-6 border-r-2 text-start">
+        {navWebSocket.map(({ title, url }) => (
+          <a href={url} class="flex flex-col space-y-4">
+            <span class="text-sm font-medium">{title}</span>
+          </a>
+        ))}
+      </div>
+    )
+  }
+  <div class="flex flex-col grow max-w-6xl items-center gap-4">
+    <div class="flex flex-col items-center gap-4">
+      <slot name="eyebrow" />
+      <h2
+        class="text-6xl font-extrabold tracking-tight text-center gradient-text"
+      >
+        {title}
+      </h2>
+    </div>
+    <p class="max-w-xl text-2xl font-extrabold text-center">
+      <slot name="lead" />
+    </p>
+    <article class="w-full">
+      <slot />
+    </article>
   </div>
-  <p class="max-w-xl text-2xl font-extrabold text-center">
-    <slot name="lead" />
-  </p>
-  <article class="max-w-6xl w-full">
-    <slot />
-  </article>
 </section>
