@@ -116,7 +116,6 @@ const navItems = [
   closeNavButton.addEventListener("click", closeMenu);
 
   document.addEventListener("scroll", () => {
-    console.log(Astro.url.pathname);
     header.classList.toggle("fixed-header", page.scrollTop > 40);
   });
 
