@@ -112,6 +112,8 @@ const navItems = [
     MicroModal.close(menuModalId);
   };
 
+  console.log(Astro.url.pathname);
+
   openNavButton.addEventListener("click", openMenu);
   closeNavButton.addEventListener("click", closeMenu);
 
