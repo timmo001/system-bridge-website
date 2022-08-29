@@ -10,20 +10,20 @@ const isWebSocket = id.startsWith("ws");
 
 <section
   {id}
-  class="grid grid-cols-4 self-center items-center gap-4 scroll-mt-24"
+  class="flex flex-row justify-center items-start gap-4 scroll-mt-24"
 >
   {
     isAPI && (
-      <div class="flex flex-col justify-start gap-4 border-r-2">
+      <div class="justify-start space-y-6 mt-28 pl-2 pr-6 border-r-2 text-start">
         {navAPI.map(({ title, url }) => (
-          <a href={url} class="flex flex-col items-center space-y-4">
+          <a href={url} class="flex flex-col space-y-4">
             <span class="text-sm font-medium">{title}</span>
           </a>
         ))}
       </div>
     )
   }
-  <div class="flex flex-col w-max">
+  <div class="grow flex flex-col max-w-6xl">
     <div class="flex flex-col items-center gap-4">
       <slot name="eyebrow" />
       <h2
@@ -35,7 +35,7 @@ const isWebSocket = id.startsWith("ws");
     <p class="max-w-xl text-2xl font-extrabold text-center">
       <slot name="lead" />
     </p>
-    <article class="max-w-6xl w-full">
+    <article>
       <slot />
     </article>
   </div>
