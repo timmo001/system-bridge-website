@@ -34,12 +34,15 @@ const navItems = [
           {
             navItems.map(({ title, url }) => (
               <a
-                class={`text-sm text-${
-                  Astro.url.pathname === url ? "indigo-100" : "white"
-                } drop-shadow-${
+                class={`text-sm text-indigo-50 drop-shadow-${
                   Astro.url.pathname === url ? "2xl" : "lg"
                 } hover:drop-shadow-xl`}
                 href={url}
+                style={`color: ${
+                  Astro.url.pathname === url
+                    ? "var(--color-nav-active)"
+                    : "inherit"
+                }`}
               >
                 {title}
               </a>
