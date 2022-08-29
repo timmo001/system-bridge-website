@@ -23,7 +23,7 @@ const isWebSocket = id.startsWith("ws");
       </div>
     )
   }
-  <div class="grow flex flex-col max-w-6xl">
+  <div class="flex flex-col grow max-w-6xl items-center gap-4">
     <div class="flex flex-col items-center gap-4">
       <slot name="eyebrow" />
       <h2
@@ -35,7 +35,7 @@ const isWebSocket = id.startsWith("ws");
     <p class="max-w-xl text-2xl font-extrabold text-center">
       <slot name="lead" />
     </p>
-    <article>
+    <article class="w-full">
       <slot />
     </article>
   </div>
