@@ -4,7 +4,6 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 
 const navItems = [
   { title: "Features", url: "/#features" },
-  // { title: "Showcase", url: "/#showcase" },
   { title: "Modules", url: "/#modules" },
   { title: "Links / Resources", url: "/#links" },
   { title: "Download & Install", url: "/docs/install" },
@@ -18,7 +17,7 @@ const navItems = [
 
 <header
   id="page-header"
-  class="z-10 flex items-center justify-between w-full px-8 py-4 text-white border-b border-transparent fixed top-0 bottom-auto bg-violet-900"
+  class="z-10 flex items-center justify-between w-full px-8 py-4 fixed top-0 bottom-auto bg-violet-900 text-white"
 >
   <a
     class="flex items-center gap-3 nav-text hover:!text-default drop-shadow-lg hover:drop-shadow-xl"
@@ -35,7 +34,11 @@ const navItems = [
           {
             navItems.map(({ title, url }) => (
               <a
-                class="text-sm nav-text drop-shadow-lg hover:drop-shadow-xl"
+                class={`text-sm text-${
+                  Astro.url.pathname === url ? "indigo-100" : "white"
+                } drop-shadow-${
+                  Astro.url.pathname === url ? "2xl" : "lg"
+                } hover:drop-shadow-xl`}
                 href={url}
               >
                 {title}
@@ -110,8 +113,7 @@ const navItems = [
   closeNavButton.addEventListener("click", closeMenu);
 
   document.addEventListener("scroll", () => {
-    const d = page.clientHeight - page.scrollTop - header.offsetHeight;
-    header.classList.toggle("fixed-header", d < 0);
+    header.classList.toggle("fixed-header", page.scrollTop > 40);
   });
 
   menu.addEventListener("click", (event) => {
@@ -131,6 +133,10 @@ const navItems = [
 </noscript> -->
 
 <style>
+  .fixed-header {
+    @apply shadow-xl;
+  }
+
   .modal.is-open {
     @apply block;
   }
