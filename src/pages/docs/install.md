@@ -22,7 +22,7 @@ python -m pip install --upgrade pywin32 systembridgeshared systembridgebackend s
 sudo apt update
 sudo apt install lshw upower
 sudo apt install python3 python3-pip python3-setuptools python3-wheel
-python -m pip install --upgrade systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui
+python3 -m pip install --upgrade systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui
 ```
 
 ## Detailed installation
