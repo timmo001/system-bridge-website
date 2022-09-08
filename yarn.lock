@@ -36,10 +36,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.22.1.tgz#8d0d4df6e02f72d6ad9b2c99b403c455d4a301c2"
   integrity sha512-FiRZ7fwJhADPo2X1unTyEq9V7EfeWE3GOBhzKDcFIF8mc5iLZ0VmPXrGmvOUTRXkZH99+TkB1SXGaTDjelRa2w==
 
-"@astrojs/compiler@^0.23.4":
-  version "0.23.4"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.23.4.tgz#e22d1436876d0477e62be38063263d2851c57403"
-  integrity sha512-vNZIa5Tf5nOqBEGJvM6xyYBnGcz4MAp+bBPnyVI0UYRjsIWlP7RgMdCpRV0OOh5kgh00BoAypGv27kcoJCMVfA==
+"@astrojs/compiler@^0.23.4", "@astrojs/compiler@^0.23.5":
+  version "0.23.5"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.23.5.tgz#ea57a2b994b2930e3b3d2d524f10866698fef4f1"
+  integrity sha512-vBMPy9ok4iLapSyCCT1qsZ9dK7LkVFl9mObtLEmWiec9myGHS9h2kQY2xzPeFNJiWXUf9O6tSyQpQTy5As/p3g==
 
 "@astrojs/language-server@^0.20.0":
   version "0.20.3"
@@ -933,12 +933,12 @@ astro@1.0.0-rc.1:
     yargs-parser "^21.0.1"
     zod "^3.17.3"
 
-astro@1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.1.6.tgz#119cbdee8bd6b44f7039372d7722dfdba6d2fc59"
-  integrity sha512-rNV1VjO5tlqu5nSrvOJdAIxwUVaFOYtG/siopederG6xK2EjCvmFjFUGOBW+xVkQCeA7j3OfE+5CZ8Wa+ZrcOw==
+astro@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.1.7.tgz#faabc2688d8c3095f7a74f81d4fdfafdef9f66f6"
+  integrity sha512-bQr95BIgD6Eu0exGOY26TxxKahZ3FiiEOpu3oUzsdM9kgeWUW8Mtjz3BKD+klZS9x0z3NYWOueCgxqe+vij8Vg==
   dependencies:
-    "@astrojs/compiler" "^0.23.4"
+    "@astrojs/compiler" "^0.23.5"
     "@astrojs/language-server" "^0.23.0"
     "@astrojs/markdown-remark" "^1.1.1"
     "@astrojs/telemetry" "^1.0.0"
