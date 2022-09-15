@@ -98,31 +98,24 @@ const navItems = [
 
   const menuModalId = "menu-modal";
 
-  const header: HTMLElement = document.querySelector("#page-header");
   const page = document.documentElement;
+  const header = document.querySelector("#page-header");
   const menu = document.querySelector(`#${menuModalId} ul`);
   const openNavButton = document.querySelector("#open-nav-button");
   const closeNavButton = document.querySelector("#close-nav-button");
 
-  const openMenu = () => {
-    MicroModal.show(menuModalId, { disableScroll: true });
-  };
+  const closeMenu = () => MicroModal.close(menuModalId);
+  const openMenu = () => MicroModal.show(menuModalId, { disableScroll: true });
 
-  const closeMenu = () => {
-    MicroModal.close(menuModalId);
-  };
-
-  openNavButton.addEventListener("click", openMenu);
   closeNavButton.addEventListener("click", closeMenu);
+  openNavButton.addEventListener("click", openMenu);
 
   document.addEventListener("scroll", () => {
     header.classList.toggle("fixed-header", page.scrollTop > 40);
   });
 
   menu.addEventListener("click", (event) => {
-    if ((event.target as HTMLElement).tagName === "A") {
-      closeMenu();
-    }
+    if ((event.target as HTMLElement).tagName === "A") closeMenu();
   });
 </script>
 
