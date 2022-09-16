@@ -172,10 +172,10 @@
     sitemap "^7.1.1"
     zod "^3.17.3"
 
-"@astrojs/tailwind@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-2.0.0.tgz#a9e501ceef1177a9f916d249dd641baa64084f37"
-  integrity sha512-gHtSupbQ326xY73QwQ3GM33+5iNpVCdE3Pm0kNP1o8jOWNDr+hiTcjpnJj0Q4BIydynEnh667T1aZzkytNO8ZA==
+"@astrojs/tailwind@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-2.0.1.tgz#f7c7d1ca28b5cd831934c1410c142ac16f10efda"
+  integrity sha512-fvruoVEvx0zQsVY2AVRrhvH25zp6xTF8Wb1Lu43KXLoxU7fHIB1fcTTRP+Qhd4f5EvuTmuPKaKwHmbrv8mTV9A==
   dependencies:
     "@proload/core" "^0.3.2"
     autoprefixer "^10.4.7"
