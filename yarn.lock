@@ -914,10 +914,10 @@ astro-icon@0.7.3:
     resolve-pkg "^2.0.0"
     svgo "^2.8.0"
 
-astro-robots-txt@0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/astro-robots-txt/-/astro-robots-txt-0.3.9.tgz#cce07d8dd1b1a38da9cbf7a158d58a1686066f06"
-  integrity sha512-WH8fExZdhsXAAYiqItmp8owHEcNlfbVygN5tTPoZDUnRdiRp5ojQYX/E4YW+JSX4AzEJeEHBSMNzpPFsZLR41g==
+astro-robots-txt@0.3.10:
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/astro-robots-txt/-/astro-robots-txt-0.3.10.tgz#a54323670ee5943487c4b2698502cf330e7d88aa"
+  integrity sha512-fVQOdiVFPgMJEILUFBpNsup3q/RBvYiiecQVyPeWo3Ss+CzjMCkbWBflbFr86+9tTkiX0q1dufNem03QnorJ/w==
   dependencies:
     deepmerge "^4.2.2"
     valid-filename "^4.0.0"
