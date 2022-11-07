@@ -10,7 +10,7 @@ See below for the full installation instructions. For a more detailed guide foll
 
 ### Windows
 
-Install [Python 3.9](https://www.python.org/downloads) or above including pip in the setup.
+Install [Python 3.9](https://www.python.org/downloads) or newer including pip in the setup.
 
 ```bash
 python -m pip install --upgrade pywin32 systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui systembridgewindowssensors
@@ -29,7 +29,7 @@ python3 -m pip install --upgrade systembridgeshared systembridgebackend systembr
 
 ### Prerequisites
 
-You will need [Python 3.9](https://www.python.org/downloads) or above and pip to install the packages. The latest version is reccomended.
+You will need [Python 3.9](https://www.python.org/downloads) or newer and pip to install the packages. The latest version is reccomended.
 
 #### Linux
 
