@@ -989,10 +989,10 @@ astro@1.0.0-rc.1:
     yargs-parser "^21.0.1"
     zod "^3.17.3"
 
-astro@1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.6.2.tgz#85b03201ba6a1cd1476ac4f7849dc450692e4e76"
-  integrity sha512-UHbzQ3Q7iU2a0XBY6Dzh/Hksoa7svmkWZ3ABRGgSOT765GXIGZkErgeNAsjsBW7RsTUKVLqVxD2LK3NzZL5EKA==
+astro@1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.6.4.tgz#3fa1ddaabbfc834f4019a791868a173c7e5aad11"
+  integrity sha512-4Yi6fonZK/t8I1BdZ2YaTtSKUSeB8RoikDDssqkiO6j2BAfK4HOhRk70PrrkKyY5gK6VCe/Nao8ABq3GZfxm9g==
   dependencies:
     "@astrojs/compiler" "^0.29.5"
     "@astrojs/language-server" "^0.26.2"
