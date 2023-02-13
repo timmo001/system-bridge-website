@@ -202,15 +202,17 @@
     undici "^5.14.0"
     which-pm-runs "^1.1.0"
 
-"@astrojs/vercel@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/vercel/-/vercel-3.0.1.tgz#6e1ccfebc2526d586ed6918cd4337824f993ac6e"
-  integrity sha512-Q6Qx4O8lABjU0rIkGlecyM961Y/70O8u6apnFXF/ht1Rd1i4oxXZrhXSFKh03kz1P/wERiv29DM49htG/AlyvA==
+"@astrojs/vercel@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/vercel/-/vercel-3.1.1.tgz#185128598780489dc70fe2afdb785cba0cee8791"
+  integrity sha512-3u976waO1HjnmvImmdTiiHqlH+kCF/NAmppwtzWg86uTLj581gYy6OXIfzMxg5uvC1tODbciuauFJcmdEBThIw==
   dependencies:
     "@astrojs/webapi" "^2.0.0"
+    "@vercel/analytics" "^0.1.8"
     "@vercel/nft" "^0.22.1"
     fast-glob "^3.2.11"
     set-cookie-parser "^2.5.1"
+    web-vitals "^3.1.1"
 
 "@astrojs/webapi@^0.12.0":
   version "0.12.0"
@@ -872,6 +874,11 @@
   version "21.0.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.0.tgz#0c60e537fa790f5f9472ed2776c2b71ec117351b"
   integrity sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==
+
+"@vercel/analytics@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-0.1.8.tgz#71f1f8c7bb98ac0c5c47eb3fb8ccbe8141b9fe47"
+  integrity sha512-PQrOI8BJ9qUiVJuQfnKiJd15eDjDJH9TBKsNeMrtelT4NAk7d9mBVz1CoZkvoFnHQ0OW7Xnqmr1F2nScfAnznQ==
 
 "@vercel/nft@^0.22.1":
   version "0.22.6"
@@ -5363,6 +5370,11 @@ web-streams-polyfill@^3.0.3:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/web-streams-polyfill/-/web-streams-polyfill-3.2.1.tgz#71c2718c52b45fd49dbeee88634b3a60ceab42a6"
   integrity sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==
+
+web-vitals@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-3.1.1.tgz#bb124a03df7a135617f495c5bb7dbc30ecf2cce3"
+  integrity sha512-qvllU+ZeQChqzBhZ1oyXmWsjJ8a2jHYpH8AMaVuf29yscOPZfTQTjQFRX6+eADTdsDE8IanOZ0cetweHMs8/2A==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
