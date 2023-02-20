@@ -28,7 +28,7 @@
     "tailwindcss-fluid-type": "2.0.3"
   },
   "dependencies": {
-    "@astrojs/vercel": "3.0.1",
+    "@astrojs/vercel": "3.1.2",
     "micromodal": "0.4.10"
   }
 }
