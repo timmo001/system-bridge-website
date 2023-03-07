@@ -23,7 +23,7 @@
     "postcss": "8.4.21",
     "prettier": "2.8.4",
     "prettier-plugin-astro": "0.8.0",
-    "rimraf": "4.1.2",
+    "rimraf": "4.3.1",
     "tailwindcss": "3.2.7",
     "tailwindcss-fluid-type": "2.0.3"
   },
