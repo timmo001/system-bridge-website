@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@astrojs/sitemap": "1.2.2",
-    "@astrojs/tailwind": "3.1.1",
+    "@astrojs/tailwind": "3.1.2",
     "@types/micromodal": "0.3.3",
     "astro": "2.3.4",
     "astro-eleventy-img": "0.5.0",
