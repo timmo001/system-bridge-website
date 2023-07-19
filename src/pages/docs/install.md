@@ -13,7 +13,7 @@ See below for the full installation instructions. For a more detailed guide foll
 Install [Python 3.9](https://www.python.org/downloads) or newer including pip in the setup.
 
 ```bash
-python -m pip install --upgrade pywin32 systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui systembridgewindowssensors
+python -m pip install --upgrade pywin32 winsdk systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui systembridgewindowssensors
 ```
 
 ### Linux
@@ -48,7 +48,13 @@ python -m pip install --upgrade systembridgeshared systembridgebackend systembri
 
 #### Windows specifics
 
-In windows there is an optional but recommended package which provides sensor data specific to Windows. You can install it using the following command:
+In Windows, you should install these required packages:
+
+```bash
+python -m pip install --upgrade pywin32 winsdk systembridgeshared systembridgebackend
+```
+
+There is an optional but recommended package which provides sensor data specific to Windows. You can install it using the following command:
 
 ```bash
 python -m pip install --upgrade systembridgewindowssensors
