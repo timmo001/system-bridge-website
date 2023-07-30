@@ -8,8 +8,8 @@ To request data, send a message to the WebSocket with the `GET_DATA` event with 
 
 ```json
 {
+  "api_key": "abc123",
   "event": "GET_DATA",
-  "api-key": "abc123",
   "modules": ["disk"]
 }
 ```
