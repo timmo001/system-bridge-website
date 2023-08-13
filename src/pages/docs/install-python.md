@@ -4,7 +4,7 @@ id: install
 title: Download & Install - Python
 ---
 
-The easiest method to install System Bridge is to use the [prebuilt version](install). If you want to install using Python, follow the instructions below.
+> The easiest method to install System Bridge is to use the [prebuilt version](install). If you want to install using Python, follow the instructions below.
 
 ## Full installation
 
