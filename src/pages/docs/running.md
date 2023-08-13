@@ -6,15 +6,15 @@ title: Running
 
 ## Application
 
-To run the application for the first time, use the following command:
+You can run the application from the shortcut in your start menu / applications called `System Bridge`.
+
+### Linux
+
+Linux users can also run the application from the terminal. This is useful for debugging and reporting startup issues.
 
 ```bash
-python -m systembridgebackend
+systembridge
 ```
-
-After the first run, you can exit the application via the system tray icon.
-
-You should now find a shortcut in your start menu / applications called `System Bridge`.
 
 ### Autostart
 
@@ -25,7 +25,7 @@ To enable autostart, open settings via the system tray icon, enable autostart an
 If you want to run the application without a GUI, you can use the following command:
 
 ```bash
-python -m systembridgebackend --no-gui
+systembridge --no-gui
 ```
 
 #### Systemd Service
@@ -38,7 +38,7 @@ Description=System Bridge
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 -m systembridgebackend --no-gui
+ExecStart=/usr/bin/systembridge --no-gui
 Restart=on-abort
 RemainAfterExit=yes
 
@@ -46,19 +46,15 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 ```
 
-## CLI
-
-To run the CLI, you can use the following command:
-
-```bash
-python -m systembridgecli --help
-```
-
-This command will show you all available commands. For more details, read the [CLI](https://system-bridge.timmo.dev/docs/cli) page.
-
 ### API Key
 
-To get the `api-key` for use in the API/WebSocket, you can use the following command:
+The `api-key` is essential to connect to the API/WebSocket. You can copy this using the tray menu, or reading the logs after starting the application (useful if running headless or with `--no-gui`).
+
+You can also use the CLI which is provided by the `systembridgecli` package which you will need to install Python first before
+
+```bash
+python -m pip install --upgrade systembridgecli
+```
 
 ```bash
 python -m systembridgecli api-key
