@@ -6,7 +6,9 @@ title: FAQ
 
 ## How do I find my API key
 
-You can get your API key using the [CLI](/docs/cli) to output your API key.
+You can copy your API key from the tray menu.
+
+If you run headless (aka with `--no-gui`), you can get your API key using the [CLI](/docs/cli) to output your API key or by reading the application startup logs.
 
 ## Accessing logs
 
