@@ -4,7 +4,6 @@ id: install
 title: Download & Install
 ---
 
-
 ## Full installation
 
 ### Windows
