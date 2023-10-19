@@ -1075,10 +1075,10 @@
   resolved "https://registry.yarnpkg.com/@types/mdurl/-/mdurl-1.0.2.tgz#e2ce9d83a613bacf284c7be7d491945e39e1f8e9"
   integrity sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==
 
-"@types/micromodal@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@types/micromodal/-/micromodal-0.3.3.tgz#2ffc55fc90ca201054389b5eba118772c0189eaf"
-  integrity sha512-XQg6nqg15A6ZKkMkDdqLkC5LTxLb7CZU6BX8uHBj4AVU7+k/W6kfriW5HCsarrjFpONNOMAmhA1ReUsMm7297g==
+"@types/micromodal@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@types/micromodal/-/micromodal-0.3.4.tgz#0c7ef69919a303f643d39800490116fcc126ad7a"
+  integrity sha512-Csyi/yEZTioC4Me5QaEVm6H55lav8ngqXuMad2JP+pVWXm9VP+VCTkzSDyqd8Pe5lsE6MRT7VMuPcOISGAkaeQ==
 
 "@types/ms@*":
   version "0.7.31"
