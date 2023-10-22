@@ -31,7 +31,7 @@ know how to code to do so.
  [pull request](https://github.com/timmo001/system-bridge/pulls)
  to fix a bug or implement a new feature.
 - You can also contribute to the website GitHub repository
- [here](https://github.com/timmo001/system-bridge-site-v2).
+ [here](https://github.com/timmo001/system-bridge-website).
 
 ## I have a question or need help with something
 
