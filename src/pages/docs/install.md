@@ -6,60 +6,28 @@ title: Download & Install
 
 ## Full installation
 
-See below for the full installation instructions. For a more detailed guide follow the detailed installation instructions.
-
 ### Windows
 
-Install [Python 3.9](https://www.python.org/downloads) or newer including pip in the setup.
-
-```bash
-python -m pip install --upgrade pywin32 systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui systembridgewindowssensors
-```
+Use the setup wizard to install System Bridge. You can download the latest version [here](https://github.com/timmo001/system-bridge/releases/latest).
 
 ### Linux
-
-```bash
-sudo apt update
-sudo apt install lshw upower
-sudo apt install python3 python3-pip python3-setuptools python3-wheel
-python3 -m pip install --upgrade systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui
-```
-
-## Detailed installation
-
-### Prerequisites
-
-You will need [Python 3.9](https://www.python.org/downloads) or newer and pip to install the packages. The latest version is reccomended.
-
-#### Linux
 
 You will need these packages:
 
 - `lshw`: Gets system information such as the UUID.
 - `upower`: (Optional) Gets battery information.
 
-### Install
-
-You can install all packages using pip:
-
 ```bash
-python -m pip install --upgrade systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui
+sudo apt update
+sudo apt install lshw upower
 ```
 
-#### Windows specifics
+Download the package for your distribution. Ubuntu/Debian users should use the `deb` file for example. [here](https://github.com/timmo001/system-bridge/releases/latest).
 
-In windows there is an optional but recommended package which provides sensor data specific to Windows. You can install it using the following command:
+Once downloaded you can install this using your software manager GUI or the terminal.
 
-```bash
-python -m pip install --upgrade systembridgewindowssensors
-```
+## Customized installation / Python
 
-#### Linux Headless Server
+The above is the easiest way to install System Bridge. If you want to install using Python, follow this [guide](install-python).
 
-For a headless setup, you can just install the backend, cli, and shared packages.
-
-You may need to generate your `~/.config/user-dirs.dirs` using the `xdg-user-dirs-update` command. See [here](https://wiki.archlinux.org/title/XDG_user_directories) for more info.
-
-```bash
-python -m pip install --upgrade systembridgeshared systembridgebackend systembridgecli
-```
+From here you can only install what you need such as a headless setup or add the `systembridgecli` package for access to the command line interface.
