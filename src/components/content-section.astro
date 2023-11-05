@@ -10,11 +10,11 @@ const isWebSocket = id.startsWith("websocket");
 
 <section
   {id}
-  class="flex flex-row justify-center items-start gap-4 scroll-mt-24"
+  class="flex flex-row justify-center items-start scroll-mt-24"
 >
   {
     isAPI && (
-      <div class="justify-start mt-36 pl-2 pr-4 border-r-2 text-start">
+      <div class="justify-start mt-28 pl-2 pr-4 border-r-2 text-start">
         {navAPI.map(({ title, url }) => (
           <a
             href={url}
@@ -31,7 +31,7 @@ const isWebSocket = id.startsWith("websocket");
   }
   {
     isWebSocket && (
-      <div class="justify-start mt-36 pl-2 pr-4 border-r-2 text-start">
+      <div class="justify-start mt-28 pl-2 pr-4 border-r-2 text-start">
         {navWebSocket.map(({ title, url }) => (
           <a
             href={url}
@@ -58,7 +58,7 @@ const isWebSocket = id.startsWith("websocket");
     <p class="max-w-xl text-2xl font-extrabold text-center">
       <slot name="lead" />
     </p>
-    <article class="w-full">
+    <article class="w-full p-4" style="max-width: 100vw;">
       <slot />
     </article>
   </div>
