@@ -14,7 +14,7 @@ const isWebSocket = id.startsWith("websocket");
 >
   {
     isAPI && (
-      <div class="justify-start mt-42 pl-2 pr-4 border-r-2 text-start">
+      <div class="justify-start mt-36 pl-2 pr-4 border-r-2 text-start">
         {navAPI.map(({ title, url }) => (
           <a
             href={url}
@@ -31,7 +31,7 @@ const isWebSocket = id.startsWith("websocket");
   }
   {
     isWebSocket && (
-      <div class="justify-start mt-42 pl-2 pr-4 border-r-2 text-start">
+      <div class="justify-start mt-36 pl-2 pr-4 border-r-2 text-start">
         {navWebSocket.map(({ title, url }) => (
           <a
             href={url}
@@ -46,7 +46,7 @@ const isWebSocket = id.startsWith("websocket");
       </div>
     )
   }
-  <div class="flex flex-col grow max-w-6xl items-center gap-4">
+  <div class="flex flex-col grow max-w-6xl items-center gap-4 mt-24">
     <div class="flex flex-col items-center gap-4">
       <slot name="eyebrow" />
       <h2
