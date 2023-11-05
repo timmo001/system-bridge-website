@@ -23,9 +23,6 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
   class={`relative ${fullHeight ? "h-full" : "h-96"} mb-8 bg-violet-900`}
   style={`${fullHeight ? "" : "height: 580px"}`}
 >
-  <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
-    <HeroImage />
-  </div>
   <div
     class={`relative grid h-full ${
       fullHeight ? "sm:grid-cols-2" : "sm:grid-cols-1"
@@ -65,23 +62,10 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
   </div>
 </section>
 
-<!-- https://github.com/withastro/compiler/issues/395 -->
-<!-- <noscript>
-  <style>
-    #splash-bg-fallback {
-      @apply block;
-    }
-  </style>
-</noscript> -->
-
 <style>
   @media (prefers-reduced-motion: reduce) {
     picture {
       @apply animate-none;
-    }
-
-    #splash-bg-fallback {
-      @apply block;
     }
   }
 </style>
