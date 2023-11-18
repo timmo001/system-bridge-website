@@ -12,7 +12,7 @@ See below for the full installation instructions. For a more detailed guide foll
 
 ### Windows
 
-Install [Python 3.9](https://www.python.org/downloads) or newer including pip in the setup.
+Install [Python 3.12](https://www.python.org/downloads) or newer including pip in the setup.
 
 ```bash
 python -m pip install --upgrade pywin32 winsdk systembridgeshared systembridgebackend systembridgecli systembridgefrontend systembridgegui systembridgewindowssensors
