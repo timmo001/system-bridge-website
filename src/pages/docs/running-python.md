@@ -48,7 +48,7 @@ python -m systembridgecli --help
 
 This command will show you all available commands. For more details, read the [CLI](https://system-bridge.timmo.dev/docs/cli) page.
 
-### API Key
+### Token
 
 To get the `api-key` for use in the API/WebSocket, you can use the following command:
 

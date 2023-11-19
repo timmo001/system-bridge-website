@@ -4,11 +4,11 @@ id: faq
 title: FAQ
 ---
 
-## How do I find my API key
+## How do I find my Token
 
-You can copy your API key from the tray menu.
+You can copy your Token from the tray menu.
 
-If you run headless (aka with `--no-gui`), you can get your API key using the [CLI](/docs/cli) to output your API key or by reading the application startup logs.
+If you run headless (aka with `--no-gui`), you can get your Token using the [CLI](/docs/cli) to output your Token or by reading the application startup logs.
 
 ## Accessing logs
 

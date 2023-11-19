@@ -46,7 +46,7 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 ```
 
-### API Key
+### Token
 
 The `api-key` is essential to connect to the API/WebSocket. You can copy this using the tray menu, or reading the logs after starting the application (useful if running headless or with `--no-gui`).
 

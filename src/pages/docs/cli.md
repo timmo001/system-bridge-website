@@ -4,7 +4,7 @@ id: cli
 title: CLI
 ---
 
-### API Key
+### Token
 
 To get the `api-key` for use in the API/WebSocket, you can use the following command:
 
