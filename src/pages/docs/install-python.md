@@ -31,7 +31,7 @@ python3 -m pip install --upgrade systembridgeshared systembridgebackend systembr
 
 ### Prerequisites
 
-You will need [Python 3.9](https://www.python.org/downloads) or newer and pip to install the packages. The latest version is reccomended.
+You will need [Python 3.12](https://www.python.org/downloads) or newer and pip to install the packages. The latest version is reccomended.
 
 #### Linux
 
