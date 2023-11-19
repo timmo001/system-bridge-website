@@ -1,6 +1,6 @@
 ---
 layout: ~/layouts/single.astro
-id: api-keyboard
+id: tokenboard
 title: API - Keyboard
 ---
 
