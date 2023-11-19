@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install lshw upower
 ```
 
-Download the package for your distribution. Ubuntu/Debian users should use the `deb` file for example. [here](https://github.com/timmo001/system-bridge/releases/latest).
+[Download](https://github.com/timmo001/system-bridge/releases/latest) the package for your distribution.
 
 Once downloaded you can install this using your software manager GUI or the terminal.
 
