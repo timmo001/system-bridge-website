@@ -40,6 +40,11 @@
     "icon": "mdi:network-outline"
   },
   {
+    "title": "Processes",
+    "description": "Process information.",
+    "icon": "mdi:window-maximize"
+  },
+  {
     "title": "Sensors",
     "description": "Sensor data.",
     "icon": "mdi:desktop-classic"
