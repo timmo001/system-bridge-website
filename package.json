@@ -20,7 +20,7 @@
     "astro-icon": "0.8.2",
     "astro-robots-txt": "1.0.0",
     "eslint": "8.56.0",
-    "postcss": "8.4.32",
+    "postcss": "8.4.33",
     "prettier": "3.1.1",
     "prettier-plugin-astro": "0.12.3",
     "rimraf": "5.0.5",
