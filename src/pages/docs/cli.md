@@ -4,18 +4,18 @@ id: cli
 title: CLI
 ---
 
-### API Key
+### Token
 
-To get the `api-key` for use in the API/WebSocket, you can use the following command:
+To get the `token` for use in the API/WebSocket, you can use the following command:
 
 ```bash
-python -m systembridgecli api-key
+python -m systembridgecli token
 ```
 
-To reset your `api-key`, run this command:
+To reset your `token`, run this command:
 
 ```bash
-python -m systembridgecli api-key --reset
+python -m systembridgecli token --reset
 ```
 
 ## API Port

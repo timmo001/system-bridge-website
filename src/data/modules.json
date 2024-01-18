@@ -25,6 +25,11 @@
     "icon": "mdi:expansion-card"
   },
   {
+    "title": "Media",
+    "description": "Media player information.",
+    "icon": "mdi:video-vintage"
+  },
+  {
     "title": "Memory",
     "description": "Memory configuration and usage.",
     "icon": "mdi:memory"
@@ -35,9 +40,14 @@
     "icon": "mdi:network-outline"
   },
   {
+    "title": "Processes",
+    "description": "Process information.",
+    "icon": "mdi:window-maximize"
+  },
+  {
     "title": "Sensors",
     "description": "Sensor data.",
-    "icon": "mdi:desktop-classic"
+    "icon": "mdi:chip"
   },
   {
     "title": "System",

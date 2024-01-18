@@ -46,9 +46,9 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 ```
 
-### API Key
+### Token
 
-The `api-key` is essential to connect to the API/WebSocket. You can copy this using the tray menu, or reading the logs after starting the application (useful if running headless or with `--no-gui`).
+The `token` is essential to connect to the API/WebSocket. You can copy this using the tray menu, or reading the logs after starting the application (useful if running headless or with `--no-gui`).
 
 You can also use the CLI which is provided by the `systembridgecli` package which you will need to install Python first before
 
@@ -57,11 +57,11 @@ python -m pip install --upgrade systembridgecli
 ```
 
 ```bash
-python -m systembridgecli api-key
+python -m systembridgecli token
 ```
 
-To reset your `api-key`, run this command:
+To reset your `token`, run this command:
 
 ```bash
-python -m systembridgecli api-key --reset
+python -m systembridgecli token --reset
 ```

@@ -8,7 +8,7 @@ To register as a listener, connect to the WebSocket at `/api/websocket` and send
 
 ```json
 {
-  "api_key": "abc123",
+  "token": "abc123",
   "event": "REGISTER_DATA_LISTENER",
   "modules": ["cpu", "memory", "system"]
 }
