@@ -25,7 +25,7 @@
     "prettier-plugin-astro": "0.13.0",
     "rimraf": "5.0.5",
     "tailwindcss": "3.4.1",
-    "tailwindcss-fluid-type": "2.0.3"
+    "tailwindcss-fluid-type": "2.0.6"
   },
   "dependencies": {
     "@astrojs/vercel": "3.8.2",
