@@ -6,9 +6,6 @@ import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
-  experimental: {
-    viewTransitions: true,
-  },
   integrations: [robotsTxt(), sitemap(), tailwind()],
   site: "https://system-bridge.timmo.dev",
   markdown: {
