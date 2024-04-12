@@ -4,6 +4,8 @@ id: cli
 title: CLI
 ---
 
+You can use a built version of the cli in the `_up_\dist\systembridgecli` or use the python package.
+
 ### Token
 
 To get the `token` for use in the API/WebSocket, you can use the following command:
@@ -24,12 +26,6 @@ You can get the API port by running the following command:
 
 ```bash
 python -m systembridgecli api-port
-```
-
-You can also reset the API port by running the following command:
-
-```bash
-python -m systembridgecli api-port --reset
 ```
 
 ## Data
@@ -67,25 +63,25 @@ python -m systembridgecli data-value cpu usage
 To open the logs in the default text editor, run the following command:
 
 ```bash
-python -m systembridgecli open-logs-backend
+python -m systembridgecli open-logs
 ```
 
-To open the GUI logs in the default text editor, run the following command:
+To open the backend logs in the default text editor, run the following command:
 
 ```bash
-python -m systembridgecli open-logs-gui
+python -m systembridgecli open-logs-backend
 ```
 
 To get the path for the logs, run the following command:
 
 ```bash
-python -m systembridgecli logs-path-backend
+python -m systembridgecli logs-path
 ```
 
-For the GUI logs, run the following command:
+To get the path for the backend logs, run the following command:
 
 ```bash
-python -m systembridgecli logs-path-gui
+python -m systembridgecli logs-path-backend
 ```
 
 ## Settings
@@ -98,26 +94,10 @@ python -m systembridgecli settings
 
 This returns all settings in a table.
 
-### Get or set a setting
+### Get a setting
 
 To get a single setting, run the following command:
 
 ```bash
 python -m systembridgecli setting KEY
-```
-
-To update a setting, run the following command:
-
-```bash
-python -m systembridgecli setting --set-value KEY --value "VALUE"
-```
-
-For secrets, follow the same as above, replacing setting with secret.
-
-```bash
-python -m systembridgecli secret KEY
-```
-
-```bash
-python -m systembridgecli secret --set-value KEY --value "VALUE"
 ```
