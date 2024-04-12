@@ -8,7 +8,7 @@ title: Download & Install
 
 ### Windows
 
-Use the setup wizard to install System Bridge. You can download the latest version [here](https://github.com/timmo001/system-bridge/releases/latest).
+Use the setup wizard to install System Bridge. You can download the latest version [here](https://github.com/timmo001/system-bridge/releases).
 
 ### Linux
 
@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install lshw upower
 ```
 
-[Download](https://github.com/timmo001/system-bridge/releases/latest) the package for your distribution.
+[Download](https://github.com/timmo001/system-bridge/releases) the package for your distribution.
 
 Once downloaded you can install this using your software manager GUI or the terminal.
 
