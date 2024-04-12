@@ -17,7 +17,7 @@ You can access logs via the system tray icon or via the [CLI](/docs/cli).
 ## Home Assistant / I cannot connect to System Bridge
 
 - Check your firewall. You may need to allow System Bridge through your firewall.
-    - When you first run System Bridge on Windows with Microsoft Defender, you should get a prompt to allow it through your firewall. If you don't see this prompt, you should manually add an exception.
+   - When you first run System Bridge on Windows with Microsoft Defender, you should get a prompt to allow it through your firewall. If you don't see this prompt, you should manually add an exception.
 - Check your token. Make sure you have the correct [token](#how-do-i-find-my-token).
 - Check your hostname / IP address. Make sure you are using the correct address to connect to System Bridge.
 
