@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
@@ -6,7 +7,7 @@ import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [robotsTxt(), sitemap(), tailwind()],
+  integrations: [icon(), robotsTxt(), sitemap(), tailwind()],
   site: "https://system-bridge.timmo.dev",
   markdown: {
     extendDefaultPlugins: true,

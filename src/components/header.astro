@@ -1,6 +1,5 @@
 ---
-import { Icon } from "astro-icon";
-import ThemeSwitcher from "~/components/theme-switcher.astro";
+import { Icon } from "astro-icon/components";
 
 const navItems = [
   { title: "Features", url: "/#features" },
@@ -58,7 +57,6 @@ const navItems = [
       >
         <Icon pack="mdi" name="menu" class="h-8" />
       </button>
-      <ThemeSwitcher />
     </div>
     <div id="menu-modal" class="hidden modal" aria-hidden="true">
       <div class="fixed inset-0 px-8 py-4 bg-default">
