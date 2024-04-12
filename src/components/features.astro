@@ -9,9 +9,7 @@ import features from "~/data/features.json";
     {
       features.map(({ title, description, icon }) => (
         <div class="flex flex-col items-center gap-4 p-6">
-          <div class="w-72 h-72">
-            <Icon name={icon} />
-          </div>
+          <Icon class="w-72 h-72" name={icon} />
           <p class="text-xl font-extrabold text-center">{title}</p>
           <p class="text-sm text-center text-offset">
             <Fragment set:html={description} />

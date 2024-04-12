@@ -112,8 +112,8 @@ const navItems = [
     header.classList.toggle("fixed-header", page.scrollTop > 40);
   });
 
-  menu.addEventListener("click", (event) => {
-    if ((event.target as HTMLElement).tagName === "A") closeMenu();
+  menu?.addEventListener("click", (event) => {
+    if ((event.target as HTMLElement).tagName === "a") closeMenu();
   });
 </script>
 
