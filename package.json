@@ -9,19 +9,20 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "clean": "rm -rf dist node_modules public/assets/images"
+    "clean": "rm -rf dist node_modules public/assets/images",
+    "postinstall": "cd node_modules/sharp && bun install"
   },
   "devDependencies": {
     "@astrojs/sitemap": "3.1.2",
     "@astrojs/tailwind": "5.1.0",
     "@types/micromodal": "0.3.5",
     "astro": "4.6.1",
-    "astro-eleventy-img": "0.5.0",
     "astro-robots-txt": "1.0.0",
     "eslint": "8.57.0",
     "postcss": "8.4.38",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
+    "prettier-plugin-tailwindcss": "0.5.13",
     "sharp": "0.33.3",
     "tailwindcss": "3.4.3",
     "tailwindcss-fluid-type": "2.0.6"
