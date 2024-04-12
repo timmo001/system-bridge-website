@@ -22,12 +22,13 @@
     "postcss": "8.4.38",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
+    "sharp": "0.33.3",
     "tailwindcss": "3.4.3",
     "tailwindcss-fluid-type": "2.0.6"
   },
   "dependencies": {
     "@astrojs/vercel": "7.5.3",
-    "@iconify-json/mdi": "^1.1.66",
+    "@iconify-json/mdi": "1.1.66",
     "astro-icon": "1.1.0",
     "micromodal": "0.4.10"
   }
