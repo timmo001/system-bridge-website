@@ -13,7 +13,7 @@ You can run the application from the shortcut in your start menu / applications 
 Linux users can also run the application from the terminal. This is useful for debugging and reporting startup issues.
 
 ```bash
-systembridge
+system-bridge
 ```
 
 ### Autostart
@@ -25,7 +25,7 @@ To enable autostart, open settings via the system tray icon, enable autostart an
 If you want to run the application without a GUI, you can use the following command:
 
 ```bash
-systembridge --no-gui
+system-bridge --no-gui
 ```
 
 #### Systemd Service
@@ -38,7 +38,8 @@ Description=System Bridge
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/systembridge --no-gui
+ExecStart=/usr/bin/system-bridge --no-gui
+User=username
 Restart=on-abort
 RemainAfterExit=yes
 
@@ -58,10 +59,4 @@ python -m pip install --upgrade systembridgecli
 
 ```bash
 python -m systembridgecli token
-```
-
-To reset your `token`, run this command:
-
-```bash
-python -m systembridgecli token --reset
 ```
