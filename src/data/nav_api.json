@@ -8,19 +8,7 @@
     "url": "/docs/api/data-key"
   },
   {
-    "title": "Keyboard",
-    "url": "/docs/api/keyboard"
-  },
-  {
-    "title": "Notification",
-    "url": "/docs/api/notification"
-  },
-  {
-    "title": "Open",
-    "url": "/docs/api/open"
-  },
-  {
-    "title": "Power",
-    "url": "/docs/api/power"
+    "title": "Media file data",
+    "url": "/docs/api/media-file-data"
   }
 ]

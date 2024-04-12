@@ -1,15 +1,15 @@
 ---
 layout: ~/layouts/single.astro
-id: api-media-files
-title: API - Media - Files
+id: api-media-file-data
+title: API - Media - Get File Data
 ---
 
-_List files from system._
+_Get media file from system._
 
 ## Request
 
 ```http
-GET /api/media/files?base={base}&path={path}
+GET /api/media/file/data?base={base}&path={path}&token={token}
 ```
 
 Base is the base directory to search from. Path is the relative path to the file from the base.
@@ -25,8 +25,4 @@ The avaliable base directories are:
 
 ## Response
 
-```json
-{
-    "foo": "bar"
-}
-```
+This will be the binary version of the file you request, so an image will return the image etc.
