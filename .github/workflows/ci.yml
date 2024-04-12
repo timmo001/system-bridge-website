@@ -15,3 +15,5 @@ on:
 jobs:
   build-node-linux:
     uses: timmo001/workflows/.github/workflows/build-node-linux.yml@master
+    with:
+      use-bun: true
