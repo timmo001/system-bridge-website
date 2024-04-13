@@ -10,6 +10,7 @@ This will look something like this:
 
 ```json
 {
+  "id": "abc123",
   "type": "DATA_UPDATE",
   "message": "Data received",
   "module": "system",
@@ -25,21 +26,7 @@ This will look something like this:
     "uuid": "abcd-efgh-abcd-efgh-abcd",
     "version": "3.0.0",
     "version_latest": "3.0.0",
-    "version_newer_avaliable": false,
-    "last_updated": {
-      "boot_time": 1651511337.1713245,
-      "fqdn": 1651511338.036244,
-      "hostname": 1651511338.0402544,
-      "ip_address_4": 1651511338.0451906,
-      "mac_address": 1651511338.0491898,
-      "platform": 1651511338.0531907,
-      "platform_version": 1651511338.0581908,
-      "uptime": 1651511338.0626273,
-      "uuid": 1651511338.0913987,
-      "version": 1651511338.095335,
-      "version_latest": 1651511348.3147278,
-      "version_newer_avaliable": 1651511348.3207302
-    }
+    "version_newer_avaliable": false
   }
 }
 ```
