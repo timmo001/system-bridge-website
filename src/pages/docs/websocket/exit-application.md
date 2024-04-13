@@ -1,6 +1,6 @@
 ---
 layout: ~/layouts/single.astro
-id: websocket-data-register-listener
+id: websocket-exit-application
 title: WebSocket - Exit application
 ---
 

@@ -26,5 +26,9 @@
   {
     "title": "Media control",
     "url": "/docs/websocket/media-control"
+  },
+  {
+    "title": "Send notification",
+    "url": "/docs/websocket/notification"
   }
 ]

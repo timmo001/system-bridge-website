@@ -1,6 +1,6 @@
 ---
 layout: ~/layouts/single.astro
-id: websocket-data-register-listener
+id: websocket-media-control
 title: WebSocket - Media control
 ---
 
