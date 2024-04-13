@@ -38,5 +38,9 @@
   {
     "title": "Open URL",
     "url": "/docs/websocket/open-url"
+  },
+  {
+    "title": "Power control",
+    "url": "/docs/websocket/power-control"
   }
 ]
