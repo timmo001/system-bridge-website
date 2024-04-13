@@ -30,5 +30,13 @@
   {
     "title": "Send notification",
     "url": "/docs/websocket/notification"
+  },
+  {
+    "title": "Open path",
+    "url": "/docs/websocket/open-path"
+  },
+  {
+    "title": "Open URL",
+    "url": "/docs/websocket/open-url"
   }
 ]
