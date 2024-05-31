@@ -13,7 +13,7 @@ To request data, send a message to the WebSocket with the `GET_DATA` event with 
   "event": "GET_DATA",
   "data": {
     "modules": [
-      "disks"
+      "system"
     ]
   }
 }
