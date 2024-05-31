@@ -11,6 +11,10 @@ To request data, send a message to the WebSocket with the `GET_DATA` event with 
   "id": "abc123",
   "token": "abc123",
   "event": "GET_DATA",
-  "data": { "modules": ["disk"] }
+  "data": {
+    "modules": [
+      "disks"
+    ]
+  }
 }
 ```
