@@ -22,7 +22,7 @@
     "postcss": "8.4.38",
     "prettier": "3.3.1",
     "prettier-plugin-astro": "0.14.0",
-    "prettier-plugin-tailwindcss": "0.6.1",
+    "prettier-plugin-tailwindcss": "0.6.2",
     "sharp": "0.33.4",
     "tailwindcss": "3.4.4",
     "tailwindcss-fluid-type": "2.0.6"
