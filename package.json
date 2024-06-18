@@ -13,7 +13,7 @@
     "postinstall": "cd node_modules/sharp && bun install"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "3.1.5",
+    "@astrojs/sitemap": "3.1.6",
     "@astrojs/tailwind": "5.1.0",
     "@types/micromodal": "0.3.5",
     "astro": "4.10.3",
