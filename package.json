@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@astrojs/vercel": "7.7.1",
-    "@iconify-json/mdi": "1.1.66",
+    "@iconify-json/mdi": "1.1.67",
     "astro-icon": "1.1.0",
     "micromodal": "0.4.10"
   }
