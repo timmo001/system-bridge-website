@@ -13,7 +13,7 @@ You can run the application from the shortcut in your start menu / applications 
 Linux users can also run the application from the terminal. This is useful for debugging and reporting startup issues.
 
 ```bash
-system-bridge
+systembridge
 ```
 
 ### Autostart
@@ -25,12 +25,12 @@ To enable autostart, open settings via the system tray icon, enable autostart an
 If you want to run the application without a GUI, you can use the following command:
 
 ```bash
-system-bridge --no-gui
+systembridge --no-gui
 ```
 
 #### Systemd Service
 
-Here is an example systemd service. This runs as root, so you will need to have run the install commands as root for this to run.
+Here is an example systemd service. This runs as root, so you will need to have run the install commands as root for this to run. Replace `<USER>` with the user you want to run the service as.
 
 ```bash
 [Unit]
@@ -38,8 +38,8 @@ Description=System Bridge
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/system-bridge --no-gui
-User=username
+ExecStart=/usr/bin/systembridge --no-gui
+User=<USER>
 Restart=on-abort
 RemainAfterExit=yes
 
