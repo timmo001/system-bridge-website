@@ -30,7 +30,7 @@
   "dependencies": {
     "@astrojs/vercel": "7.7.2",
     "@iconify-json/mdi": "1.1.68",
-    "astro-icon": "1.1.0",
+    "astro-icon": "1.1.1",
     "micromodal": "0.4.10"
   }
 }
