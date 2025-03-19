@@ -31,6 +31,6 @@
     "@astrojs/vercel": "7.8.1",
     "@iconify-json/mdi": "1.2.0",
     "astro-icon": "1.1.1",
-    "micromodal": "0.4.10"
+    "micromodal": "0.5.2"
   }
 }
