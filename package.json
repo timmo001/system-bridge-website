@@ -28,7 +28,7 @@
     "tailwindcss-fluid-type": "2.0.6"
   },
   "dependencies": {
-    "@astrojs/vercel": "7.8.1",
+    "@astrojs/vercel": "8.1.4",
     "@iconify-json/mdi": "1.2.0",
     "astro-icon": "1.1.1",
     "micromodal": "0.4.10"
