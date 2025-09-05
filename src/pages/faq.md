@@ -11,9 +11,13 @@ title: FAQ
 
 ## How do I find my Token
 
-You can copy your Token from the tray menu.
+You can get your Token using the CLI command:
 
-If you run headless (aka with `--no-gui`), you can get your Token using the [CLI](/docs/cli) to output your Token or by reading the application startup logs. These can be found in the local application data directory under `timmo001/systembridge`.
+```bash
+system-bridge client token
+```
+
+Alternatively, you can find your Token in the application startup logs when running the backend. The logs will show "Your API token is" followed by your token value.
 
 ## Accessing logs
 
