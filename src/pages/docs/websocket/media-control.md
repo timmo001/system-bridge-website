@@ -8,12 +8,12 @@ Actions and values can be found [here](https://github.com/timmo001/system-bridge
 
 ```json
 {
-  "id": "abc123",
-  "token": "abc123",
-  "event": "MEDIA_CONTROL",
-  "data": {
-    "action": "PAUSE",
-    "value": null
-  }
+    "id": "abc123",
+    "token": "abc123",
+    "event": "MEDIA_CONTROL",
+    "data": {
+        "action": "PAUSE",
+        "value": null
+    }
 }
 ```

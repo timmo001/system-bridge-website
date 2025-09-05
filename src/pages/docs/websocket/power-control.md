@@ -15,9 +15,9 @@ Avaliable events are:
 
 ```json
 {
-  "id": "abc123",
-  "token": "abc123",
-  "event": "POWER_SLEEP",
-  "data": {}
+    "id": "abc123",
+    "token": "abc123",
+    "event": "POWER_SLEEP",
+    "data": {}
 }
 ```
