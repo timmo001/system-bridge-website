@@ -4,11 +4,7 @@ id: running
 title: Running
 ---
 
-## Running
-
-1. To run the backend server use the desktop shortcut which will launch the
-   application for you. If you are a linux user, you can also launch the
-   app via the terminal:
+To run the backend server use the desktop shortcut which will launch the application for you. If you are a linux user, you can also launch the app via the terminal:
 
 ```bash
 system-bridge backend

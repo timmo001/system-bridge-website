@@ -9,8 +9,6 @@ title: Download & Install
 > old application before installing v5 to avoid conflicts. Your token and
 > settings will not carry over to the new version.
 
-## Installation
-
 Download the latest release from the [releases page](https://github.com/timmo001/system-bridge/releases).
 
 ### Linux installation

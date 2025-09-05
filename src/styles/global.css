@@ -1,17 +1,17 @@
 h1 {
-  @apply text-5xl mt-8 mb-3;
+  @apply text-5xl mt-10 mb-3;
 }
 
 h2 {
-  @apply text-4xl mt-6 mb-3;
+  @apply text-4xl mt-8 mb-3;
 }
 
 h3 {
-  @apply text-3xl mt-4 mb-3;
+  @apply text-3xl mt-6 mb-3;
 }
 
 h4 {
-  @apply text-2xl mt-3 mb-2;
+  @apply text-2xl mt-4 mb-2;
 }
 
 h5 {
