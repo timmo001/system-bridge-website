@@ -12,8 +12,7 @@ This will look something like this:
 {
     "id": "abc123",
     "type": "DATA_UPDATE",
-    "message": "Data received",
-    "module": "system",
+    "subtype": "NONE",
     "data": {
         "boot_time": 1651433957.3015134,
         "fqdn": "Desktop",
@@ -27,6 +26,8 @@ This will look something like this:
         "version": "5.0.2",
         "version_latest": "5.0.7",
         "version_newer_avaliable": false
-    }
+    },
+    "message": "Data received",
+    "module": "system"
 }
 ```
