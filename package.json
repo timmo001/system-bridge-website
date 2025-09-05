@@ -25,7 +25,7 @@
     "prettier-plugin-tailwindcss": "0.6.14",
     "sharp": "0.34.3",
     "tailwindcss": "3.4.12",
-    "tailwindcss-fluid-type": "2.0.6"
+    "tailwindcss-fluid-type": "2.0.7"
   },
   "dependencies": {
     "@astrojs/vercel": "7.8.1",
