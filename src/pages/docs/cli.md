@@ -4,100 +4,96 @@ id: cli
 title: CLI
 ---
 
-You can use a built version of the cli in the `_up_\dist\systembridgecli` or use the python package.
+The System Bridge CLI provides commands to interact with the System Bridge backend. All CLI commands are accessed through the `system-bridge client` subcommand.
 
-### Token
+## Token
 
-To get the `token` for use in the API/WebSocket, you can use the following command:
-
-```bash
-python -m systembridgecli token
-```
-
-To reset your `token`, run this command:
+To get the API token for use in the API/WebSocket, run the following command:
 
 ```bash
-python -m systembridgecli token --reset
+system-bridge client token
 ```
 
-## API Port
+## Notification
 
-You can get the API port by running the following command:
+To send a notification, use the following command:
 
 ```bash
-python -m systembridgecli api-port
+system-bridge client notification --title "Title" --message "Message" --icon "icon-name"
 ```
+
+Available flags:
+
+- `--title`: The title of the notification (default: "System Bridge")
+- `--message`: The message of the notification (default: "Hello, world!")
+- `--icon`: The icon of the notification (default: "system-bridge")
+
+## Discovery
+
+### List Services
+
+To list discovered services on the network, run:
+
+```bash
+system-bridge client discovery list
+```
+
+This will scan for available System Bridge instances and display them with their hostname, IP, port, and type.
 
 ## Data
 
-You can retrieve the data from the data modules by running the following command:
+### List Modules
+
+To list all available data modules, run:
 
 ```bash
-python -m systembridgecli data MODULE
+system-bridge client data list
 ```
 
-For example, to get the data from the `cpu` module, run the following command:
+By default, this outputs as a simple list. You can also use:
 
 ```bash
-python -m systembridgecli data cpu
+system-bridge client data list --json
 ```
 
-This outputs the data as a table. This is good for getting current data at a glance.
+To output as a JSON array.
 
-## Data Value
+### Run Modules
 
-To get a single data value, run the following command:
+To run a specific data module and get its data as JSON, use:
 
 ```bash
-python -m systembridgecli data-value MODULE VALUE
+system-bridge client data run --module cpu
 ```
 
-For example, to get the `usage` value from the `cpu` module, run the following command:
+For example, to get CPU data:
 
 ```bash
-python -m systembridgecli data-value cpu usage
+system-bridge client data run --module cpu
 ```
 
-## Logs
-
-To open the logs in the default text editor, run the following command:
+To run all modules and get a JSON object with all data:
 
 ```bash
-python -m systembridgecli open-logs
+system-bridge client data run --all
 ```
 
-To open the backend logs in the default text editor, run the following command:
+To pretty-print the JSON output:
 
 ```bash
-python -m systembridgecli open-logs-backend
+system-bridge client data run --module cpu --pretty
 ```
 
-To get the path for the logs, run the following command:
+Available flags:
+
+- `--module` or `-m`: Module name (e.g., cpu, memory)
+- `--all`: Run all modules
+- `--pretty`: Pretty-print JSON output
+
+## Version
+
+To get the version of System Bridge, run:
 
 ```bash
-python -m systembridgecli logs-path
-```
-
-To get the path for the backend logs, run the following command:
-
-```bash
-python -m systembridgecli logs-path-backend
-```
-
-## Settings
-
-To get all settings, run the following command:
-
-```bash
-python -m systembridgecli settings
-```
-
-This returns all settings in a table.
-
-### Get a setting
-
-To get a single setting, run the following command:
-
-```bash
-python -m systembridgecli setting KEY
+system-bridge version
 ```

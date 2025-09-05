@@ -4,28 +4,28 @@ id: install
 title: Download & Install
 ---
 
-## Full installation
+> [!IMPORTANT]
+> Any version 4 users will need to remove any integrations, and uninstall the
+> old application before installing v5 to avoid conflicts. Your token and
+> settings will not carry over to the new version.
 
-### Windows
+## Installation
 
-Use the setup wizard to install System Bridge. You can download the latest version [here](https://github.com/timmo001/system-bridge/releases).
+Download the latest release from the [releases page](https://github.com/timmo001/system-bridge/releases).
 
-### Linux
+### Linux installation
 
-You will also need these packages:
+Install the package for your distribution's package manager.
 
-- `lshw`: Gets system information such as the UUID.
-- `upower`: (Optional) Gets battery information.
+#### Arch Linux (AUR)
 
-```bash
-sudo apt update
-sudo apt install lshw upower
-```
+You can install the latest version with the AUR package [system-bridge](https://aur.archlinux.org/packages/system-bridge).
 
-[Download](https://github.com/timmo001/system-bridge/releases) the package for your distribution.
+You can also install the current master branch of this project with the AUR package
+[system-bridge-git](https://aur.archlinux.org/packages/system-bridge-git).
+This will build and install the application for you based on the latest master
+branch which is automatically updated every commit.
 
-Once downloaded you can install this using your software manager GUI or the terminal.
+### Windows installation
 
-## Customized installation / Python
-
-The above is the easiest way to install System Bridge. If you want to install using Python, follow this [guide](install-python).
+Run the setup executable to install the application.
