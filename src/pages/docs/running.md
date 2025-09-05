@@ -4,59 +4,71 @@ id: running
 title: Running
 ---
 
-## Application
+## Running
 
-You can run the application from the shortcut in your start menu / applications called `System Bridge`.
-
-### Linux
-
-Linux users can also run the application from the terminal. This is useful for debugging and reporting startup issues.
+1. To run the backend server use the desktop shortcut which will launch the
+   application for you. If you are a linux user, you can also launch the
+   app via the terminal:
 
 ```bash
-systembridge
+system-bridge backend
 ```
 
-### Autostart
+### Running as a Service
 
-To enable autostart, open settings via the system tray icon, enable autostart and click the save icon. The application will now be added to startup.
+#### Linux (systemd)
 
-### No GUI / Headless
+> [!WARNING]
+> Not supported with AppImage or Flatpak.
+> You will need to configure the service
+> manually to the correct path.
 
-If you want to run the application without a GUI, you can use the following command:
+1. Copy the systemd service file to the systemd directory:
 
 ```bash
-systembridge --no-gui
+sudo cp .scripts/linux/system-bridge.service /etc/systemd/system/
 ```
 
-#### Systemd Service
-
-Here is an example systemd service. This runs as root, so you will need to have run the install commands as root for this to run. Replace `<USER>` with the user you want to run the service as.
+2. Reload systemd daemon:
 
 ```bash
-[Unit]
-Description=System Bridge
-After=network.target
+sudo systemctl daemon-reload
+```
 
-[Service]
-ExecStart=/usr/bin/systembridge --no-gui
-User=<USER>
-Restart=on-abort
-RemainAfterExit=yes
+3. Enable the service to start on boot:
 
-[Install]
-WantedBy=multi-user.target
+```bash
+sudo systemctl enable system-bridge
+```
+
+4. Start the service:
+
+```bash
+sudo systemctl start system-bridge
+```
+
+5. Check the service status:
+
+```bash
+sudo systemctl status system-bridge
+```
+
+#### Windows (service installation)
+
+1. Open PowerShell as Administrator
+2. Navigate to the directory containing the installation scripts
+3. Run the installation script:
+
+```powershell
+.\scripts\windows\install-service.ps1
+```
+
+4. To uninstall the service:
+
+```powershell
+.\scripts\windows\uninstall-service.ps1
 ```
 
 ### Token
 
-The `token` is essential to connect to the API/WebSocket. You can copy this using the tray menu, or reading the logs after starting the application (useful if running headless or with `--no-gui`).
-
-You can also use the CLI which is provided by the `systembridgecli` package which you will need to install Python first before
-
-```bash
-python -m pip install --upgrade systembridgecli
-```
-
-```bash
-python -m systembridgecli token
-```
+The `token` is essential to connect to the API/WebSocket. You can copy this using the tray menu, or reading the logs after starting the application.
