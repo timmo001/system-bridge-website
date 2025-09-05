@@ -71,4 +71,10 @@ sudo systemctl status system-bridge
 
 ### Token
 
-The `token` is essential to connect to the API/WebSocket. You can copy this using the tray menu, or reading the logs after starting the application.
+The `token` is essential to connect to the API/WebSocket. You can get it using the CLI command:
+
+```bash
+system-bridge client token
+```
+
+Alternatively, you can find your Token in the application startup logs when running the backend. The logs will show "Your API token is" followed by your token value.
