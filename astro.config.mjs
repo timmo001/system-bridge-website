@@ -4,6 +4,8 @@ import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import vercel from "@astrojs/vercel";
+import remarkCallouts from "./src/plugins/remark-callouts.js";
+import rehypeCallouts from "./src/plugins/rehype-callouts.js";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,6 +13,8 @@ export default defineConfig({
   site: "https://system-bridge.timmo.dev",
   markdown: {
     extendDefaultPlugins: true,
+    remarkPlugins: [remarkCallouts],
+    rehypePlugins: [rehypeCallouts],
     shikiConfig: {
       theme: "github-dark-dimmed",
       wrap: false,
