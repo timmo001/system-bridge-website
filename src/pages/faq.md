@@ -4,6 +4,11 @@ id: faq
 title: FAQ
 ---
 
+## Upgrading from version 4 to version 5
+
+> [!IMPORTANT]
+> Any version 4 users will need to remove any integrations, and uninstall the old application before installing v5 to avoid conflicts. Your token and settings will not carry over to the new version.
+
 ## How do I find my Token
 
 You can copy your Token from the tray menu.
@@ -14,12 +19,24 @@ If you run headless (aka with `--no-gui`), you can get your Token using the [CLI
 
 You can access logs via the system tray icon or via the [CLI](/docs/cli).
 
+## Platform support
+
+System Bridge officially supports:
+
+- **Linux**: Full support with native packages and AppImage
+- **Windows**: Full support with installer
+- **macOS**: Untested but can be compiled from source (community supported)
+
 ## Home Assistant / I cannot connect to System Bridge
 
-- Check your firewall. You may need to allow System Bridge through your firewall.
-   - When you first run System Bridge on Windows with Microsoft Defender, you should get a prompt to allow it through your firewall. If you don't see this prompt, you should manually add an exception.
-- Check your token. Make sure you have the correct [token](#how-do-i-find-my-token).
-- Check your hostname / IP address. Make sure you are using the correct address to connect to System Bridge.
+- **Firewall issues**: You may need to allow System Bridge through your firewall.
+    - When you first run System Bridge on Windows with Microsoft Defender, you should get a prompt to allow it through your firewall. If you don't see this prompt, you should manually add an exception.
+    - On Linux, ensure your firewall allows connections on the System Bridge port (default: 9170).
+- **Token verification**: Make sure you have the correct [token](#how-do-i-find-my-token).
+- **Network configuration**: Check your hostname / IP address. Make sure you are using the correct address to connect to System Bridge.
+- **Service status**: Ensure System Bridge is running. Check the system tray icon or use the CLI to verify the service is active.
+- **Port conflicts**: Verify that the default port (9170) is not being used by another application.
+- **Antivirus software**: Some antivirus programs may block System Bridge. Check your antivirus settings and add exceptions if needed.
 
 ## I'd like to contribute to the project
 
