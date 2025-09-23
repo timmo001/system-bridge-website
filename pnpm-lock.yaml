@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/vercel':
         specifier: 8.2.7
-        version: 8.2.7(astro@5.13.9(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1))(rollup@4.52.0)
+        version: 8.2.7(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1))(rollup@4.52.0)
       '@iconify-json/mdi':
         specifier: 1.2.3
         version: 1.2.3
@@ -26,13 +26,13 @@ importers:
         version: 3.6.0
       '@astrojs/tailwind':
         specifier: 6.0.2
-        version: 6.0.2(astro@5.13.9(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1))(tailwindcss@3.4.17)
+        version: 6.0.2(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1))(tailwindcss@3.4.17)
       '@types/micromodal':
         specifier: 0.3.5
         version: 0.3.5
       astro:
-        specifier: 5.13.9
-        version: 5.13.9(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1)
+        specifier: 5.13.10
+        version: 5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1)
       astro-robots-txt:
         specifier: 1.0.0
         version: 1.0.0
@@ -82,8 +82,11 @@ packages:
   '@astrojs/internal-helpers@0.7.2':
     resolution: {integrity: sha512-KCkCqR3Goym79soqEtbtLzJfqhTWMyVaizUi35FLzgGSzBotSw8DB1qwsu7U96ihOJgYhDk2nVPz+3LnXPeX6g==}
 
-  '@astrojs/markdown-remark@6.3.6':
-    resolution: {integrity: sha512-bwylYktCTsLMVoCOEHbn2GSUA3c5KT/qilekBKA3CBng0bo1TYjNZPr761vxumRk9kJGqTOtU+fgCAp5Vwokug==}
+  '@astrojs/internal-helpers@0.7.3':
+    resolution: {integrity: sha512-6Pl0bQEIChuW5wqN7jdKrzWfCscW2rG/Cz+fzt4PhSQX2ivBpnhXgFUCs0M3DCYvjYHnPVG2W36X5rmFjZ62sw==}
+
+  '@astrojs/markdown-remark@6.3.7':
+    resolution: {integrity: sha512-KXGdq6/BC18doBCYXp08alHlWChH0hdD2B1qv9wIyOHbvwI5K6I7FhSta8dq1hBQNdun8YkKPR013D/Hm8xd0g==}
 
   '@astrojs/prism@3.3.0':
     resolution: {integrity: sha512-q8VwfU/fDZNoDOf+r7jUnMC2//H2l0TuQ6FkGJL8vD8nw/q5KiL3DS1KKBI3QhI9UQhpJ5dc7AtqfbXWuOgLCQ==}
@@ -992,8 +995,8 @@ packages:
   astro-robots-txt@1.0.0:
     resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
 
-  astro@5.13.9:
-    resolution: {integrity: sha512-vwnJ9Db/X35G3n7F2KgcAAsQ7Du00s0ZFvB+Sx0w7Jl4fwit4+mHJbL4U2ZFxIo9tU07oZEey/2g1Awom7i0LQ==}
+  astro@5.13.10:
+    resolution: {integrity: sha512-PgIrIYvrR7fCoSPPt1sGlpoYK/FNil1BwKazND1DyaZC7SbWLi9hdIHM3ApdrL2SWK7oiADRPw7cTn80UyDWqA==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2913,9 +2916,11 @@ snapshots:
 
   '@astrojs/internal-helpers@0.7.2': {}
 
-  '@astrojs/markdown-remark@6.3.6':
+  '@astrojs/internal-helpers@0.7.3': {}
+
+  '@astrojs/markdown-remark@6.3.7':
     dependencies:
-      '@astrojs/internal-helpers': 0.7.2
+      '@astrojs/internal-helpers': 0.7.3
       '@astrojs/prism': 3.3.0
       github-slugger: 2.0.0
       hast-util-from-html: 2.0.3
@@ -2949,9 +2954,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.76
 
-  '@astrojs/tailwind@6.0.2(astro@5.13.9(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.2(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.13.9(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1)
+      astro: 5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1)
       autoprefixer: 10.4.21(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
@@ -2971,14 +2976,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/vercel@8.2.7(astro@5.13.9(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1))(rollup@4.52.0)':
+  '@astrojs/vercel@8.2.7(astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1))(rollup@4.52.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.7.2
       '@vercel/analytics': 1.5.0
       '@vercel/functions': 2.2.13
       '@vercel/nft': 0.29.4(rollup@4.52.0)
       '@vercel/routing-utils': 5.1.1
-      astro: 5.13.9(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1)
+      astro: 5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1)
       esbuild: 0.25.9
       tinyglobby: 0.2.14
     transitivePeerDependencies:
@@ -3678,11 +3683,11 @@ snapshots:
       valid-filename: 4.0.0
       zod: 3.25.76
 
-  astro@5.13.9(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1):
+  astro@5.13.10(@types/node@24.5.2)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.52.0)(typescript@5.9.2)(yaml@2.8.1):
     dependencies:
       '@astrojs/compiler': 2.13.0
-      '@astrojs/internal-helpers': 0.7.2
-      '@astrojs/markdown-remark': 6.3.6
+      '@astrojs/internal-helpers': 0.7.3
+      '@astrojs/markdown-remark': 6.3.7
       '@astrojs/telemetry': 3.3.0
       '@capsizecss/unpack': 2.4.0
       '@oslojs/encoding': 1.1.0
