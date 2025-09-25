@@ -16,7 +16,7 @@
     "@astrojs/sitemap": "3.6.0",
     "@astrojs/tailwind": "6.0.2",
     "@types/micromodal": "0.3.5",
-    "astro": "5.13.10",
+    "astro": "5.13.11",
     "astro-robots-txt": "1.0.0",
     "eslint": "9.36.0",
     "postcss": "8.5.6",
