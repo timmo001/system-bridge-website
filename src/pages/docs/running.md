@@ -4,15 +4,19 @@ id: running
 title: Running
 ---
 
-To run the backend server use the desktop shortcut which will launch the application for you. If you are a linux user, you can also launch the app via the terminal:
+To run the backend server use the desktop shortcut which will launch the application for you.
+
+You can enable autostart in the settings. This may require restarting the application to apply.
+
+## Linux (Terminal)
+
+If you are a linux user, you can also launch the app via the terminal:
 
 ```bash
 system-bridge backend
 ```
 
-### Running as a Service
-
-#### Linux (systemd)
+## Linux (Systemd)
 
 > [!WARNING]
 > Not supported with AppImage or Flatpak.
@@ -47,22 +51,6 @@ sudo systemctl start system-bridge
 
 ```bash
 sudo systemctl status system-bridge
-```
-
-#### Windows (service installation)
-
-1. Open PowerShell as Administrator
-2. Navigate to the directory containing the installation scripts
-3. Run the installation script:
-
-```powershell
-.\scripts\windows\install-service.ps1
-```
-
-4. To uninstall the service:
-
-```powershell
-.\scripts\windows\uninstall-service.ps1
 ```
 
 ### Token
