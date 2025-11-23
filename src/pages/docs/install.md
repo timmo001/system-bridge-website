@@ -26,4 +26,4 @@ branch which is automatically updated every commit.
 
 ### Windows installation
 
-Run the setup executable to install the application.
+Run the setup executable to install the application. After installation completes, you can start System Bridge from the Start Menu shortcut. See the [Running](running) page for more details on starting the application.

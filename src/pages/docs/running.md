@@ -4,13 +4,28 @@ id: running
 title: Running
 ---
 
-To run the backend server use the desktop shortcut which will launch the application for you.
+## Windows
+
+After installation, System Bridge can be started from the Start Menu shortcut that gets created during installation. Look for "System Bridge" in your Start Menu.
+
+> [!NOTE]
+> The Start Menu shortcut may not appear immediately after installation until Windows indexes it. If you cannot find it, try searching for "System Bridge" in the Start Menu or restart Windows Explorer.
+
+Alternatively, you can start System Bridge from a terminal:
+
+```powershell
+cd "C:\Program Files\System Bridge"
+.\system-bridge.exe backend
+```
+
+> [!IMPORTANT]
+> Simply double-clicking `system-bridge.exe` will not start the application visibly. You must use the `backend` command or the Start Menu shortcut.
 
 You can enable autostart in the settings. This may require restarting the application to apply.
 
 ## Linux (Terminal)
 
-If you are a linux user, you can also launch the app via the terminal:
+You can launch the app via the terminal:
 
 ```bash
 system-bridge backend
