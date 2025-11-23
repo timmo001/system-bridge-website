@@ -38,11 +38,29 @@ system-bridge backend
 > You will need to configure the service
 > manually to the correct path.
 
-1. Copy the systemd service file to the systemd directory:
+1. Create a systemd service file at `/etc/systemd/system/system-bridge.service`:
 
-```bash
-sudo cp .scripts/linux/system-bridge.service /etc/systemd/system/
+```ini
+[Unit]
+Description=System Bridge
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/system-bridge backend
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=system-bridge
+Environment="HOME=/root"
+
+[Install]
+WantedBy=multi-user.target
 ```
+
+> [!IMPORTANT]
+> The `Environment="HOME=/root"` setting is required for System Bridge to locate its configuration directory. Without this, the service will fail to start with a configuration path error.
 
 2. Reload systemd daemon:
 
