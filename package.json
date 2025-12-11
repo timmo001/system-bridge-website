@@ -24,7 +24,7 @@
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.7.2",
     "sharp": "0.34.5",
-    "tailwindcss": "3.4.18",
+    "tailwindcss": "3.4.19",
     "tailwindcss-fluid-type": "2.0.7"
   },
   "dependencies": {
