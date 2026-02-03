@@ -1,14 +1,16 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://system-bridge.timmo.dev',
-  integrations: [
-    starlight({
+	integrations: [
+		icon(),
+		starlight({
       title: 'System Bridge',
-      customCss: ['./src/styles/starlight.css'],
+      customCss: ['./src/styles/starlight.css', './src/styles/landing.css'],
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/timmo001/system-bridge' },
       ],

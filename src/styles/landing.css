@@ -1,0 +1,52 @@
+.sb-hero {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.sb-hero-media {
+  display: flex;
+  justify-content: center;
+}
+
+.sb-hero-logo {
+  width: min(420px, 70vw);
+  height: auto;
+}
+
+.sb-hero-copy h1 {
+  font-size: clamp(2.5rem, 3vw + 1.5rem, 4.25rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+
+.sb-hero-copy p {
+  font-size: 1.1rem;
+  max-width: 44rem;
+}
+
+.sb-eyebrow {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--sl-color-gray-3);
+  margin: 0 0 0.75rem;
+}
+
+.sb-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .sb-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  }
+
+  .sb-hero-media {
+    justify-content: flex-start;
+  }
+}

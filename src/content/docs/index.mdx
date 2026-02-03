@@ -4,6 +4,9 @@ description: Monitor and control your system with a local API and WebSocket.
 template: splash
 hero:
   tagline: A bridge for your systems.
+  image:
+    file: ../../assets/logo.svg
+    alt: System Bridge logo
   actions:
     - text: Download & Install
       link: /install/
@@ -14,36 +17,108 @@ hero:
       variant: minimal
 ---
 
-## What is System Bridge?
+import { CardGrid } from '@astrojs/starlight/components';
+import { Icon } from 'astro-icon/components';
+import LandingCard from '../../components/LandingCard.astro';
 
 System Bridge is an application for your desktop that allows you to monitor and control your system.
 
 ## Features
 
-- **System Information:** Access your system's information via the data modules using the API/WebSocket.
-- **Open files and URLs:** Automate your system by opening a URL/path via the API/WebSocket.
-- **Send Notifications:** Send system notifications via the API/WebSocket.
-- **Cross-Platform:** Compatible with Windows and Linux.
-- **Integrated with Home Assistant:** Interact with your Bridges using [Home Assistant](https://www.home-assistant.io/integrations/system_bridge).
-- **Android Companion App:** Available on the [Play Store](https://play.google.com/store/apps/details?id=dev.timmo.systembridge). Source is on [GitHub](https://github.com/timmo001/system-bridge-android-companion).
+<CardGrid>
+  <LandingCard title="System Information">
+    <Icon slot="icon" name="mdi:information-outline" />
+    Access your system's information via the data modules using the API/WebSocket.
+  </LandingCard>
+  <LandingCard title="Open files and URLs">
+    <Icon slot="icon" name="mdi:cogs" />
+    Automate your system by opening a URL/path via the API/WebSocket.
+  </LandingCard>
+  <LandingCard title="Send Notifications">
+    <Icon slot="icon" name="mdi:bell" />
+    Send system notifications via the API/WebSocket.
+  </LandingCard>
+  <LandingCard title="Cross-Platform">
+    <Icon slot="icon" name="mdi:desktop-tower-monitor" />
+    Compatible with Windows and Linux.
+  </LandingCard>
+  <LandingCard title="Integrated with Home Assistant">
+    <Icon slot="icon" name="mdi:home-assistant" />
+    Interact with your Bridges using [Home Assistant](https://www.home-assistant.io/integrations/system_bridge).
+  </LandingCard>
+  <LandingCard title="Android Companion App">
+    <Icon slot="icon" name="mdi:android" />
+    Available on the [Play Store](https://play.google.com/store/apps/details?id=dev.timmo.systembridge). Source is on
+    [GitHub](https://github.com/timmo001/system-bridge-android-companion).
+  </LandingCard>
+</CardGrid>
 
 ## Modules
 
-- **Battery:** Battery level, capacity and configuration.
-- **CPU:** CPU usage, clock speed, and configuration.
-- **Disks:** Disk and filesystem information.
-- **Display:** Display information.
-- **GPU:** Graphics card configuration and usage.
-- **Media:** Media player information.
-- **Memory:** Memory configuration and usage.
-- **Network:** Networking information.
-- **Processes:** Process information.
-- **Sensors:** Sensor data.
-- **System:** System information.
+<CardGrid>
+  <LandingCard title="Battery">
+    <Icon slot="icon" name="mdi:battery-charging" />
+    Battery level, capacity and configuration.
+  </LandingCard>
+  <LandingCard title="CPU">
+    <Icon slot="icon" name="mdi:cpu-64-bit" />
+    CPU usage, clock speed, and configuration.
+  </LandingCard>
+  <LandingCard title="Disks">
+    <Icon slot="icon" name="mdi:harddisk" />
+    Disk and filesystem information.
+  </LandingCard>
+  <LandingCard title="Display">
+    <Icon slot="icon" name="mdi:monitor" />
+    Display information.
+  </LandingCard>
+  <LandingCard title="GPU">
+    <Icon slot="icon" name="mdi:expansion-card" />
+    Graphics card configuration and usage.
+  </LandingCard>
+  <LandingCard title="Media">
+    <Icon slot="icon" name="mdi:video-vintage" />
+    Media player information.
+  </LandingCard>
+  <LandingCard title="Memory">
+    <Icon slot="icon" name="mdi:memory" />
+    Memory configuration and usage.
+  </LandingCard>
+  <LandingCard title="Network">
+    <Icon slot="icon" name="mdi:network-outline" />
+    Networking information.
+  </LandingCard>
+  <LandingCard title="Processes">
+    <Icon slot="icon" name="mdi:window-maximize" />
+    Process information.
+  </LandingCard>
+  <LandingCard title="Sensors">
+    <Icon slot="icon" name="mdi:chip" />
+    Sensor data.
+  </LandingCard>
+  <LandingCard title="System">
+    <Icon slot="icon" name="mdi:desktop-tower" />
+    System information.
+  </LandingCard>
+</CardGrid>
 
 ## Links / Resources
 
-- [Discussions](https://github.com/timmo001/system-bridge/discussions): Participate in discussions and get help.
-- [Suggest a Feature / Report a Bug](https://github.com/timmo001/system-bridge/issues): Suggest ideas or report issues.
-- [Contribute to the Application](https://github.com/timmo001/system-bridge): Submit a pull request.
-- [Contribute to the Website / Documentation](https://github.com/timmo001/system-bridge-website): Submit a pull request.
+<CardGrid>
+  <LandingCard title="Discussions">
+    <Icon slot="icon" name="mdi:forum-outline" />
+    [Participate in discussions and get help here.](https://github.com/timmo001/system-bridge/discussions)
+  </LandingCard>
+  <LandingCard title="Suggest a Feature / Report a Bug">
+    <Icon slot="icon" name="mdi:notebook-plus-outline" />
+    [Thought of a feature that could be added? Found an issue? Suggest it here.](https://github.com/timmo001/system-bridge/issues)
+  </LandingCard>
+  <LandingCard title="Contribute to the Application">
+    <Icon slot="icon" name="mdi:github" />
+    [Contribute to the project by submitting a pull request.](https://github.com/timmo001/system-bridge)
+  </LandingCard>
+  <LandingCard title="Contribute to the Website / Documentation">
+    <Icon slot="icon" name="mdi:notebook-edit-outline" />
+    [Contribute to the website by submitting a pull request.](https://github.com/timmo001/system-bridge-website)
+  </LandingCard>
+</CardGrid>
