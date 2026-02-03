@@ -1,0 +1,41 @@
+---
+export type CalloutType = "info" | "warning" | "success" | "error";
+
+interface Props {
+  type: CalloutType;
+}
+
+const { type } = Astro.props;
+---
+
+<div
+  class={`callout callout-${type} border-l-4 pl-4 py-2 my-4 ${
+    type === "info"
+      ? "border-blue-500 bg-blue-50 dark:bg-blue-950/20"
+      : type === "warning"
+      ? "border-yellow-500 bg-yellow-50 dark:bg-yellow-950/20"
+      : type === "success"
+      ? "border-green-500 bg-green-50 dark:bg-green-950/20"
+      : "border-red-500 bg-red-50 dark:bg-red-950/20"
+  }`}
+>
+  <div class="flex items-start gap-2">
+    <div class={`flex-shrink-0 mt-0.5 ${
+      type === "info"
+        ? "text-blue-600 dark:text-blue-400"
+        : type === "warning"
+        ? "text-yellow-600 dark:text-yellow-400"
+        : type === "success"
+        ? "text-green-600 dark:text-green-400"
+        : "text-red-600 dark:text-red-400"
+    }`}>
+      {type === "info" && "ℹ️"}
+      {type === "warning" && "⚠️"}
+      {type === "success" && "✅"}
+      {type === "error" && "❌"}
+    </div>
+    <div class="text-sm">
+      <slot />
+    </div>
+  </div>
+</div>

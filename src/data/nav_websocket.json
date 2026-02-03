@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Requesting data",
+    "url": "/docs/websocket/data-get"
+  },
+  {
+    "title": "Registering as a listener",
+    "url": "/docs/websocket/data-register-listener"
+  },
+  {
+    "title": "Receiving data updates",
+    "url": "/docs/websocket/data-receive"
+  },
+  {
+    "title": "Exit application",
+    "url": "/docs/websocket/exit-application"
+  },
+  {
+    "title": "Keyboard keypress",
+    "url": "/docs/websocket/keyboard-keypress"
+  },
+  {
+    "title": "Keyboard text",
+    "url": "/docs/websocket/keyboard-text"
+  },
+  {
+    "title": "Media control",
+    "url": "/docs/websocket/media-control"
+  },
+  {
+    "title": "Send notification",
+    "url": "/docs/websocket/notification"
+  },
+  {
+    "title": "Open path",
+    "url": "/docs/websocket/open-path"
+  },
+  {
+    "title": "Open URL",
+    "url": "/docs/websocket/open-url"
+  },
+  {
+    "title": "Power control",
+    "url": "/docs/websocket/power-control"
+  }
+]
