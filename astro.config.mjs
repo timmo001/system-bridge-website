@@ -11,8 +11,12 @@ export default defineConfig({
 		starlight({
       title: 'System Bridge',
       customCss: ['./src/styles/starlight.css', './src/styles/landing.css'],
+      components: {
+        SocialIcons: './src/components/SocialIcons.astro',
+      },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/timmo001/system-bridge' },
+        { icon: 'comment', label: 'Discussions', href: 'https://github.com/timmo001/system-bridge/discussions' },
       ],
       sidebar: [
         {
