@@ -16,13 +16,13 @@
 }
 
 .sb-hero-copy h1 {
-  font-size: clamp(2.5rem, 3vw + 1.5rem, 4.25rem);
-  line-height: 1.05;
+  font-size: var(--sl-text-h1);
+  line-height: var(--sl-line-height-headings);
   margin: 0 0 1rem;
 }
 
 .sb-hero-copy p {
-  font-size: 1.1rem;
+  font-size: var(--sl-text-body);
   max-width: 44rem;
 }
 
@@ -39,6 +39,13 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1.25rem;
+}
+
+.sb-lede {
+  font-size: var(--sl-text-h3);
+  line-height: var(--sl-line-height-headings);
+  color: var(--sl-color-white);
+  margin: 0 0 2.5rem;
 }
 
 @media (min-width: 900px) {
