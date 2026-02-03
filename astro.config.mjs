@@ -8,6 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'System Bridge',
+      customCss: ['./src/styles/starlight.css'],
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/timmo001/system-bridge' },
       ],
