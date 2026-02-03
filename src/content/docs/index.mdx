@@ -17,7 +17,7 @@ hero:
       variant: minimal
 ---
 
-import { CardGrid } from '@astrojs/starlight/components';
+import { CardGrid, LinkButton } from '@astrojs/starlight/components';
 import { Icon } from 'astro-icon/components';
 import LandingCard from '../../components/LandingCard.astro';
 
@@ -44,12 +44,15 @@ System Bridge is an application for your desktop that allows you to monitor and 
   </LandingCard>
   <LandingCard title="Integrated with Home Assistant">
     <Icon slot="icon" name="mdi:home-assistant" />
-    Interact with your Bridges using [Home Assistant](https://www.home-assistant.io/integrations/system_bridge).
+    Interact with your Bridges using
+    <a href="https://www.home-assistant.io/integrations/system_bridge" target="_blank" rel="noopener noreferrer">Home Assistant</a>.
   </LandingCard>
   <LandingCard title="Android Companion App">
     <Icon slot="icon" name="mdi:android" />
-    Available on the [Play Store](https://play.google.com/store/apps/details?id=dev.timmo.systembridge). Source is on
-    [GitHub](https://github.com/timmo001/system-bridge-android-companion).
+    Available on the
+    <a href="https://play.google.com/store/apps/details?id=dev.timmo.systembridge" target="_blank" rel="noopener noreferrer">Play Store</a>.
+    Source is on
+    <a href="https://github.com/timmo001/system-bridge-android-companion" target="_blank" rel="noopener noreferrer">GitHub</a>.
   </LandingCard>
 </CardGrid>
 
@@ -107,18 +110,30 @@ System Bridge is an application for your desktop that allows you to monitor and 
 <CardGrid>
   <LandingCard title="Discussions">
     <Icon slot="icon" name="mdi:forum-outline" />
-    [Participate in discussions and get help here.](https://github.com/timmo001/system-bridge/discussions)
+    Participate in discussions and get help here.
+    <LinkButton href="https://github.com/timmo001/system-bridge/discussions" variant="secondary" target="_blank" rel="noopener noreferrer">
+      Open Discussions
+    </LinkButton>
   </LandingCard>
   <LandingCard title="Suggest a Feature / Report a Bug">
     <Icon slot="icon" name="mdi:notebook-plus-outline" />
-    [Thought of a feature that could be added? Found an issue? Suggest it here.](https://github.com/timmo001/system-bridge/issues)
+    Thought of a feature that could be added? Found an issue? Suggest it here.
+    <LinkButton href="https://github.com/timmo001/system-bridge/issues" variant="secondary" target="_blank" rel="noopener noreferrer">
+      Open Issues
+    </LinkButton>
   </LandingCard>
   <LandingCard title="Contribute to the Application">
     <Icon slot="icon" name="mdi:github" />
-    [Contribute to the project by submitting a pull request.](https://github.com/timmo001/system-bridge)
+    Contribute to the project by submitting a pull request.
+    <LinkButton href="https://github.com/timmo001/system-bridge" variant="secondary" target="_blank" rel="noopener noreferrer">
+      View Repository
+    </LinkButton>
   </LandingCard>
   <LandingCard title="Contribute to the Website / Documentation">
     <Icon slot="icon" name="mdi:notebook-edit-outline" />
-    [Contribute to the website by submitting a pull request.](https://github.com/timmo001/system-bridge-website)
+    Contribute to the website by submitting a pull request.
+    <LinkButton href="https://github.com/timmo001/system-bridge-website" variant="secondary" target="_blank" rel="noopener noreferrer">
+      View Website Repo
+    </LinkButton>
   </LandingCard>
 </CardGrid>
