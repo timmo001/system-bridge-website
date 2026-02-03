@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.svg";
+
+const { fullHeight } = Astro.props;
+
+const widths = [450, 800];
+const sizes = "(min-width: 620px) 38vw, 64vw";
+---
+
+<section
+  class={`relative ${fullHeight ? "h-full" : "h-96"} mb-8 bg-violet-900`}
+  style={`${fullHeight ? "" : "height: 580px"}`}
+>
+  <div
+    class={`relative grid h-full ${
+      fullHeight ? "sm:grid-cols-2" : "sm:grid-cols-1"
+    } place-items-center gap-8`}
+  >
+    <Image
+      class={`${
+        fullHeight ? "self-end" : "self-center"
+      } w-2/3 max-w-3xl sm:w-10/12 sm:self-auto ${
+        fullHeight ? "sm:justify-self-end" : "sm:justify-self-center"
+      } drop-shadow-xl hover:drop-shadow-2xl`}
+      src={logo}
+      widths={widths}
+      sizes={sizes}
+      alt="Logo for System Bridge"
+    />
+    {
+      fullHeight ? (
+        <h2 class="flex flex-col self-start gap-2 sm:gap-4 sm:self-auto sm:justify-self-start">
+          <div class="font-extrabold tracking-tighter text-center text-8xl text-white drop-shadow-xl hover:drop-shadow-2xl">
+            A bridge for
+            <br />
+            your systems.
+          </div>
+        </h2>
+      ) : (
+        ""
+      )
+    }
+  </div>
+</section>
+
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    picture {
+      @apply animate-none;
+    }
+  }
+</style>

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "System Information",
+    "description": "Access your system's information via the data modules using the API/WebSocket.",
+    "icon": "mdi:information-outline"
+  },
+  {
+    "title": "Open files and URLs",
+    "description": "Automate your system by opening a URL/path via the API/WebSocket.",
+    "icon": "mdi:cogs"
+  },
+  {
+    "title": "Send Notifications",
+    "description": "Send system notifications via the API/WebSocket.",
+    "icon": "mdi:bell"
+  },
+  {
+    "title": "Cross-Platform",
+    "description": "Compatible with Windows and Linux.",
+    "icon": "mdi:desktop-tower-monitor"
+  },
+  {
+    "title": "Integrated with Home Assistant",
+    "description": "Interact with your Bridges using <a href='https://www.home-assistant.io/integrations/system_bridge' target='_blank'>Home Assistant</a>.",
+    "icon": "mdi:home-assistant"
+  },
+  {
+    "title": "Android Companion App",
+    "description": "You can find the Android companion app on the <a href='https://play.google.com/store/apps/details?id=dev.timmo.systembridge' target='_blank'>Play Store</a>. The source for this app can be found on <a href='https://github.com/timmo001/system-bridge-android-companion' target='_blank'>GitHub</a>.",
+    "icon": "mdi:android"
+  }
+]
