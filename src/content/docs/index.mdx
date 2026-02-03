@@ -1,40 +1,49 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: System Bridge
+description: Monitor and control your system with a local API and WebSocket.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: A bridge for your systems.
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Download & Install
+      link: /install/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: View API
+      link: /api/data/
+      icon: right-arrow
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+## What is System Bridge?
 
-## Next steps
+System Bridge is an application for your desktop that allows you to monitor and control your system.
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+## Features
+
+- **System Information:** Access your system's information via the data modules using the API/WebSocket.
+- **Open files and URLs:** Automate your system by opening a URL/path via the API/WebSocket.
+- **Send Notifications:** Send system notifications via the API/WebSocket.
+- **Cross-Platform:** Compatible with Windows and Linux.
+- **Integrated with Home Assistant:** Interact with your Bridges using [Home Assistant](https://www.home-assistant.io/integrations/system_bridge).
+- **Android Companion App:** Available on the [Play Store](https://play.google.com/store/apps/details?id=dev.timmo.systembridge). Source is on [GitHub](https://github.com/timmo001/system-bridge-android-companion).
+
+## Modules
+
+- **Battery:** Battery level, capacity and configuration.
+- **CPU:** CPU usage, clock speed, and configuration.
+- **Disks:** Disk and filesystem information.
+- **Display:** Display information.
+- **GPU:** Graphics card configuration and usage.
+- **Media:** Media player information.
+- **Memory:** Memory configuration and usage.
+- **Network:** Networking information.
+- **Processes:** Process information.
+- **Sensors:** Sensor data.
+- **System:** System information.
+
+## Links / Resources
+
+- [Discussions](https://github.com/timmo001/system-bridge/discussions): Participate in discussions and get help.
+- [Suggest a Feature / Report a Bug](https://github.com/timmo001/system-bridge/issues): Suggest ideas or report issues.
+- [Contribute to the Application](https://github.com/timmo001/system-bridge): Submit a pull request.
+- [Contribute to the Website / Documentation](https://github.com/timmo001/system-bridge-website): Submit a pull request.
