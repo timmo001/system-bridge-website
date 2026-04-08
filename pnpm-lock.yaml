@@ -40,8 +40,8 @@ importers:
         specifier: 10.2.0
         version: 10.2.0(jiti@1.21.7)
       postcss:
-        specifier: 8.5.8
-        version: 8.5.8
+        specifier: 8.5.9
+        version: 8.5.9
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -2320,8 +2320,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.5.8:
-    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
+  postcss@8.5.9:
+    resolution: {integrity: sha512-7a70Nsot+EMX9fFU3064K/kdHWZqGVY+BADLyXc8Dfv+mTLLVl6JzJpPaCZ2kQL9gIJvKXSLMHhqdRRjwQeFtw==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -3034,9 +3034,9 @@ snapshots:
   '@astrojs/tailwind@6.0.2(astro@5.18.1(@types/node@25.5.0)(@vercel/functions@3.4.3)(jiti@1.21.7)(rollup@4.59.0)(typescript@5.9.2)(yaml@2.8.3))(tailwindcss@3.4.19(yaml@2.8.3))':
     dependencies:
       astro: 5.18.1(@types/node@25.5.0)(@vercel/functions@3.4.3)(jiti@1.21.7)(rollup@4.59.0)(typescript@5.9.2)(yaml@2.8.3)
-      autoprefixer: 10.4.21(postcss@8.5.8)
-      postcss: 8.5.8
-      postcss-load-config: 4.0.2(postcss@8.5.8)
+      autoprefixer: 10.4.21(postcss@8.5.9)
+      postcss: 8.5.9
+      postcss-load-config: 4.0.2(postcss@8.5.9)
       tailwindcss: 3.4.19(yaml@2.8.3)
     transitivePeerDependencies:
       - ts-node
@@ -3918,14 +3918,14 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  autoprefixer@10.4.21(postcss@8.5.8):
+  autoprefixer@10.4.21(postcss@8.5.9):
     dependencies:
       browserslist: 4.25.4
       caniuse-lite: 1.0.30001741
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
-      postcss: 8.5.8
+      postcss: 8.5.9
       postcss-value-parser: 4.2.0
 
   axios@1.13.5:
@@ -5287,36 +5287,36 @@ snapshots:
       exsolve: 1.0.7
       pathe: 2.0.3
 
-  postcss-import@15.1.0(postcss@8.5.8):
+  postcss-import@15.1.0(postcss@8.5.9):
     dependencies:
-      postcss: 8.5.8
+      postcss: 8.5.9
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.11
 
-  postcss-js@4.1.0(postcss@8.5.8):
+  postcss-js@4.1.0(postcss@8.5.9):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.5.8
+      postcss: 8.5.9
 
-  postcss-load-config@4.0.2(postcss@8.5.8):
+  postcss-load-config@4.0.2(postcss@8.5.9):
     dependencies:
       lilconfig: 3.1.3
       yaml: 2.8.3
     optionalDependencies:
-      postcss: 8.5.8
+      postcss: 8.5.9
 
-  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.8)(yaml@2.8.3):
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.9)(yaml@2.8.3):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
       jiti: 1.21.7
-      postcss: 8.5.8
+      postcss: 8.5.9
       yaml: 2.8.3
 
-  postcss-nested@6.2.0(postcss@8.5.8):
+  postcss-nested@6.2.0(postcss@8.5.9):
     dependencies:
-      postcss: 8.5.8
+      postcss: 8.5.9
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.1.2:
@@ -5326,7 +5326,7 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.8:
+  postcss@8.5.9:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -5690,11 +5690,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.8
-      postcss-import: 15.1.0(postcss@8.5.8)
-      postcss-js: 4.1.0(postcss@8.5.8)
-      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.8)(yaml@2.8.3)
-      postcss-nested: 6.2.0(postcss@8.5.8)
+      postcss: 8.5.9
+      postcss-import: 15.1.0(postcss@8.5.9)
+      postcss-js: 4.1.0(postcss@8.5.9)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.9)(yaml@2.8.3)
+      postcss-nested: 6.2.0(postcss@8.5.9)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.11
       sucrase: 3.35.1
@@ -5882,7 +5882,7 @@ snapshots:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.8
+      postcss: 8.5.9
       rollup: 4.59.0
       tinyglobby: 0.2.15
     optionalDependencies:
