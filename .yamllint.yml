@@ -1,0 +1,14 @@
+---
+extends: default
+
+ignore: |
+  pnpm-lock.yaml
+
+rules:
+  line-length:
+    ignore: |
+      .github/
+    level: warning
+  truthy:
+    ignore: |
+      .github/workflows/
