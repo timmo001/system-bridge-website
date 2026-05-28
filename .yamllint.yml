@@ -1,10 +1,14 @@
 ---
 extends: default
 
+ignore: |
+  pnpm-lock.yaml
+
 rules:
   line-length:
     ignore: |
-      .gitlab-ci.yml
       .github/
-      .yarn/
     level: warning
+  truthy:
+    ignore: |
+      .github/workflows/
