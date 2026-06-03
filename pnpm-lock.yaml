@@ -18,8 +18,8 @@ importers:
         specifier: 1.1.5
         version: 1.1.5
       micromodal:
-        specifier: 0.6.2
-        version: 0.6.2
+        specifier: 0.7.0
+        version: 0.7.0
     devDependencies:
       '@astrojs/sitemap':
         specifier: 3.7.3
@@ -1908,8 +1908,8 @@ packages:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
 
-  micromodal@0.6.2:
-    resolution: {integrity: sha512-awofmgoRTJxeF4gt5wQirrYlJeu7VXFNlGOvunmoWQZkb83N3g8HdXqnlgwi9paK0Uj/64t6zqI8dvV8C3KoAw==}
+  micromodal@0.7.0:
+    resolution: {integrity: sha512-DOU0eE7tByNFTrU9KgPIywt2imA2+ttMMoE89BU/w/r92tNemGFwCg5QTZLLv04N53ZGTizg10zeT7dUv8V/ug==}
     engines: {node: '>=10'}
 
   mime-db@1.52.0:
@@ -4902,7 +4902,7 @@ snapshots:
       braces: 3.0.3
       picomatch: 2.3.2
 
-  micromodal@0.6.2: {}
+  micromodal@0.7.0: {}
 
   mime-db@1.52.0: {}
 
