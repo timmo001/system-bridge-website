@@ -1,6 +1,18 @@
 ---
-title: WebSocket - Connecting & Message Format
+title: Overview
+description: Connect to the System Bridge WebSocket API and understand the request, response, and error message formats shared across every event.
 ---
+
+The WebSocket API gives you a single persistent connection to System Bridge for live data and control. Every feature uses the same message envelope, so once you understand the format below, each event page builds on it.
+
+## Sections
+
+- [Data](/api/websocket/data/): Request system data on demand or subscribe to live updates.
+- [Input](/api/websocket/input/): Simulate keyboard input on the host.
+- [Control](/api/websocket/control/): Control media, notifications, opening paths and URLs, and power state.
+- [System](/api/websocket/system/): Browse files, read and update settings, run allowlisted commands, and exit the backend.
+
+## Connecting
 
 Connect to the WebSocket API at:
 

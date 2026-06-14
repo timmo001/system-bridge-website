@@ -102,7 +102,7 @@ export default defineConfig({
             {
               label: 'WebSocket',
               items: [
-                { label: 'Connecting & Message Format', slug: 'api/websocket/overview' },
+                { label: 'Overview', slug: 'api/websocket/overview' },
                 { label: 'Data', slug: 'api/websocket/data' },
                 { label: 'Input', slug: 'api/websocket/input' },
                 { label: 'Control', slug: 'api/websocket/control' },
