@@ -5,24 +5,7 @@ description: Connect agents to System Bridge over the Model Context Protocol to 
 
 System Bridge includes a [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server, letting agents and other MCP clients query your system and trigger actions.
 
-## Connecting
-
-The MCP server runs over a WebSocket connection at:
-
-```http
-GET /api/mcp
-```
-
-By default this is served on port `9170`, so the full URL is usually `ws://{host}:9170/api/mcp`. Replace `{host}` with the hostname or IP address of the machine running System Bridge. The port can be changed with the `SYSTEM_BRIDGE_PORT` environment variable.
-
-## Authentication
-
-The connection is authenticated with your API token, passed one of two ways:
-
-- As a query parameter: `ws://{host}:9170/api/mcp?token={token}`
-- As an `Authorization: Bearer {token}` header on the upgrade request.
-
-See [how to find your token](/using/cli/#token). Connections with a missing or invalid token are rejected with `401 Unauthorized`.
+The server runs over a WebSocket at `ws://{host}:9170/api/mcp`. Replace `{host}` with the hostname or IP of the machine running System Bridge; the port can be changed with the `SYSTEM_BRIDGE_PORT` environment variable. The connection is authenticated with your API token, passed either as a `token` query parameter or an `Authorization: Bearer {token}` header. A missing or invalid token is rejected with `401 Unauthorized`. See [how to find your token](/using/cli/#token).
 
 ## Setup
 
@@ -46,6 +29,20 @@ With `websocat` installed, add System Bridge to your agent's MCP config:
 
 :::note
 The config key and file location vary by agent. Check your agent's MCP documentation for where its config lives and which key it uses.
+:::
+
+:::tip
+If you sync one config across several machines, hardcoding a token doesn't travel well. Use a small wrapper script that reads the token from `system-bridge client token` at launch and execs `websocat`, then point `command` at it so each machine uses its own token automatically:
+
+```json title="mcp.json"
+{
+  "mcpServers": {
+    "system-bridge": {
+      "command": "system-bridge-mcp"
+    }
+  }
+}
+```
 :::
 
 ## Tools
