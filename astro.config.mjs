@@ -13,7 +13,6 @@ export default defineConfig({
     '/docs/install': '/install',
     '/docs/running': '/running',
     '/docs/cli': '/cli',
-    '/docs/faq': '/faq',
     '/docs/api/data': '/api/data',
     '/docs/api/media-file-data': '/api/media-file-data',
     '/docs/websocket/data-get': '/api/websocket/data#requesting-data',
@@ -86,7 +85,6 @@ export default defineConfig({
             { label: 'Install', slug: 'install' },
             { label: 'Running', slug: 'running' },
             { label: 'CLI', slug: 'cli' },
-            { label: 'FAQ', slug: 'faq' },
           ],
         },
         {
