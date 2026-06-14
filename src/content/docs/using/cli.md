@@ -117,21 +117,13 @@ To run the backend server, use:
 system-bridge backend
 ```
 
-Add `--open-web-client` to open the web client once the backend has started:
+Add `--open-web-client` to open the [web client](/using/web-client/) once the backend has started:
 
 ```bash
 system-bridge backend --open-web-client
 ```
 
 See [Running](/running/) for autostart and service setup.
-
-## TUI
-
-To launch the interactive terminal UI, run:
-
-```bash
-system-bridge tui
-```
 
 ## Version
 
@@ -143,5 +135,8 @@ system-bridge version
 
 ## Next steps
 
+- Prefer a graphical interface? Use the [web client](/using/web-client/).
+- Prefer an interactive menu? Use the [TUI](/using/tui/).
 - Connect to the [API and WebSocket](/api/) to read data and control your system.
+- Integrate with [Home Assistant](/using/home-assistant/).
 - Not started the backend yet? See [Running](/running/).

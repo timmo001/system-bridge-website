@@ -12,7 +12,8 @@ export default defineConfig({
   redirects: {
     '/docs/install': '/install',
     '/docs/running': '/running',
-    '/docs/cli': '/cli',
+    '/docs/cli': '/using/cli',
+    '/cli': '/using/cli',
     '/docs/api/data': '/api/data',
     '/docs/api/media-file-data': '/api/media-file-data',
     '/docs/websocket/data-get': '/api/websocket/data#requesting-data',
@@ -85,7 +86,16 @@ export default defineConfig({
           items: [
             { label: 'Install', slug: 'install' },
             { label: 'Running', slug: 'running' },
-            { label: 'CLI', slug: 'cli' },
+          ],
+        },
+        {
+          label: 'Using',
+          items: [
+            { label: 'Desktop', slug: 'using/desktop' },
+            { label: 'CLI', slug: 'using/cli' },
+            { label: 'TUI', slug: 'using/tui' },
+            { label: 'Web Client', slug: 'using/web-client' },
+            { label: 'Home Assistant', slug: 'using/home-assistant' },
           ],
         },
         {

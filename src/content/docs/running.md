@@ -6,7 +6,7 @@ title: Running
 
 ### Desktop
 
-If you installed System Bridge from a Linux package (deb, rpm, Arch or Flatpak), an application menu entry called "System Bridge" is added during installation. Launch it from your desktop's app launcher to start the backend and open the web client.
+If you installed System Bridge from a Linux package (deb, rpm, Arch or Flatpak), an application menu entry called "System Bridge" is added during installation. Launch it from your desktop's app launcher to start the backend and open the [web client](/using/web-client/).
 
 ### Terminal
 
@@ -208,5 +208,7 @@ system-bridge backend
 
 ## Next steps
 
-- Use the [CLI](/cli/) to get your [token](/cli/#token) and run more commands.
+- Open the [web client](/using/web-client/) to monitor and control your system.
+- Use the [CLI](/using/cli/) or [TUI](/using/tui/), and get your [token](/using/cli/#token).
 - Connect to the [API and WebSocket](/api/) to read data and control your system.
+- Integrate with [Home Assistant](/using/home-assistant/).

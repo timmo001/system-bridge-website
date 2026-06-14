@@ -91,4 +91,6 @@ Please do not submit feedback or bug reports for macOS, as it is not supported. 
 ## Next steps
 
 - Start System Bridge: see [Running](/running/).
-- Get your token and explore commands with the [CLI](/cli/).
+- Monitor and control your system from the [web client](/using/web-client/).
+- Explore the [CLI](/using/cli/) and [TUI](/using/tui/), and get your [token](/using/cli/#token).
+- Connect it to [Home Assistant](/using/home-assistant/).

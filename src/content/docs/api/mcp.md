@@ -10,7 +10,7 @@ System Bridge includes a [Model Context Protocol](https://modelcontextprotocol.i
 GET /api/mcp
 ```
 
-The MCP server speaks JSON-RPC 2.0 over this endpoint and is authenticated with your API token. See [how to find your token](/cli/#token).
+The MCP server speaks JSON-RPC 2.0 over this endpoint and is authenticated with your API token. See [how to find your token](/using/cli/#token).
 
 ## Tools
 

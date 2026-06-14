@@ -36,7 +36,7 @@ Every message you send uses the same envelope:
 ```
 
 - `id`: An identifier you choose. It is echoed back on the response so you can match requests to responses.
-- `token`: Your API token. See [how to find your token](/cli/#token).
+- `token`: Your API token. See [how to find your token](/using/cli/#token).
 - `event`: The event to trigger (for example `GET_DATA`).
 - `data`: The payload for the event. Use `{}` when the event takes no data.
 
