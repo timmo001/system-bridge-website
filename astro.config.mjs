@@ -11,6 +11,24 @@ export default defineConfig({
 		starlight({
       title: 'System Bridge',
       customCss: ['./src/styles/starlight.css', './src/styles/landing.css'],
+      head: [
+        {
+          tag: 'meta',
+          attrs: { property: 'og:image', content: 'https://system-bridge.timmo.dev/social.jpg' },
+        },
+        {
+          tag: 'meta',
+          attrs: { property: 'og:image:width', content: '2560' },
+        },
+        {
+          tag: 'meta',
+          attrs: { property: 'og:image:height', content: '1440' },
+        },
+        {
+          tag: 'meta',
+          attrs: { name: 'twitter:image', content: 'https://system-bridge.timmo.dev/social.jpg' },
+        },
+      ],
       components: {
         SocialIcons: './src/components/SocialIcons.astro',
         Footer: './src/components/Footer.astro',
