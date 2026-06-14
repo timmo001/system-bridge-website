@@ -26,7 +26,8 @@ export default defineConfig({
     '/docs/websocket/open-path': '/api/websocket/control#open-a-path',
     '/docs/websocket/open-url': '/api/websocket/control#open-a-url',
     '/docs/websocket/power-control': '/api/websocket/control#power-control',
-    '/websocket/overview': '/api/websocket/overview',
+    '/websocket/overview': '/api/websocket',
+    '/api/websocket/overview': '/api/websocket',
     '/websocket/data-get': '/api/websocket/data#requesting-data',
     '/websocket/data-register-listener': '/api/websocket/data#registering-as-a-listener',
     '/websocket/data-receive': '/api/websocket/data#receiving-data',
@@ -94,6 +95,7 @@ export default defineConfig({
             {
               label: 'HTTP',
               items: [
+                { label: 'Overview', slug: 'api/http' },
                 { label: 'Status & Health', slug: 'api/status' },
                 { label: 'Data', slug: 'api/data' },
                 { label: 'Media File Data', slug: 'api/media-file-data' },
@@ -102,7 +104,7 @@ export default defineConfig({
             {
               label: 'WebSocket',
               items: [
-                { label: 'Overview', slug: 'api/websocket/overview' },
+                { label: 'Overview', slug: 'api/websocket' },
                 { label: 'Data', slug: 'api/websocket/data' },
                 { label: 'Input', slug: 'api/websocket/input' },
                 { label: 'Control', slug: 'api/websocket/control' },
