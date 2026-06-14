@@ -1,5 +1,5 @@
 ---
-title: WebSocket - Data
+title: Data
 ---
 
 Request system data on demand, subscribe to live updates, and handle the messages the backend sends back.

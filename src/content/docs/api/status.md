@@ -1,5 +1,5 @@
 ---
-title: API - Status & Health
+title: Status & Health
 ---
 
 These endpoints report whether the backend is running. Neither requires authentication.

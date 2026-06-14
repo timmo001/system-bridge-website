@@ -1,5 +1,5 @@
 ---
-title: API - Media - Get File Data
+title: Media - Get File Data
 ---
 
 _Get media file from system._

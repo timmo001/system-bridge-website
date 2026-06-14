@@ -1,5 +1,5 @@
 ---
-title: WebSocket - Control
+title: Control
 ---
 
 Control playback, send notifications, open files and URLs, and manage system power state.

@@ -1,5 +1,5 @@
 ---
-title: WebSocket - System
+title: System
 ---
 
 Browse the filesystem, read and update settings, run allowlisted commands, and shut down the backend.

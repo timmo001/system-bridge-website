@@ -1,5 +1,5 @@
 ---
-title: WebSocket - Input
+title: Input
 ---
 
 Simulate keyboard input on the host machine.
