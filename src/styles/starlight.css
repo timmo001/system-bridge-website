@@ -20,3 +20,19 @@ header.header {
 header.header .site-title {
   color: var(--sl-color-white);
 }
+
+@media (min-width: 50rem) {
+  /* Pin the title column so the search box position and width stay the same
+     on the splash overview page and on docs pages. */
+  header.header {
+    grid-template-columns:
+      minmax(calc(var(--sl-sidebar-width) - var(--sl-nav-pad-x)), auto)
+      1fr
+      auto;
+  }
+
+  /* Widen the search trigger (Starlight default caps it at 22rem). */
+  header.header site-search button[data-open-modal] {
+    max-width: 34rem;
+  }
+}
