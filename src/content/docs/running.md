@@ -194,6 +194,18 @@ Simply double-clicking `system-bridge.exe` will not start the application visibl
 
 You can enable autostart in the settings. This may require restarting the application to apply.
 
+## macOS
+
+:::caution
+macOS is not officially supported. There are no prebuilt packages, so you need to [build it from source](/install/#macos) first.
+:::
+
+Once built, start System Bridge from a terminal:
+
+```bash
+system-bridge backend
+```
+
 ## Next steps
 
 - Use the [CLI](/cli/) to get your [token](/cli/#token) and run more commands.
