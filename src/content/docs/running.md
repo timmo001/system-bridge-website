@@ -31,13 +31,75 @@ You can launch the app via the terminal:
 system-bridge backend
 ```
 
-## Linux (Systemd)
+## Linux (systemd)
 
 :::caution
 Not supported with AppImage or Flatpak.
 You will need to configure the service
 manually to the correct path.
 :::
+
+### User service (recommended)
+
+Run System Bridge as a user service so it shares your login session. This gives it access to your display, audio, notifications and media, and it reads its configuration from your home directory without any extra setup.
+
+1. Create a user service file at `~/.config/systemd/user/system-bridge.service`:
+
+```ini
+[Unit]
+Description=System Bridge
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/system-bridge backend
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
+```
+
+:::note
+Adjust `ExecStart` if `system-bridge` is installed somewhere other than `/usr/bin` (for example a manual install under `~/.local/bin`). Check the path with `which system-bridge`.
+:::
+
+2. Reload the user systemd daemon:
+
+```bash
+systemctl --user daemon-reload
+```
+
+3. Enable and start the service:
+
+```bash
+systemctl --user enable --now system-bridge
+```
+
+4. Check the service status:
+
+```bash
+systemctl --user status system-bridge
+```
+
+To follow the logs:
+
+```bash
+journalctl --user -u system-bridge -f
+```
+
+:::tip
+User services only run while you are logged in. To keep System Bridge running at boot and after you log out, enable lingering for your user:
+
+```bash
+sudo loginctl enable-linger $USER
+```
+
+:::
+
+### System service
+
+For headless or multi-user setups, you can run System Bridge as a system-wide service managed by root.
 
 1. Create a systemd service file at `/etc/systemd/system/system-bridge.service`:
 
@@ -64,25 +126,19 @@ WantedBy=multi-user.target
 The `Environment="HOME=/root"` setting is required for System Bridge to locate its configuration directory. Without this, the service will fail to start with a configuration path error.
 :::
 
-2. Reload systemd daemon:
+2. Reload the systemd daemon:
 
 ```bash
 sudo systemctl daemon-reload
 ```
 
-3. Enable the service to start on boot:
+3. Enable and start the service:
 
 ```bash
-sudo systemctl enable system-bridge
+sudo systemctl enable --now system-bridge
 ```
 
-4. Start the service:
-
-```bash
-sudo systemctl start system-bridge
-```
-
-5. Check the service status:
+4. Check the service status:
 
 ```bash
 sudo systemctl status system-bridge
@@ -95,5 +151,16 @@ The `token` is essential to connect to the API/WebSocket. You can get it using t
 ```bash
 system-bridge client token
 ```
+
+:::note
+The token is stored per user, so run this command as the same user that runs the backend. If you run System Bridge as a system service under root, switch to that user first:
+
+```bash
+sudo su -
+system-bridge client token
+```
+
+You can also use the short form `system-bridge c t`.
+:::
 
 Alternatively, you can find your Token in the application startup logs when running the backend. The logs will show "Your API token is" followed by your token value.
