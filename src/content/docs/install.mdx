@@ -24,12 +24,19 @@ Stable builds are attached to the releases page. Development builds from the lat
 
     <Tabs syncKey="distro">
       <TabItem label="Arch Linux">
-        You can install the latest version with the AUR package [system-bridge](https://aur.archlinux.org/packages/system-bridge).
+        Install from the AUR with an AUR helper such as [yay](https://github.com/Jguer/yay).
 
-        You can also install the current development branch of this project with the AUR package
-        [system-bridge-git](https://aur.archlinux.org/packages/system-bridge-git).
-        This will build and install the application for you based on the latest `dev`
-        branch which is automatically updated every commit.
+        For the latest stable release, use the [system-bridge](https://aur.archlinux.org/packages/system-bridge) package:
+
+        ```bash
+        yay -S system-bridge
+        ```
+
+        For the development branch, use the [system-bridge-git](https://aur.archlinux.org/packages/system-bridge-git) package. This builds and installs the application from the latest `dev` branch, which is updated automatically every commit:
+
+        ```bash
+        yay -S system-bridge-git
+        ```
 
         Alternatively, install the `.pkg.tar.zst` from the releases page or downloaded workflow asset directly:
 
