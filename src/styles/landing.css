@@ -1,59 +1,62 @@
-.sb-hero {
-  display: grid;
-  gap: 2rem;
-  align-items: center;
-  padding: 2.5rem 0 1.5rem;
+/* Purple hero panel: theme-agnostic background with the white logo.
+   Full-bleed background across the viewport, with inner content kept aligned
+   to the container width used by the rest of the page. */
+.hero {
+  background: #512da8;
+  color: #fff;
+  margin-inline: calc(50% - 50vw);
+  padding-block: 3rem;
+  padding-inline: max(calc(50vw - 50%), 1.5rem);
+  margin-block-start: -1.5rem;
+  margin-block-end: 2.5rem;
 }
 
-.sb-hero-media {
-  display: flex;
-  justify-content: center;
+/* Contain the full-bleed hero's scrollbar-width overflow without affecting
+   doc pages or the sticky header. */
+main:has(.hero) {
+  overflow-x: clip;
 }
 
-.sb-hero-logo {
-  width: min(420px, 70vw);
-  height: auto;
+.hero h1 {
+  color: #fff;
 }
 
-.sb-hero-copy h1 {
-  font-size: var(--sl-text-h1);
-  line-height: var(--sl-line-height-headings);
-  margin: 0 0 1rem;
+.hero .tagline {
+  color: color-mix(in srgb, #fff 85%, transparent);
 }
 
-.sb-hero-copy p {
-  font-size: var(--sl-text-body);
-  max-width: 44rem;
+/* Supporting blurb shown beneath the tagline inside the hero. */
+.hero .tagline .hero-blurb {
+  display: block;
+  margin-block-start: 1rem;
+  font-size: var(--sl-text-base);
+  color: color-mix(in srgb, #fff 80%, transparent);
 }
 
-.sb-eyebrow {
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  color: var(--sl-color-gray-3);
-  margin: 0 0 0.75rem;
+/* CTA buttons need contrast against the purple panel. */
+.hero .sl-link-button.primary {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
 }
 
-.sb-hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.25rem;
+.hero .sl-link-button.primary:hover {
+  background: color-mix(in srgb, #fff 88%, #512da8);
 }
 
-.sb-lede {
-  font-size: var(--sl-text-h3);
-  line-height: var(--sl-line-height-headings);
-  color: var(--sl-color-white);
-  margin: 0 0 2.5rem;
+.hero .sl-link-button.minimal {
+  color: #fff;
+  border-color: transparent;
+  padding-inline: 1.125rem;
 }
 
-@media (min-width: 900px) {
-  .sb-hero {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+@media (min-width: 50rem) {
+  .hero .sl-link-button.minimal {
+    padding-inline: 1.25rem;
   }
+}
 
-  .sb-hero-media {
-    justify-content: flex-start;
-  }
+.hero .sl-link-button.minimal:hover {
+  background: color-mix(in srgb, #fff 12%, transparent);
+  color: #fff;
 }
