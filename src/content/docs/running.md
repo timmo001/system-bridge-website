@@ -31,6 +31,29 @@ You can launch the app via the terminal:
 system-bridge backend
 ```
 
+### Autostart
+
+To start System Bridge automatically when you log in, you have a couple of options:
+
+- **Autostart desktop file:** Enable autostart in the application settings, which writes `~/.config/autostart/system-bridge.desktop`. You can also create this file yourself:
+
+```ini
+[Desktop Entry]
+Name=System Bridge
+Comment=System Bridge
+Exec=system-bridge backend
+Icon=system-bridge
+Type=Application
+Categories=Utility;
+X-GNOME-Autostart-enabled=true
+```
+
+- **Compositor autostart:** If your window manager or compositor handles its own startup, add `system-bridge backend` to its autostart configuration instead. For Hyprland, see the [Hyprland autostart docs](https://wiki.hypr.land/Configuring/Basics/Autostart/).
+
+:::tip
+For a service that survives logout and restarts on failure, use a [user systemd service](#user-service-recommended) instead.
+:::
+
 ## Linux (systemd)
 
 :::caution
