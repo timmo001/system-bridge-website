@@ -5,7 +5,7 @@ description: Reference for the System Bridge HTTP, WebSocket and MCP interfaces.
 
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-System Bridge exposes your system over a local API. There are three ways to interact with it: an HTTP API for simple request/response calls, a WebSocket API for live data and control, and an MCP server for AI assistants.
+System Bridge exposes your system over a local API. There are three ways to interact with it: an HTTP API for simple request/response calls, a WebSocket API for live data and control, and an MCP server for agents.
 
 The [WebSocket API](/api/websocket/) is the primary interface and covers most operations: live data, input, media and power control, notifications, settings, and commands. Reach for HTTP only when you want a quick one-off read of status or a module's current data.
 
@@ -40,7 +40,7 @@ The `GET /api` and `GET /api/health` endpoints do not require a token.
 <CardGrid>
   <LinkCard title="WebSocket" href="/api/websocket/" description="Live data subscriptions and system control. Covers most operations." />
   <LinkCard title="HTTP" href="/api/status/" description="Request/response endpoints for status and module data." />
-  <LinkCard title="MCP Server" href="/api/mcp/" description="Connect AI assistants over the Model Context Protocol." />
+  <LinkCard title="MCP Server" href="/api/mcp/" description="Connect agents over the Model Context Protocol." />
 </CardGrid>
 
 ### When to use which
@@ -49,4 +49,4 @@ The `GET /api` and `GET /api/health` endpoints do not require a token.
 | --- | --- |
 | WebSocket | Most operations: live updates, control actions (media, power, notifications, input), settings, and commands. |
 | HTTP | Simple one-off reads: health checks and fetching a module's current data. |
-| MCP | Letting AI assistants query data and trigger actions. |
+| MCP | Letting agents query data and trigger actions. |

@@ -12,7 +12,7 @@ GET /api
 
 Returns a JSON object confirming the API is running:
 
-```json
+```json title="Response"
 {
     "status": "success",
     "message": "API is running",
@@ -28,7 +28,7 @@ GET /api/health
 
 Returns the health status, current time and backend version:
 
-```json
+```json title="Response"
 {
     "status": "healthy",
     "timestamp": "2025-01-01T12:00:00Z",

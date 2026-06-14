@@ -2,6 +2,8 @@
 title: API - Data
 ---
 
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
 _Get data from data modules._
 
 ## Authentication
@@ -10,17 +12,20 @@ This endpoint requires authentication via the `X-API-Token` header or the `token
 
 ## Request
 
-```http
-GET /api/data/{module}
-X-API-Token: {token}
-```
-
-Or:
-
-```http
-GET /api/data/{module}
-token: {token}
-```
+<Tabs syncKey="auth-header">
+  <TabItem label="X-API-Token header">
+    ```http
+    GET /api/data/{module}
+    X-API-Token: {token}
+    ```
+  </TabItem>
+  <TabItem label="token header">
+    ```http
+    GET /api/data/{module}
+    token: {token}
+    ```
+  </TabItem>
+</Tabs>
 
 `{module}` is one of: `battery`, `cpu`, `disks`, `displays`, `gpus`, `media`, `memory`, `networks`, `processes`, `sensors`, `system`.
 
@@ -28,7 +33,7 @@ token: {token}
 
 The response format varies depending on the module requested. Here's an example:
 
-```json
+```json title="Response"
 {
     "boot_time": 1651433957.3015134,
     "fqdn": "Desktop",

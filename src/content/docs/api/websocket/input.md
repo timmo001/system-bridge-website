@@ -8,7 +8,7 @@ Simulate keyboard input on the host machine.
 
 Send the `KEYBOARD_KEYPRESS` event with a `key` to press a single key.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -23,7 +23,7 @@ Send the `KEYBOARD_KEYPRESS` event with a `key` to press a single key.
 
 Send the `KEYBOARD_TEXT` event with a `text` string to type text.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",

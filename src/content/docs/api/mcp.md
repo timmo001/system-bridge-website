@@ -2,7 +2,7 @@
 title: API - MCP Server
 ---
 
-System Bridge includes a [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server, letting AI assistants and other MCP clients query your system and trigger actions.
+System Bridge includes a [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server, letting agents and other MCP clients query your system and trigger actions.
 
 ## Endpoint
 

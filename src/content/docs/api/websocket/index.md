@@ -26,7 +26,7 @@ By default this is served on port `9170`, so the full URL is usually `ws://{host
 
 Every message you send uses the same envelope:
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -44,7 +44,7 @@ Every message you send uses the same envelope:
 
 Responses use a different envelope to requests:
 
-```json
+```json title="Response"
 {
     "id": "abc123",
     "type": "RESPONSE_TYPE",
@@ -66,7 +66,7 @@ Responses use a different envelope to requests:
 
 When a request fails, the response `type` is `ERROR` and `subtype` describes the cause:
 
-```json
+```json title="Error response"
 {
     "id": "abc123",
     "type": "ERROR",

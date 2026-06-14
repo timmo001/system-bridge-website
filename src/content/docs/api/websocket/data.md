@@ -8,7 +8,7 @@ Request system data on demand, subscribe to live updates, and handle the message
 
 To request data, send a message with the `GET_DATA` event listing each module to receive data from.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -23,7 +23,7 @@ To request data, send a message with the `GET_DATA` event listing each module to
 
 To receive data whenever it changes, send the `REGISTER_DATA_LISTENER` event with each module you want to subscribe to.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -36,7 +36,7 @@ The backend replies with a `DATA_LISTENER_REGISTERED` response, then sends a [`D
 
 To stop receiving updates, send the `UNREGISTER_DATA_LISTENER` event. It takes no data and responds with the `DATA_LISTENER_UNREGISTERED` type.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -51,7 +51,7 @@ After a `GET_DATA` request or while registered as a listener, you receive messag
 
 This will look something like this:
 
-```json
+```json title="Response"
 {
     "id": "abc123",
     "type": "DATA_UPDATE",

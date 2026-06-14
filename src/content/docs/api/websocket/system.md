@@ -14,7 +14,7 @@ The available base directory keys are `documents`, `downloads`, `home`, `music`,
 
 Send the `GET_DIRECTORIES` event to list the available base directories. It takes no data and responds with the `DIRECTORIES` type.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -27,7 +27,7 @@ Send the `GET_DIRECTORIES` event to list the available base directories. It take
 
 Send the `GET_DIRECTORY` event with the base directory key to look up a single directory. It responds with the `DIRECTORY` type.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -42,7 +42,7 @@ Send the `GET_DIRECTORY` event with the base directory key to look up a single d
 
 Send the `GET_FILES` event with a base directory, and optionally a relative `path` within it, to list files. It responds with the `FILES` type.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -58,7 +58,7 @@ Send the `GET_FILES` event with a base directory, and optionally a relative `pat
 
 Send the `GET_FILE` event with the absolute `path` to a file to get its information. It responds with the `FILE` type.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -75,7 +75,7 @@ To read the contents of a media file, use the [Media File Data](/api/media-file-
 
 Send the `VALIDATE_DIRECTORY` event with a `path` to check whether it exists and is a directory. It responds with the `DIRECTORY_VALIDATED` type and a `data.valid` boolean.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -90,7 +90,7 @@ Send the `VALIDATE_DIRECTORY` event with a `path` to check whether it exists and
 
 Send the `GET_DISK_MOUNTS` event to list mounted disks, categorised into primary and secondary (bind and squashfs) mounts. It takes no data and responds with the `DISK_MOUNTS` type.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -107,7 +107,7 @@ Read and update the backend settings over the WebSocket connection.
 
 Send the `GET_SETTINGS` event to retrieve the current settings. It takes no data and responds with the `SETTINGS_RESULT` type.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -120,7 +120,7 @@ Send the `GET_SETTINGS` event to retrieve the current settings. It takes no data
 
 Send the `UPDATE_SETTINGS` event with the settings object to update. It responds with the `SETTINGS_UPDATED` type and the updated settings.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -153,7 +153,7 @@ Run a command from the allowlist defined in your [settings](#settings).
 
 Send the `COMMAND_EXECUTE` event with the `commandID` of an allowlisted command:
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -174,7 +174,7 @@ Only commands present in `commands.allowlist` can be executed. Requesting an unk
 
 Send the `EXIT_APPLICATION` event to shut down the backend. It takes empty `data`.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",

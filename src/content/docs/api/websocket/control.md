@@ -19,7 +19,7 @@ Available actions:
 - `VOLUME_DOWN`
 - `MUTE`
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -34,7 +34,7 @@ Available actions:
 
 Send the `NOTIFICATION` event to show a desktop notification. `title` and `message` are required; the rest are optional.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -60,7 +60,7 @@ Available fields:
 
 Send the `OPEN` event with a `path` to open a file or folder with the default application.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -75,7 +75,7 @@ Send the `OPEN` event with a `path` to open a file or folder with the default ap
 
 Send the `OPEN` event with a `url` to open it in the default browser.
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
@@ -97,7 +97,7 @@ Control the system power state with one of the following events. Each takes empt
 - `POWER_SHUTDOWN`
 - `POWER_SLEEP`
 
-```json
+```json title="Request"
 {
     "id": "abc123",
     "token": "abc123",
