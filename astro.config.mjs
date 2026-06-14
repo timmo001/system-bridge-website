@@ -13,6 +13,7 @@ export default defineConfig({
       customCss: ['./src/styles/starlight.css', './src/styles/landing.css'],
       components: {
         SocialIcons: './src/components/SocialIcons.astro',
+        Footer: './src/components/Footer.astro',
       },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/timmo001/system-bridge' },
