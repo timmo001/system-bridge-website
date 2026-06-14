@@ -43,6 +43,7 @@ If you sync one config across several machines, hardcoding a token doesn't trave
   }
 }
 ```
+
 :::
 
 ## Tools
@@ -113,4 +114,3 @@ Example arguments:
 ```json
 { "action": "PAUSE" }
 ```
-</content>
