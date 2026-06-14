@@ -1,37 +1,21 @@
 {
-  "name": "system-bridge-website",
-  "version": "2.0.0",
-  "private": true,
+  "name": "system-bridge",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "astro dev",
     "dev": "astro dev",
+    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "format": "prettier --write .",
-    "clean": "rm -rf dist node_modules public/assets/images",
-    "postinstall": "cd node_modules/sharp && bun install"
-  },
-  "devDependencies": {
-    "@astrojs/sitemap": "3.7.3",
-    "@astrojs/tailwind": "6.0.2",
-    "@types/micromodal": "0.3.5",
-    "astro": "5.18.2",
-    "astro-robots-txt": "1.0.0",
-    "eslint": "10.4.1",
-    "postcss": "8.5.15",
-    "prettier": "3.8.4",
-    "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "0.8.0",
-    "sharp": "0.35.1",
-    "tailwindcss": "3.4.19",
-    "tailwindcss-fluid-type": "2.0.7"
+    "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "10.0.8",
-    "@iconify-json/mdi": "1.2.3",
-    "astro-icon": "1.1.5",
-    "micromodal": "0.7.0"
+    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/starlight": "^0.40.0",
+    "@iconify-json/mdi": "^1.2.3",
+    "astro": "^6.4.6",
+    "astro-icon": "^1.1.5",
+    "sharp": "^0.35.1"
   },
-  "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67"
+  "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d"
 }

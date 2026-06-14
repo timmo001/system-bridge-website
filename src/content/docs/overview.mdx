@@ -1,0 +1,32 @@
+---
+title: Overview
+description: Guides and reference for installing, running, and integrating with System Bridge.
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+System Bridge runs on your desktop and exposes your system over a local API and WebSocket. Use these guides to get set up and start integrating.
+
+## Getting Started
+
+<CardGrid>
+  <LinkCard title="Install" href="/install/" description="Download and install System Bridge on Windows or Linux." />
+  <LinkCard title="Running" href="/running/" description="Start System Bridge and keep it running." />
+  <LinkCard title="CLI" href="/cli/" description="Control System Bridge from the command line." />
+  <LinkCard title="FAQ" href="/faq/" description="Answers to common questions." />
+</CardGrid>
+
+## API
+
+<CardGrid>
+  <LinkCard title="Data" href="/api/data/" description="Request system data over the HTTP API." />
+  <LinkCard title="Media File Data" href="/api/media-file-data/" description="Access media file information." />
+</CardGrid>
+
+## WebSocket
+
+<CardGrid>
+  <LinkCard title="Requesting Data" href="/websocket/data-get/" description="Fetch data over the WebSocket connection." />
+  <LinkCard title="Registering as a Listener" href="/websocket/data-register-listener/" description="Subscribe to data updates." />
+  <LinkCard title="Receiving Data" href="/websocket/data-receive/" description="Handle incoming data messages." />
+</CardGrid>

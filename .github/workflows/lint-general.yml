@@ -6,7 +6,8 @@ on:
   pull_request:
   push:
     branches:
-      - astro-starlight
+      - master
+      - main
   workflow_dispatch:
 
 jobs:

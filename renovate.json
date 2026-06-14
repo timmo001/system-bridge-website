@@ -6,10 +6,20 @@
     "group:recommended"
   ],
   "dependencyDashboard": true,
-  "labels": [
-    "dependencies"
-  ],
+  "labels": ["dependencies"],
   "lockFileMaintenance": {
     "enabled": true
-  }
+  },
+  "packageRules": [
+    {
+      "description": "Group Tailwind CSS packages.",
+      "groupName": "tailwindcss",
+      "matchPackageNames": ["tailwindcss", "@tailwindcss/**", "tailwind-merge", "postcss"]
+    },
+    {
+      "description": "Group GitHub Actions.",
+      "groupName": "github actions",
+      "matchManagers": ["github-actions"]
+    }
+  ]
 }

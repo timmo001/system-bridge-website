@@ -1,32 +1,146 @@
-# System Bridge Website - Agent Guidelines
+# System Bridge Website - Agent Guide
 
-Static documentation site built with Astro.
+This repo hosts the System Bridge documentation site built with Astro + Starlight.
+Keep changes small, aligned with existing patterns, and focused on content and UI.
 
-## Quick Start
+## Quick Commands
 
-- **Dev server**: `pnpm run dev` or `astro dev`
-- **Build**: `pnpm run build` or `astro build`
-- **Preview**: `pnpm run preview` or `astro preview`
-- **Clean**: `pnpm run clean` (removes dist, node_modules, assets)
-- **Format**: `pnpm run format` or `prettier --write .`
-- **Lint**: `eslint .` (extends plugin:astro/recommended)
+- Install deps: `pnpm install`
+- Dev server: `pnpm dev` (alias: `pnpm start`)
+- Build: `pnpm build`
+- Preview build: `pnpm preview`
+- Astro CLI: `pnpm astro -- --help`
 
-**Note:** No tests configured - this is a static documentation site
+## Lint / Test
+
+- No lint script is configured in `package.json`.
+- No tests are configured in this repo.
+- Running a single test is not applicable here.
+- If you add lint/tests, update `package.json` and this file with exact commands.
+
+## Package Manager
+
+- Use `pnpm` only (see `packageManager` in `package.json`).
+- Do not add npm/yarn commands to docs or scripts.
 
 ## Tech Stack
 
-- **Framework**: Astro 5.x with TypeScript (static output, Vercel adapter)
-- **Package Manager**: pnpm (required - see packageManager in package.json)
-- **Styling**: Tailwind CSS with fluid typography plugin, scoped `<style>` blocks in components
-- **Icons**: Use `astro-icon` with Icon component from "astro-icon/components"
+- Astro 5.x with Starlight docs.
+- Tailwind CSS with `tailwindcss-fluid-type`.
+- `astro-icon` for SVG icons.
+- Static output site; no server runtime in this repo.
 
-## Code Style
+## Repo Layout
 
-- **Indentation**: 2 spaces for code, 4 spaces for Markdown (see .editorconfig)
-- **Imports**: Use `~/*` alias for `src/*` paths (configured in tsconfig.json)
-- **Data**: JSON files in `src/data/` for structured content
-- **Naming**: kebab-case for files/URLs, PascalCase for Astro components
-- **TypeScript**: ESNext target, module resolution set to node
-- **Markdown**: Uses custom remark/rehype callout plugins
-- **Scripts**: Inline `<script>` tags in .astro files for interactivity
-- **Formatting**: Prettier with astro and tailwindcss plugins (empty config = defaults)
+- Docs content: `src/content/docs/` (Markdown/MDX with frontmatter).
+- UI components: `src/components/` (.astro).
+- Layouts: `src/layouts/`.
+- Styles: `src/styles/` and component `<style>` blocks.
+- Public assets: `public/`.
+- Build output: `dist/` (generated; do not edit).
+
+## Content Authoring (Always On)
+
+- Use YAML frontmatter; include `title` and `description` when available.
+- File names in `src/content/docs/` are kebab-case and map to routes.
+- Keep headings in natural order (H2 under page title).
+- Use Starlight callouts: `:::note`, `:::tip`, `:::caution`, `:::danger`.
+- External links should include `target="_blank"` and `rel="noopener noreferrer"` when in Astro/MDX.
+- Use language tags on code fences (e.g. `bash`, `json`, `ts`).
+- Prefer short, action-oriented paragraphs; avoid wall-of-text updates.
+
+## Astro / MDX Patterns
+
+- Keep imports and data in the frontmatter block (`---`).
+- Use ESM imports only.
+- For icons, use `Icon` from `astro-icon/components`.
+- When linking within docs, use absolute `/docs/...` paths.
+- Preserve existing component structures unless refactors are required.
+
+## Client Scripts (Astro)
+
+- Place client scripts near the end of the component.
+- Guard DOM lookups (`querySelector`) before use.
+- Prefer `addEventListener` over inline handlers.
+- Keep scripts small; do not introduce heavy client logic.
+- Avoid global side effects unless the component already does so.
+
+## Tailwind + CSS
+
+- Prefer Tailwind utility classes for layout/spacing/typography.
+- Use CSS variables already defined in the theme (see `tailwind.config.cjs`).
+- Use `<style>` blocks for small component-scoped rules only.
+- Avoid adding new global CSS unless necessary; keep it in `src/styles/`.
+
+## Images and Assets
+
+- Store shared assets in `src/assets/`.
+- Reference assets with relative paths from MDX frontmatter when needed.
+- Provide descriptive `alt` text for images.
+- Prefer optimized formats (SVG/WEBP) when adding new assets.
+
+## Imports
+
+- Order imports: external packages first, then local files.
+- Use relative paths for local imports; no path aliases are configured.
+- Match the quote style used in the file you are editing.
+
+## Formatting
+
+- Match existing indentation and whitespace in the file.
+- Do not reformat unrelated lines or reorder content without need.
+- Keep JSX/MDX attributes on multiple lines when already split.
+
+## Workspace Hygiene
+
+- Avoid editing generated output like `dist/`.
+- Do not touch `node_modules/`.
+- Keep changes focused; avoid broad refactors.
+- Preserve content order unless a change requires reflow.
+
+## Docs Routing
+
+- Nested doc routes map to nested folders (e.g. `websocket/open-url.md`).
+- Keep slugs consistent with sidebar labels and internal links.
+- Use `/docs/...` for internal links in prose.
+
+## Types and Error Handling
+
+- Astro uses strict TS config; keep types explicit in scripts when needed.
+- Guard DOM queries with null checks or optional chaining.
+- Avoid throwing in client scripts; fail quietly for missing elements.
+
+## Naming Conventions
+
+- Components: `PascalCase.astro` (e.g. `LandingCard.astro`).
+- Docs files: kebab-case (e.g. `open-url.md`).
+- IDs/classes: descriptive and consistent with existing patterns.
+
+## Accessibility
+
+- Provide alt text for images and icons used as images.
+- Buttons/interactive icons need `aria-label`.
+- Ensure focusable elements remain keyboard-accessible.
+
+## Quality Checks
+
+- Run `pnpm dev` for quick visual verification.
+- Run `pnpm build` before publishing changes that touch layout or config.
+- Confirm nav links and sidebar entries resolve correctly.
+
+## Updating Navigation
+
+- Sidebar and site metadata live in `astro.config.mjs`.
+- Keep sidebar labels human-readable and slugs consistent with doc routes.
+
+## Cursor / Copilot Rules
+
+- No Cursor rules found in `.cursor/rules/` or `.cursorrules`.
+- No Copilot instructions found in `.github/copilot-instructions.md`.
+
+## OpenCode Skills (Use for Infrequent Tasks)
+
+- `/.opencode/skills/docs-page-workflow.md`
+- `/.opencode/skills/landing-content-updates.md`
+
+Keep this file focused on always-needed guidance. Move rare workflows to skills.
