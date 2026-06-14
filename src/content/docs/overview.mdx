@@ -20,10 +20,15 @@ export const usingCards = [
 
 export const apiCards = [
   { title: 'API Reference', href: '/api/', description: 'Base URL, authentication and the three protocols.' },
+  { title: 'HTTP', href: '/api/http/', description: 'Simple request/response reads over the HTTP API.' },
   { title: 'Status & Health', href: '/api/status/', description: 'Check whether the backend is running.' },
   { title: 'Data', href: '/api/data/', description: 'Request system data over the HTTP API.' },
   { title: 'Media File Data', href: '/api/media-file-data/', description: 'Access media file information.' },
   { title: 'MCP Server', href: '/api/mcp/', description: 'Connect agents over the Model Context Protocol.' },
+];
+
+export const llmsCards = [
+  { title: 'LLMs', href: '/llms/', description: 'Feed the documentation to an agent using llms.txt.' },
 ];
 
 export const websocketCards = [
@@ -58,4 +63,10 @@ System Bridge runs on your desktop and exposes your system over a local API and 
 
 <CardGrid>
   {websocketCards.map((card) => <LinkCard key={card.href} {...card} />)}
+</CardGrid>
+
+## LLMs
+
+<CardGrid>
+  {llmsCards.map((card) => <LinkCard key={card.href} {...card} />)}
 </CardGrid>
