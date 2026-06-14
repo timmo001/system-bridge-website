@@ -2,6 +2,8 @@
 title: Running
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+
 ## Linux
 
 ### Desktop
@@ -22,7 +24,7 @@ To start System Bridge automatically when you log in, you have a couple of optio
 
 - **Autostart desktop file:** Enable autostart in the application settings, which writes `~/.config/autostart/system-bridge.desktop`. You can also create this file yourself:
 
-```ini
+```ini title="~/.config/autostart/system-bridge.desktop"
 [Desktop Entry]
 Name=System Bridge
 Comment=System Bridge
@@ -36,7 +38,7 @@ X-GNOME-Autostart-enabled=true
 - **Compositor autostart:** If your window manager or compositor handles its own startup, add `system-bridge backend` to its autostart configuration instead. For Hyprland, see the [Hyprland autostart docs](https://wiki.hypr.land/Configuring/Basics/Autostart/).
 
 :::tip
-For a service that survives logout and restarts on failure, use a [user systemd service](#user-service-recommended) instead.
+For a service that survives logout and restarts on failure, use a user systemd service (see [User service](#user-service-recommended) below) instead.
 :::
 
 ### Systemd
@@ -51,44 +53,48 @@ manually to the correct path.
 
 Run System Bridge as a user service so it shares your login session. This gives it access to your display, audio, notifications and media, and it reads its configuration from your home directory without any extra setup.
 
+<Steps>
+
 1. Create a user service file at `~/.config/systemd/user/system-bridge.service`:
 
-```ini
-[Unit]
-Description=System Bridge
-After=network.target
+   ```ini title="~/.config/systemd/user/system-bridge.service"
+   [Unit]
+   Description=System Bridge
+   After=network.target
 
-[Service]
-Type=simple
-ExecStart=/usr/bin/system-bridge backend
-Restart=on-failure
-RestartSec=5
+   [Service]
+   Type=simple
+   ExecStart=/usr/bin/system-bridge backend
+   Restart=on-failure
+   RestartSec=5
 
-[Install]
-WantedBy=default.target
-```
+   [Install]
+   WantedBy=default.target
+   ```
 
-:::note
-Adjust `ExecStart` if `system-bridge` is installed somewhere other than `/usr/bin` (for example a manual install under `~/.local/bin`). Check the path with `which system-bridge`.
-:::
+   :::note
+   Adjust `ExecStart` if `system-bridge` is installed somewhere other than `/usr/bin` (for example a manual install under `~/.local/bin`). Check the path with `which system-bridge`.
+   :::
 
 2. Reload the user systemd daemon:
 
-```bash
-systemctl --user daemon-reload
-```
+   ```bash
+   systemctl --user daemon-reload
+   ```
 
 3. Enable and start the service:
 
-```bash
-systemctl --user enable --now system-bridge
-```
+   ```bash
+   systemctl --user enable --now system-bridge
+   ```
 
 4. Check the service status:
 
-```bash
-systemctl --user status system-bridge
-```
+   ```bash
+   systemctl --user status system-bridge
+   ```
+
+</Steps>
 
 To follow the logs:
 
@@ -109,48 +115,52 @@ sudo loginctl enable-linger $USER
 
 For headless or multi-user setups, you can run System Bridge as a system-wide service managed by root.
 
+<Steps>
+
 1. Create a systemd service file at `/etc/systemd/system/system-bridge.service`:
 
-```ini
-[Unit]
-Description=System Bridge
-After=network.target
+   ```ini title="/etc/systemd/system/system-bridge.service"
+   [Unit]
+   Description=System Bridge
+   After=network.target
 
-[Service]
-Type=simple
-ExecStart=/usr/bin/system-bridge backend
-Restart=on-failure
-RestartSec=5
-StandardOutput=journal
-StandardError=journal
-SyslogIdentifier=system-bridge
-Environment="HOME=/root"
+   [Service]
+   Type=simple
+   ExecStart=/usr/bin/system-bridge backend
+   Restart=on-failure
+   RestartSec=5
+   StandardOutput=journal
+   StandardError=journal
+   SyslogIdentifier=system-bridge
+   Environment="HOME=/root"
 
-[Install]
-WantedBy=multi-user.target
-```
+   [Install]
+   WantedBy=multi-user.target
+   ```
 
-:::caution
-The `Environment="HOME=/root"` setting is required for System Bridge to locate its configuration directory. Without this, the service will fail to start with a configuration path error.
-:::
+   :::caution
+   The `Environment="HOME=/root"` setting is required for System Bridge to locate its configuration directory. Without this, the service will fail to start with a configuration path error.
+   :::
 
 2. Reload the systemd daemon:
 
-```bash
-sudo systemctl daemon-reload
-```
+   ```bash
+   sudo systemctl daemon-reload
+   ```
 
 3. Enable and start the service:
 
-```bash
-sudo systemctl enable --now system-bridge
-```
+   ```bash
+   sudo systemctl enable --now system-bridge
+   ```
 
 4. Check the service status:
 
-```bash
-sudo systemctl status system-bridge
-```
+   ```bash
+   sudo systemctl status system-bridge
+   ```
+
+</Steps>
 
 ### Token
 
@@ -197,7 +207,7 @@ You can enable autostart in the settings. This may require restarting the applic
 ## macOS
 
 :::caution
-macOS is not officially supported. There are no prebuilt packages, so you need to [build it from source](/install/#macos) first.
+macOS is not officially supported. There are no prebuilt packages, so you need to [build it from source](/install/) first.
 :::
 
 Once built, start System Bridge from a terminal:

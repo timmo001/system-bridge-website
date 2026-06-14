@@ -3,6 +3,9 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
 import icon from 'astro-icon';
+import starlightLlmsTxt from 'starlight-llms-txt';
+import starlightContextualMenu from 'starlight-contextual-menu';
+import starlightLinksValidator from 'starlight-links-validator';
 
 // https://astro.build/config
 export default defineConfig({
@@ -51,6 +54,21 @@ export default defineConfig({
       title: 'System Bridge',
       favicon: '/system-bridge.svg',
       customCss: ['./src/styles/starlight.css', './src/styles/landing.css'],
+      editLink: {
+        baseUrl: 'https://github.com/timmo001/system-bridge-website/edit/main/',
+      },
+      lastUpdated: true,
+      plugins: [
+        starlightLinksValidator(),
+        starlightLlmsTxt({
+          projectName: 'System Bridge',
+          description: 'Monitor and control your system with a local API and WebSocket.',
+          promote: ['index*', 'overview*'],
+        }),
+        starlightContextualMenu({
+          actions: ['copy', 'view'],
+        }),
+      ],
       head: [
         {
           tag: 'meta',
@@ -124,6 +142,7 @@ export default defineConfig({
             { label: 'MCP Server', slug: 'api/mcp' },
           ],
         },
+        { label: 'LLMs', slug: 'llms' },
       ],
     }),
   ],
