@@ -8,10 +8,6 @@ title: Running
 
 If you installed System Bridge from a Linux package (deb, rpm, Arch or Flatpak), an application menu entry called "System Bridge" is added during installation. Launch it from your desktop's app launcher to start the backend and open the web client.
 
-:::note
-AppImage builds do not register a menu entry. Start those from the terminal instead.
-:::
-
 ### Terminal
 
 You can launch the app via the terminal:
@@ -46,7 +42,7 @@ For a service that survives logout and restarts on failure, use a [user systemd 
 ### Systemd
 
 :::caution
-Not supported with AppImage or Flatpak.
+Not supported with Flatpak.
 You will need to configure the service
 manually to the correct path.
 :::

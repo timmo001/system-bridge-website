@@ -2,28 +2,91 @@
 title: Download & Install
 ---
 
-:::caution
-Any version 4 users will need to remove any integrations, and uninstall the old application before installing v5 to avoid conflicts. Your token and settings will not carry over to the new version.
-:::
+Download the package for your platform from the [releases page](https://github.com/timmo001/system-bridge/releases).
 
-Download the latest release from the [releases page](https://github.com/timmo001/system-bridge/releases).
+Each release ships these assets:
+
+- Arch Linux: `system-bridge-<version>-1-x86_64.pkg.tar.zst`
+- Debian / Ubuntu: `system-bridge_<version>_<arch>.deb`
+- Fedora / RHEL: `system-bridge-<version>.<arch>.rpm`
+- Flatpak: `system-bridge-<version>.flatpak`
+- Windows: `system-bridge-<version>-setup.exe`
+
+:::note
+Stable builds are attached to the releases page. Development builds from the latest `dev` branch are also available as workflow artifacts on the [GitHub Actions runs](https://github.com/timmo001/system-bridge/actions), which require a GitHub account to download.
+:::
 
 ### Linux installation
 
-Install the package for your distribution's package manager.
+Install the package that matches your distribution's package manager.
 
 #### Arch Linux (AUR)
 
 You can install the latest version with the AUR package [system-bridge](https://aur.archlinux.org/packages/system-bridge).
 
-You can also install the current master branch of this project with the AUR package
+You can also install the current development branch of this project with the AUR package
 [system-bridge-git](https://aur.archlinux.org/packages/system-bridge-git).
-This will build and install the application for you based on the latest master
+This will build and install the application for you based on the latest `dev`
 branch which is automatically updated every commit.
+
+Alternatively, install the `.pkg.tar.zst` from the releases page or downloaded workflow asset directly:
+
+```bash
+sudo pacman -U system-bridge-<version>-1-x86_64.pkg.tar.zst
+```
+
+#### Debian / Ubuntu (.deb)
+
+Install the `.deb` asset with `apt` so dependencies are resolved automatically:
+
+```bash
+sudo apt install ./system-bridge_<version>_<arch>.deb
+```
+
+You can also install it with `dpkg`:
+
+```bash
+sudo dpkg -i system-bridge_<version>_<arch>.deb
+```
+
+#### Fedora / RHEL (.rpm)
+
+Install the `.rpm` asset with `dnf`:
+
+```bash
+sudo dnf install ./system-bridge-<version>.<arch>.rpm
+```
+
+#### Flatpak (.flatpak)
+
+Install the `.flatpak` bundle:
+
+```bash
+flatpak install system-bridge-<version>.flatpak
+```
+
+Then run it with:
+
+```bash
+flatpak run dev.timmo.system-bridge
+```
 
 ### Windows installation
 
-Run the setup executable to install the application. After installation completes, you can start System Bridge from the Start Menu shortcut.
+Run the `system-bridge-<version>-setup.exe` installer to install the application. After installation completes, you can start System Bridge from the Start Menu shortcut.
+
+### macOS
+
+macOS is not officially supported and has no prebuilt packages. You can still build it from source and test it for yourself.
+
+1. Clone the [repository](https://github.com/timmo001/system-bridge).
+2. Run `make build`.
+
+See the project's [README](https://github.com/timmo001/system-bridge#readme) for the development setup and toolchain requirements.
+
+:::note
+Please do not submit feedback or bug reports for macOS, as it is not supported. Contributions are welcome if you would like to help improve macOS support.
+:::
 
 ## Next steps
 
