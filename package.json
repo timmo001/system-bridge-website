@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.37.7",
+    "@astrojs/starlight": "^0.40.0",
     "@iconify-json/mdi": "^1.2.3",
-    "astro": "^5.18.2",
+    "astro": "^6.4.6",
     "astro-icon": "^1.1.5",
-    "sharp": "^0.34.5"
+    "sharp": "^0.35.1"
   },
   "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d"
 }
