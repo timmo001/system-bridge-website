@@ -19,3 +19,9 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# Agents
+.opencode/
+.claude/
+.agents/
+
