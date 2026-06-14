@@ -197,3 +197,8 @@ Simply double-clicking `system-bridge.exe` will not start the application visibl
 :::
 
 You can enable autostart in the settings. This may require restarting the application to apply.
+
+## Next steps
+
+- Use the [CLI](/cli/) to get your [token](/cli/#token) and run more commands.
+- Connect to the [API and WebSocket](/api/) to read data and control your system.

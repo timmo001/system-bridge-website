@@ -140,3 +140,8 @@ To get the version of System Bridge, run:
 ```bash
 system-bridge version
 ```
+
+## Next steps
+
+- Connect to the [API and WebSocket](/api/) to read data and control your system.
+- Not started the backend yet? See [Running](/running/).
