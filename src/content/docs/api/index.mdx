@@ -1,0 +1,50 @@
+---
+title: API
+description: Reference for the System Bridge HTTP, WebSocket and MCP interfaces.
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+System Bridge exposes your system over a local API. There are three ways to interact with it: an HTTP API for simple request/response calls, a WebSocket API for live data and control, and an MCP server for AI assistants.
+
+## Base URL
+
+By default the backend listens on port `9170`, so the base URL is:
+
+```text
+http://{host}:9170
+```
+
+Replace `{host}` with the hostname or IP address of the machine running System Bridge. The port can be changed with the `SYSTEM_BRIDGE_PORT` environment variable (see the [FAQ](/faq/#changing-the-port)).
+
+## Authentication
+
+Most endpoints require your API token. Get it with the CLI:
+
+```bash
+system-bridge client token
+```
+
+See the [CLI reference](/cli/#token) for more ways to find it. How you pass the token depends on the protocol:
+
+- **HTTP**: send the `X-API-Token` or `token` header. The media file endpoint takes a `token` query parameter instead.
+- **WebSocket**: include `token` in every message you send.
+- **MCP**: authenticated with the same token.
+
+The `GET /api` and `GET /api/health` endpoints do not require a token.
+
+## Protocols
+
+<CardGrid>
+  <LinkCard title="HTTP" href="/api/status/" description="Request/response endpoints for status and module data." />
+  <LinkCard title="WebSocket" href="/api/websocket/overview/" description="Live data subscriptions and system control." />
+  <LinkCard title="MCP Server" href="/api/mcp/" description="Connect AI assistants over the Model Context Protocol." />
+</CardGrid>
+
+### When to use which
+
+| Protocol | Best for |
+| --- | --- |
+| HTTP | One-off requests, health checks, fetching a module's current data. |
+| WebSocket | Subscribing to live updates and sending control actions (media, power, notifications, input). |
+| MCP | Letting AI assistants query data and trigger actions. |
