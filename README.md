@@ -6,11 +6,11 @@ The System Bridge documentation site built with Astro and Starlight.
 
 ## Site
 
-The site is available at https://system-bridge.timmo.dev.
+The site is available at <https://system-bridge.timmo.dev>.
 
 ### Old version
 
-You can find version 1 at https://system-bridge-site.vercel.app.
+You can find version 1 at <https://system-bridge-site.vercel.app>.
 
 ## Project Structure
 
