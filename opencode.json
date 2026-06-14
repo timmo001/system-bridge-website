@@ -11,6 +11,10 @@
     "system-bridge": {
       "repository": "timmo001/system-bridge",
       "description": "Use for the main System Bridge backend that this site documents: API/WebSocket behaviour, features, and release details"
+    },
+    "system-bridge-connector": {
+      "repository": "timmo001/system-bridge-connector",
+      "description": "Use for the System Bridge connector package: client connection handling and API/WebSocket usage that this site documents"
     }
   }
 }
