@@ -16,7 +16,7 @@ These files are generated from the docs at build time, so they stay in sync with
 ## How to use them
 
 - Paste one of the URLs above into an AI assistant and ask it to read the page.
-- Use the actions in the page header on any docs page to copy the page as Markdown.
+- Use the actions in the page header on any docs page to copy the page as Markdown, then paste it straight into an assistant. This gives the model the content directly, so it does not need to fetch the page over the web.
 
 ## Relationship to MCP
 
