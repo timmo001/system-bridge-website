@@ -2,7 +2,7 @@
 title: WebSocket - Power control
 ---
 
-Avaliable events are:
+Available events are:
 
 - POWER_HIBERNATE
 - POWER_LOCK

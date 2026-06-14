@@ -6,13 +6,13 @@ _Get data from data modules._
 
 ## Authentication
 
-This endpoint requires authentication via the `token` header or `X-API-Token` header.
+This endpoint requires authentication via the `X-API-Token` header or the `token` header.
 
 ## Request
 
 ```http
 GET /api/data/{module}
-Authorization: Bearer {token}
+X-API-Token: {token}
 ```
 
 Or:
@@ -21,6 +21,8 @@ Or:
 GET /api/data/{module}
 token: {token}
 ```
+
+`{module}` is one of: `battery`, `cpu`, `disks`, `displays`, `gpus`, `media`, `memory`, `networks`, `processes`, `sensors`, `system`.
 
 ## Response
 

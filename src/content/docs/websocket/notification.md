@@ -2,7 +2,7 @@
 title: WebSocket - Send notification
 ---
 
-Avaliable items can be found [here](https://github.com/timmo001/system-bridge-models/blob/master/systembridgemodels/notification.py)
+Send the `NOTIFICATION` event to show a desktop notification. `title` and `message` are required; the rest are optional.
 
 ```json
 {
@@ -15,3 +15,13 @@ Avaliable items can be found [here](https://github.com/timmo001/system-bridge-mo
     }
 }
 ```
+
+Available fields:
+
+- `title` (required): The notification title.
+- `message` (required): The notification body.
+- `icon` (optional): The icon name.
+- `duration` (optional): How long to show the notification, in milliseconds.
+- `actionUrl` (optional): A URL to open when the notification is clicked.
+- `actionPath` (optional): A file or folder path to open when the notification is clicked.
+- `sound` (optional): Path to a sound file to play with the notification.

@@ -41,6 +41,13 @@ System Bridge officially supports:
 - **Port conflicts**: Verify that the default port (9170) is not being used by another application.
 - **Antivirus software**: Some antivirus programs may block System Bridge. Check your antivirus settings and add exceptions if needed.
 
+## Changing the port
+
+System Bridge listens on port `9170` by default and advertises itself over SSDP on port `1900`. You can override these with environment variables before starting the backend:
+
+- `SYSTEM_BRIDGE_PORT`: The HTTP and WebSocket port (default `9170`).
+- `SYSTEM_BRIDGE_SSDP_PORT`: The SSDP discovery port (default `1900`).
+
 ## I'd like to contribute to the project
 
 There are many ways to contribute to this project. You don't have to know how to code to do so.

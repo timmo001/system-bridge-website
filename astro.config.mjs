@@ -79,15 +79,20 @@ export default defineConfig({
           items: [
             { label: 'Data', slug: 'api/data' },
             { label: 'Media File Data', slug: 'api/media-file-data' },
+            { label: 'Status & Health', slug: 'api/status' },
+            { label: 'MCP Server', slug: 'api/mcp' },
           ],
         },
         {
           label: 'WebSocket',
           items: [
+            { label: 'Connecting & Message Format', slug: 'websocket/overview' },
             { label: 'Requesting Data', slug: 'websocket/data-get' },
             { label: 'Registering as a Listener', slug: 'websocket/data-register-listener' },
             { label: 'Receiving Data', slug: 'websocket/data-receive' },
-            { label: 'Exit Application', slug: 'websocket/exit-application' },
+            { label: 'Files & Directories', slug: 'websocket/filesystem' },
+            { label: 'Settings', slug: 'websocket/settings' },
+            { label: 'Execute Command', slug: 'websocket/command-execute' },
             { label: 'Keyboard Keypress', slug: 'websocket/keyboard-keypress' },
             { label: 'Keyboard Text', slug: 'websocket/keyboard-text' },
             { label: 'Media Control', slug: 'websocket/media-control' },

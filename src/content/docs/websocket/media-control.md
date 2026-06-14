@@ -2,7 +2,18 @@
 title: WebSocket - Media control
 ---
 
-Actions and values can be found [here](https://github.com/timmo001/system-bridge-models/blob/master/systembridgemodels/media_control.py)
+Send the `MEDIA_CONTROL` event with an `action` to control media playback.
+
+Available actions:
+
+- `PLAY`
+- `PAUSE`
+- `STOP`
+- `NEXT`
+- `PREVIOUS`
+- `VOLUME_UP`
+- `VOLUME_DOWN`
+- `MUTE`
 
 ```json
 {
@@ -10,8 +21,7 @@ Actions and values can be found [here](https://github.com/timmo001/system-bridge
     "token": "abc123",
     "event": "MEDIA_CONTROL",
     "data": {
-        "action": "PAUSE",
-        "value": null
+        "action": "PAUSE"
     }
 }
 ```

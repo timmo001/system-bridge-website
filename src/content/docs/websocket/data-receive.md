@@ -23,7 +23,7 @@ This will look something like this:
         "uuid": "abcd-efgh-abcd-efgh-abcd",
         "version": "5.0.2",
         "version_latest": "5.0.7",
-        "version_newer_avaliable": false
+        "version_newer_available": false
     },
     "message": "Data received",
     "module": "system"

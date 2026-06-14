@@ -2,7 +2,7 @@
 title: CLI
 ---
 
-The System Bridge CLI provides commands to interact with the System Bridge backend. All CLI commands are accessed through the `system-bridge client` subcommand.
+The System Bridge CLI provides commands to interact with the System Bridge backend. Most commands live under the `system-bridge client` subcommand, while `backend`, `tui` and `version` are top-level commands.
 
 ## Token
 
@@ -38,6 +38,9 @@ Available flags:
 - `--title`: The title of the notification (default: "System Bridge")
 - `--message`: The message of the notification (default: "Hello, world!")
 - `--icon`: The icon of the notification (default: "system-bridge")
+- `--sound`: Path to a sound file to play with the notification (Linux only)
+- `--action-url`: URL to open when the notification is clicked (Linux only)
+- `--action-path`: File/folder path to open when the notification is clicked (Linux only)
 
 ## Discovery
 
@@ -68,6 +71,11 @@ system-bridge client data list --json
 ```
 
 To output as a JSON array.
+
+Available flags:
+
+- `--json`: Output as a JSON array
+- `--table`: Output as a table (default)
 
 ### Run Modules
 
@@ -100,6 +108,30 @@ Available flags:
 - `--module` or `-m`: Module name (e.g., cpu, memory)
 - `--all`: Run all modules
 - `--pretty`: Pretty-print JSON output
+
+## Backend
+
+To run the backend server, use:
+
+```bash
+system-bridge backend
+```
+
+Add `--open-web-client` to open the web client once the backend has started:
+
+```bash
+system-bridge backend --open-web-client
+```
+
+See [Running](/running/) for autostart and service setup.
+
+## TUI
+
+To launch the interactive terminal UI, run:
+
+```bash
+system-bridge tui
+```
 
 ## Version
 

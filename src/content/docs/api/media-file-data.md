@@ -12,7 +12,7 @@ GET /api/media/file/data?base={base}&path={path}&token={token}
 
 Base is the base directory to search from. Path is the relative path to the file from the base.
 
-The avaliable base directories are:
+The available base directories are:
 
 - documents
 - downloads
