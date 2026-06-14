@@ -89,7 +89,6 @@ export default defineConfig({
       ],
       components: {
         SocialIcons: './src/components/SocialIcons.astro',
-        Footer: './src/components/Footer.astro',
         PageFrame: './src/components/PageFrame.astro',
       },
       social: [
