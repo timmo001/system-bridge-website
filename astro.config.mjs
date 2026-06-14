@@ -13,6 +13,7 @@ export default defineConfig({
   // Old site served docs under /docs/*. Keep those URLs working after the
   // Starlight migration moved pages to the site root.
   redirects: {
+    '/docs': '/overview',
     '/docs/install': '/install',
     '/docs/running': '/running',
     '/docs/cli': '/using/cli',
