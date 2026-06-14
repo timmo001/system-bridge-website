@@ -5,10 +5,10 @@
   background: #512da8;
   color: #fff;
   margin-inline: calc(50% - 50vw);
-  padding-block: 3rem;
+  padding-block: 4.8rem;
   padding-inline: max(calc(50vw - 50%), 1.5rem);
   margin-block-start: -1.5rem;
-  margin-block-end: 2.5rem;
+  margin-block-end: 2.8rem;
 }
 
 /* Contain the full-bleed hero's scrollbar-width overflow without affecting
