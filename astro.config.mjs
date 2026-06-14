@@ -1,14 +1,37 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import sitemap from '@astrojs/sitemap';
 import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://system-bridge.timmo.dev',
-	integrations: [
-		icon(),
-		starlight({
+  // Old site served docs under /docs/*. Keep those URLs working after the
+  // Starlight migration moved pages to the site root.
+  redirects: {
+    '/docs/install': '/install',
+    '/docs/running': '/running',
+    '/docs/cli': '/cli',
+    '/docs/faq': '/faq',
+    '/docs/api/data': '/api/data',
+    '/docs/api/media-file-data': '/api/media-file-data',
+    '/docs/websocket/data-get': '/websocket/data-get',
+    '/docs/websocket/data-register-listener': '/websocket/data-register-listener',
+    '/docs/websocket/data-receive': '/websocket/data-receive',
+    '/docs/websocket/exit-application': '/websocket/exit-application',
+    '/docs/websocket/keyboard-keypress': '/websocket/keyboard-keypress',
+    '/docs/websocket/keyboard-text': '/websocket/keyboard-text',
+    '/docs/websocket/media-control': '/websocket/media-control',
+    '/docs/websocket/notification': '/websocket/notification',
+    '/docs/websocket/open-path': '/websocket/open-path',
+    '/docs/websocket/open-url': '/websocket/open-url',
+    '/docs/websocket/power-control': '/websocket/power-control',
+  },
+  integrations: [
+    icon(),
+    sitemap(),
+    starlight({
       title: 'System Bridge',
       customCss: ['./src/styles/starlight.css', './src/styles/landing.css'],
       head: [
@@ -32,12 +55,14 @@ export default defineConfig({
       components: {
         SocialIcons: './src/components/SocialIcons.astro',
         Footer: './src/components/Footer.astro',
+        PageFrame: './src/components/PageFrame.astro',
       },
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/timmo001/system-bridge' },
         { icon: 'comment', label: 'Discussions', href: 'https://github.com/timmo001/system-bridge/discussions' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/timmo001/system-bridge' },
       ],
       sidebar: [
+        { label: 'Overview', slug: 'overview' },
         {
           label: 'Getting Started',
           items: [

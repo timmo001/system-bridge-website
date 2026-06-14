@@ -1,36 +1,5 @@
 ---
 import Default from '@astrojs/starlight/components/Footer.astro';
-
-const year = new Date().getFullYear();
 ---
 
 <Default><slot /></Default>
-
-<footer class="sb-footer">
-  <p>&copy; {year} Aidan Timson</p>
-  <p>
-    Website source available on{' '}
-    <a
-      href="https://github.com/timmo001/system-bridge-website"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      GitHub</a
-    >.
-  </p>
-</footer>
-
-<style>
-  .sb-footer {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--sl-color-gray-5);
-    text-align: center;
-    font-size: var(--sl-text-sm);
-    color: var(--sl-color-gray-3);
-  }
-
-  .sb-footer p {
-    margin: 0.25rem 0;
-  }
-</style>

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@astrojs/sitemap':
+        specifier: ^3.7.3
+        version: 3.7.3
       '@astrojs/starlight':
         specifier: ^0.40.0
         version: 0.40.0(astro@6.4.6(@types/node@25.9.3)(rollup@4.62.0))(typescript@5.9.3)
@@ -2839,11 +2842,10 @@ snapshots:
   '@types/node@25.9.3':
     dependencies:
       undici-types: 7.24.6
-    optional: true
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 24.13.2
+      '@types/node': 25.9.3
 
   '@types/unist@2.0.11': {}
 
@@ -4589,8 +4591,7 @@ snapshots:
 
   undici-types@7.18.2: {}
 
-  undici-types@7.24.6:
-    optional: true
+  undici-types@7.24.6: {}
 
   undici@7.27.2: {}
 
