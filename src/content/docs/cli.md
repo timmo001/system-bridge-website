@@ -6,11 +6,24 @@ The System Bridge CLI provides commands to interact with the System Bridge backe
 
 ## Token
 
-To get the API token for use in the API/WebSocket, run the following command:
+The token is essential to connect to the API/WebSocket. To get it, run the following command:
 
 ```bash
 system-bridge client token
 ```
+
+:::note
+The token is stored per user, so run this command as the same user that runs the backend. If you run System Bridge as a system service under root, switch to that user first:
+
+```bash
+sudo su -
+system-bridge client token
+```
+
+You can also use the short form `system-bridge c t`.
+:::
+
+Alternatively, you can find your token in the application startup logs when running the backend. The logs will show "Your API token is" followed by your token value.
 
 ## Notification
 

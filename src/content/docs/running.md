@@ -2,28 +2,17 @@
 title: Running
 ---
 
-## Windows
+## Linux
 
-After installation, System Bridge can be started from the Start Menu shortcut that gets created during installation. Look for "System Bridge" in your Start Menu.
+### Desktop
+
+If you installed System Bridge from a Linux package (deb, rpm, Arch or Flatpak), an application menu entry called "System Bridge" is added during installation. Launch it from your desktop's app launcher to start the backend and open the web client.
 
 :::note
-The Start Menu shortcut may not appear immediately after installation until Windows indexes it. If you cannot find it, try searching for "System Bridge" in the Start Menu or restart Windows Explorer.
+AppImage builds do not register a menu entry. Start those from the terminal instead.
 :::
 
-Alternatively, you can start System Bridge from a terminal:
-
-```powershell
-cd "C:\Program Files\System Bridge"
-.\system-bridge.exe backend
-```
-
-:::caution
-Simply double-clicking `system-bridge.exe` will not start the application visibly. You must use the `backend` command or the Start Menu shortcut.
-:::
-
-You can enable autostart in the settings. This may require restarting the application to apply.
-
-## Linux (Terminal)
+### Terminal
 
 You can launch the app via the terminal:
 
@@ -54,7 +43,7 @@ X-GNOME-Autostart-enabled=true
 For a service that survives logout and restarts on failure, use a [user systemd service](#user-service-recommended) instead.
 :::
 
-## Linux (systemd)
+### Systemd
 
 :::caution
 Not supported with AppImage or Flatpak.
@@ -62,7 +51,7 @@ You will need to configure the service
 manually to the correct path.
 :::
 
-### User service (recommended)
+#### User service (recommended)
 
 Run System Bridge as a user service so it shares your login session. This gives it access to your display, audio, notifications and media, and it reads its configuration from your home directory without any extra setup.
 
@@ -120,7 +109,7 @@ sudo loginctl enable-linger $USER
 
 :::
 
-### System service
+#### System service
 
 For headless or multi-user setups, you can run System Bridge as a system-wide service managed by root.
 
@@ -187,3 +176,24 @@ You can also use the short form `system-bridge c t`.
 :::
 
 Alternatively, you can find your Token in the application startup logs when running the backend. The logs will show "Your API token is" followed by your token value.
+
+## Windows
+
+After installation, System Bridge can be started from the Start Menu shortcut that gets created during installation. Look for "System Bridge" in your Start Menu.
+
+:::note
+The Start Menu shortcut may not appear immediately after installation until Windows indexes it. If you cannot find it, try searching for "System Bridge" in the Start Menu or restart Windows Explorer.
+:::
+
+Alternatively, you can start System Bridge from a terminal:
+
+```powershell
+cd "C:\Program Files\System Bridge"
+.\system-bridge.exe backend
+```
+
+:::caution
+Simply double-clicking `system-bridge.exe` will not start the application visibly. You must use the `backend` command or the Start Menu shortcut.
+:::
+
+You can enable autostart in the settings. This may require restarting the application to apply.
