@@ -60,3 +60,16 @@ main:has(.hero) {
   background: color-mix(in srgb, #fff 12%, transparent);
   color: #fff;
 }
+
+/* Secondary CTA buttons inside the landing cards have no hover state from
+   Starlight. Give them a subtle fill that picks up each card's accent. */
+.sl-link-button.secondary {
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.sl-link-button.secondary:hover {
+  background: color-mix(in srgb, var(--sb-card-border, var(--sl-color-gray-5)) 15%, transparent);
+  border-color: var(--sb-card-border, var(--sl-color-gray-4));
+}
