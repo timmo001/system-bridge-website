@@ -1,4 +1,7 @@
-# System Bridge Website
+# (Archived) System Bridge Website
+
+> [!NOTE]
+> This repository has been archived. The documentation site now lives in [`system-bridge/docs`](https://github.com/timmo001/system-bridge/tree/dev/docs).
 
 The System Bridge documentation site built with Astro and Starlight.
 
